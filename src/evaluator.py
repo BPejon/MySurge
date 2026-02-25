@@ -77,6 +77,10 @@ class SurGEvaluator:
         refs  = markdownParser.parse_refs(passage_path)
         refid2docid = {}
 
+        #print("*****")
+        #print(f"psg node: {psg_node}")
+        #print(f"refs: {refs}")
+
         for refid,ref_title in refs.items():
 
             if normalize_string(ref_title) in self.title2docid:
@@ -84,7 +88,7 @@ class SurGEvaluator:
                 refid2docid[refid] = ref_docid
             else:
                 refid2docid[refid] = ref_title
-        # print(refid2docid)
+        print(f"ref2docid: {refid2docid}")
         eval_result = {
             "Information_Collection": {
                 "Comprehensiveness": {
@@ -152,6 +156,7 @@ class SurGEvaluator:
             for k,v in refid2docid.items():
                 sen_1 = None
                 sen_paper = None 
+                #print(f"K: {k}, V: {v}")
                 if isinstance(v,int):
                     tmp_1 = self.corpus_map[v]['Title']
                     tmp_2 = self.corpus_map[v]['Abstract']
@@ -169,6 +174,7 @@ class SurGEvaluator:
             paper_relevance = None
             if len(refid2docid) > 0:
                 paper_relevance = informationFuncs.eval_relevance_paper(self.survey_map[survey_id],refid2docid,refcontent,self.nli_model)
+                print(f"Paper Relevance: {paper_relevance}")
             else:
                 paper_relevance = 0
             eval_result["Information_Collection"]["Relevance"]["Paper_Level"] = paper_relevance

@@ -1,0 +1,53 @@
+{
+    "Information_Collection": {
+        "Comprehensiveness": {
+            "Coverage": 0.00425531914893617
+        },
+        "Relevance": {
+            "Paper_Level": 0.065,
+            "Section_Level": 0.0784313725490196,
+            "Sentence_Level": 0.0784313725490196
+        }
+    },
+    "Survey_Structure": {
+        "Structure_Quality(LLM_as_judge)": 1,
+        "SH-Recall": 0.9279497339635886
+    },
+    "Survey_Content": {
+        "Relevance": {
+            "ROUGE-1": 0.2595326196297799,
+            "ROUGE-2": 0.053234798207090615,
+            "ROUGE-L": 0.15137911065453438,
+            "BLEU": 12.789812637663525
+        },
+        "Logic": 4.916666666666667
+    },
+    "survey_id": "26"
+}
+
+{
+    "Information_Collection": {
+        "Comprehensiveness": {
+            "Coverage": 0.00425531914893617
+        },
+        "Relevance": {
+            "Paper_Level": 0.065,
+            "Section_Level": 0.0784313725490196,
+            "Sentence_Level": 0.0784313725490196
+        }
+    },
+    "Survey_Structure": {
+        "Structure_Quality(LLM_as_judge)": 1.0,
+        "SH-Recall": 0.9279497339635886
+    },
+    "Survey_Content": {
+        "Relevance": {
+            "ROUGE-1": 0.2595326196297799,
+            "ROUGE-2": 0.053234798207090615,
+            "ROUGE-L": 0.15137911065453438,
+            "BLEU": 12.789812637663525
+        },
+        "Logic": 4.916666666666667
+    },
+    "survey_id": "Average"
+}

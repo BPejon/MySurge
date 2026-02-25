@@ -1,0 +1,7 @@
+python src/test_final.py --passage_dir ./baselines/ID/output --save_path ./baselines/ID/output/log.json --device 0 --api_key sk-ZLdWh_jEUHcO6gE7GD-oxIQpMD3OO9Q_gvc3TE4gi4T3BlbkFJfPljWUt1OR-j5GlAA-CLYE7UyqbKeYE3vDkpQUdREA
+
+
+
+Transformar latex em markdown:
+pandoc main.tex --from latex --to markdown --wrap=none > main.md --syntax-highlighting=none
+

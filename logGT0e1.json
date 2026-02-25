@@ -1,0 +1,79 @@
+{
+    "Information_Collection": {
+        "Comprehensiveness": {
+            "Coverage": 0.0
+        },
+        "Relevance": {
+            "Paper_Level": 0.3409090909090909,
+            "Section_Level": 0.3375796178343949,
+            "Sentence_Level": 0.34076433121019106
+        }
+    },
+    "Survey_Structure": {
+        "Structure_Quality(LLM_as_judge)": 4,
+        "SH-Recall": 0.969916289218589
+    },
+    "Survey_Content": {
+        "Relevance": {
+            "ROUGE-1": 0.2794333624779876,
+            "ROUGE-2": 0.14523552268233839,
+            "ROUGE-L": 0.2117263355920167,
+            "BLEU": 34.17122248494586
+        },
+        "Logic": 2.3
+    },
+    "survey_id": "1"
+}
+{
+    "Information_Collection": {
+        "Comprehensiveness": {
+            "Coverage": 0.0
+        },
+        "Relevance": {
+            "Paper_Level": 0.35,
+            "Section_Level": 0.3218390804597701,
+            "Sentence_Level": 0.3103448275862069
+        }
+    },
+    "Survey_Structure": {
+        "Structure_Quality(LLM_as_judge)": 4,
+        "SH-Recall": 0.9774307670990824
+    },
+    "Survey_Content": {
+        "Relevance": {
+            "ROUGE-1": 0.28329600760721463,
+            "ROUGE-2": 0.1403152489617964,
+            "ROUGE-L": 0.20503624623524372,
+            "BLEU": 30.825725783533258
+        },
+        "Logic": 2.05
+    },
+    "survey_id": "0"
+}
+
+{
+    "Information_Collection": {
+        "Comprehensiveness": {
+            "Coverage": 0.0
+        },
+        "Relevance": {
+            "Paper_Level": 0.34545454545454546,
+            "Section_Level": 0.3297093491470825,
+            "Sentence_Level": 0.325554579398199
+        }
+    },
+    "Survey_Structure": {
+        "Structure_Quality(LLM_as_judge)": 4.0,
+        "SH-Recall": 0.9736735281588357
+    },
+    "Survey_Content": {
+        "Relevance": {
+            "ROUGE-1": 0.28136468504260115,
+            "ROUGE-2": 0.1427753858220674,
+            "ROUGE-L": 0.20838129091363022,
+            "BLEU": 32.49847413423956
+        },
+        "Logic": 2.175
+    },
+    "survey_id": "Average"
+}
