@@ -62,27 +62,84 @@ def parse_markdown(file_path):
 def parse_refs(file_path):
     """Parse the references from the markdown file.
     
-    There are two possible formats for the references section:
-    (1) A list of references with the format:
-        [num] Author(s). Title. (The title may be embraced by '*')
-    (2) A list of references with the format:
-        [num] Title
-    
-    The function returns a dict of titles with their num id as keys.
+    Simple approach: split by "." and pick the longest segment.
     """
     references = {}
-    pattern = re.compile(r"^\[(\d+)\]\s*(?:.*?\*?([\w\s:,.-]+)\*?$|([\w\s:,.-]+)$)")
     
     with open(file_path, "r", encoding="utf-8") as file:
         for line in file:
             line = line.strip()
             if not line.startswith("["):
                 continue
-            match = pattern.match(line)
-            if match:
-                ref_id = int(match.group(1))
-                title = match.group(2) if match.group(2) else match.group(3)
-                references[ref_id] = title.strip()
+            
+            # Extrai o número da referência
+            id_match = re.match(r'^\[(\d+)\]', line)
+            if not id_match:
+                continue
+            
+            ref_id = int(id_match.group(1))
+            content = line[id_match.end():].strip()
+            
+            # Divide a string por pontos
+            segments = content.split('.')
+            
+            # Remove espaços em branco de cada segmento
+            segments = [seg.strip() for seg in segments if seg.strip()]
+            
+            # Ignora segmentos que são claramente autores ou informações de publicação
+            candidate_segments = []
+            
+            for seg in segments:
+                # Ignora segmentos muito curtos (provavelmente iniciais)
+                if len(seg) <= 3:
+                    continue
+                
+                # Ignora segmentos que são só números ou datas
+                if re.match(r'^\d+$', seg) or re.match(r'^\d{4}$', seg):
+                    continue
+                
+                # Ignora segmentos com "et al"
+                if 'et al' in seg.lower():
+                    continue
+                
+                # Ignora segmentos com padrões de autoria (inicial + sobrenome)
+                if re.match(r'^[A-Z]\.?\s+[A-Z][a-z]+$', seg):
+                    continue
+                
+                # Ignora segmentos com informações de publicação
+                pub_patterns = [
+                    r'technical report',
+                    r'pp\.',
+                    r'volume',
+                    r'no\.',
+                    r'cornell',
+                    r'ieee',
+                    r'\d+\(\d+\):\d+--\d+',
+                    r'neurips',
+                    r'laboratory',
+                ]
+                
+                is_publication = False
+                for pattern in pub_patterns:
+                    if re.search(pattern, seg.lower()):
+                        is_publication = True
+                        break
+                
+                if not is_publication:
+                    candidate_segments.append(seg)
+            
+            # Se temos candidatos, escolhe o mais longo
+    
+            # Ordena por comprimento (do mais longo para o mais curto)
+            candidate_segments.sort(key=len, reverse=True)
+            title = candidate_segments[0]
+                
+            # Limpeza básica
+            title = title.rstrip(',;:')
+            title = re.sub(r'\s+', ' ', title).strip()
+                
+            references[ref_id] = title
+            #print(f"Extracted reference - ID: {ref_id}, Title: {title}")
     
     return references
 

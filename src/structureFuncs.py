@@ -22,9 +22,7 @@ def normalize_sims(sims):
 
 
 def soft_heading_recall(G, P, model):
-    #print(G)
-    #print(P)
-
+    
     def soft_cardinality(T):
         card = 0
         sims = calc_sim(T,T,model)
@@ -52,6 +50,7 @@ def soft_heading_recall(G, P, model):
 
     # Soft Heading Recall
     soft_recall = card_R_intersect_G / card_R if card_R != 0 else 0
+    
     return soft_recall
 
 
@@ -75,6 +74,11 @@ def eval_SHRecall(target_survey,psg_node: MarkdownNode,model):
         #subtitles_map.append(section['title'])
         
     gen_titles = get_title_list(psg_node)
+
+    #print("Target Titles:",target_titles)
+    #print("----------------")
+   # print("Generated Titles:",gen_titles)
+
     
     if len(gen_titles) == 0:
         return 0

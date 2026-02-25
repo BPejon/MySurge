@@ -38,7 +38,7 @@ def calculate_average_rouge_bleu(A, B):
     avg_rouge1 = mean(rouge1_scores)
     avg_rouge2 = mean(rouge2_scores)
     avg_rougeL = mean(rougeL_scores)
-    #print(bleu_scores)
+    print(bleu_scores)
     avg_BLEU = mean(bleu_scores)
     
     
