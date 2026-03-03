@@ -1,0 +1,1063 @@
+[
+  {
+    "authors": [
+      "Mahmoud Elsayed",
+      "Abubakar Isah",
+      "Moaz Hiba",
+      "Amjed Hassan",
+      "Karem Al-Garadi",
+      "Mohamed Mahmoud",
+      "Ammar El-Husseiny",
+      "Ahmed E. Radwan"
+    ],
+    "survey_title": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements",
+    "year": "2022",
+    "date": "2022-03-14T00:00:00Z",
+    "category": "NMR · Petrophysics · Enhanced oil recovery · Unconventional gas · Geosteering",
+    "abstract": "This review presents the latest update, applications, techniques of the NMR tools in both laboratory and field scales in the oil and gas upstream industry. The applications of NMR in the laboratory scale were thoroughly reviewed and summarized such as porosity, pores size distribution, permeability, saturations, capillary pressure, and wettability. NMR is an emerging tool to evaluate the improved oil recovery techniques, and it was found to be better than the current techniques used for screening, evaluation, and assessment. For example, NMR can define the recovery of oil/gas from the different pore systems in the rocks compared to other macroscopic techniques that only assess the bulk recovery. This manuscript included different applications for the NMR in enhanced oil recovery research. Also, NMR can be used to evaluate the damage potential of drilling, completion, and production fluids laboratory and field scales. Currently, NMR is used to evaluate the emulsion droplet size and its behavior in the pore space in different applications such as enhanced oil recovery, drilling, completion, etc. NMR tools in the laboratory and field scales can be used to assess the unconventional gas resources and NMR showed a very good potential for exploration and production advancement in unconventional gas fields compared to other tools. Field applications of NMR during exploration and drilling such as logging while drilling, geosteering, etc., were reviewed as well. Finally, the future and potential research directions of NMR tools were introduced which include the application of multi- dimensional NMR and the enhancement of the signal- to- noise ratio of the collected data during the logging while drilling operations.",
+    "structure": [
+      {
+        "id": "f1a2b3c4-d5e6-47f8-9a0b-1c2d3e4f5a6b",
+        "title": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements",
+        "level": "root",
+        "subsections": [
+          "a1b2c3d4-e5f6-47a8-9b0c-1d2e3f4a5b6c",
+          "b2c3d4e5-f6a7-48b9-9c0d-1e2f3a4b5c6d",
+          "c3d4e5f6-a7b8-49c0-9d1e-2f3a4b5c6d7g",
+          "d4e5f6a7-b8c9-40d1-9e2f-3a4b5c6d7e8h",
+          "e5f6a7b8-c9d0-41e2-9f3a-4b5c6d7e8f9i",
+          "f6a7b8c9-d0e1-42f3-9a4b-5c6d7e8f9a0b",
+          "g7b8c9d0-e1f2-43a4-9b5c-6d7e8f9a0b1c",
+          "h8c9d0e1-f2a3-44b5-9c6d-7e8f9a0b1c2d",
+          "i9d0e1f2-a3b4-45c6-9d7e-8f9a0b1c2d3e",
+          "b4c5d6e7-f8a9-40b1-9c2d-3e4f5a6b7c8d",
+          "f8a9b0c1-d2e3-44f5-9a6b-7c8d9e0f1a2b",
+          "a9b0c1d2-e3f4-45a6-9b7c-8d9e0f1a2b3c",
+          "c0d1e2f3-a4b5-46c7-9d8e-0f1a2b3c4d5e",
+          "d1e2f3a4-b5c6-47d8-9e9f-1a2b3c4d5e6f",
+          "e2f3a4b5-c6d7-48e9-9f0a-2b3c4d5e6f7a"
+        ],
+        "parent_id": null,
+        "prefix_titles": [
+          [
+            "title",
+            "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements"
+          ]
+        ],
+        "content": "",
+        "cites": [],
+        "cite_extract_rate": 0,
+        "origin_cites_number": 0
+      },
+      {
+        "id": "a1b2c3d4-e5f6-47a8-9b0c-1d2e3f4a5b6c",
+        "title": "Introduction",
+        "level": "section",
+        "subsections": [],
+        "parent_id": "f1a2b3c4-d5e6-47f8-9a0b-1c2d3e4f5a6b",
+        "prefix_titles": [
+          [
+            "title",
+            "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements"
+          ],
+          [
+            "section",
+            "Introduction"
+          ]
+        ],
+        "content": "",
+        "cites": [],
+        "cite_extract_rate": 0,
+        "origin_cites_number": 0
+      },
+      {
+        "id": "b2c3d4e5-f6a7-48b9-9c0d-1e2f3a4b5c6d",
+        "title": "NMR theory",
+        "level": "section",
+        "subsections": [],
+        "parent_id": "f1a2b3c4-d5e6-47f8-9a0b-1c2d3e4f5a6b",
+        "prefix_titles": [
+          [
+            "title",
+            "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements"
+          ],
+          [
+            "section",
+            "NMR theory"
+          ]
+        ],
+        "content": "",
+        "cites": [],
+        "cite_extract_rate": 0,
+        "origin_cites_number": 0
+      },
+      {
+        "id": "c3d4e5f6-a7b8-49c0-9d1e-2f3a4b5c6d7g",
+        "title": "Relaxation measurements",
+        "level": "section",
+        "subsections": [],
+        "parent_id": "f1a2b3c4-d5e6-47f8-9a0b-1c2d3e4f5a6b",
+        "prefix_titles": [
+          [
+            "title",
+            "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements"
+          ],
+          [
+            "section",
+            "Relaxation measurements"
+          ]
+        ],
+        "content": "",
+        "cites": [],
+        "cite_extract_rate": 0,
+        "origin_cites_number": 0
+      },
+      {
+        "id": "d4e5f6a7-b8c9-40d1-9e2f-3a4b5c6d7e8h",
+        "title": "Diffusion measurements",
+        "level": "section",
+        "subsections": [],
+        "parent_id": "f1a2b3c4-d5e6-47f8-9a0b-1c2d3e4f5a6b",
+        "prefix_titles": [
+          [
+            "title",
+            "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements"
+          ],
+          [
+            "section",
+            "Diffusion measurements"
+          ]
+        ],
+        "content": "",
+        "cites": [],
+        "cite_extract_rate": 0,
+        "origin_cites_number": 0
+      },
+      {
+        "id": "e5f6a7b8-c9d0-41e2-9f3a-4b5c6d7e8f9i",
+        "title": "Two-dimensional NMR measurements",
+        "level": "section",
+        "subsections": [],
+        "parent_id": "f1a2b3c4-d5e6-47f8-9a0b-1c2d3e4f5a6b",
+        "prefix_titles": [
+          [
+            "title",
+            "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements"
+          ],
+          [
+            "section",
+            "Two-dimensional NMR measurements"
+          ]
+        ],
+        "content": "",
+        "cites": [],
+        "cite_extract_rate": 0,
+        "origin_cites_number": 0
+      },
+      {
+        "id": "f6a7b8c9-d0e1-42f3-9a4b-5c6d7e8f9a0b",
+        "title": "NMR applications in laboratory scale",
+        "level": "section",
+        "subsections": [],
+        "parent_id": "f1a2b3c4-d5e6-47f8-9a0b-1c2d3e4f5a6b",
+        "prefix_titles": [
+          [
+            "title",
+            "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements"
+          ],
+          [
+            "section",
+            "NMR applications in laboratory scale"
+          ]
+        ],
+        "content": "",
+        "cites": [],
+        "cite_extract_rate": 0,
+        "origin_cites_number": 0
+      },
+      {
+        "id": "g7b8c9d0-e1f2-43a4-9b5c-6d7e8f9a0b1c",
+        "title": "Petrophysics",
+        "level": "section",
+        "subsections": [
+          "d8e9f0a1-b2c3-44d5-9e6f-7a8b9c0d1e2f",
+          "e9f0a1b2-c3d4-45e6-9f7a-8b9c0d1e2f3a",
+          "f0a1b2c3-d4e5-46f7-9a8b-9c0d1e2f3a4b",
+          "a1b2c3d4-e5f6-47a8-9b0c-1d2e3f4a5b6d",
+          "b2c3d4e5-f6a7-48b9-9c0d-1e2f3a4b5c6e",
+          "c3d4e5f6-a7b8-49c0-9d1e-2f3a4b5c6d7f"
+        ],
+        "parent_id": "f1a2b3c4-d5e6-47f8-9a0b-1c2d3e4f5a6b",
+        "prefix_titles": [
+          [
+            "title",
+            "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements"
+          ],
+          [
+            "section",
+            "Petrophysics"
+          ]
+        ],
+        "content": "",
+        "cites": [],
+        "cite_extract_rate": 0,
+        "origin_cites_number": 0
+      },
+      {
+        "id": "d8e9f0a1-b2c3-44d5-9e6f-7a8b9c0d1e2f",
+        "title": "Porosity",
+        "level": "subsection",
+        "subsections": [],
+        "parent_id": "g7b8c9d0-e1f2-43a4-9b5c-6d7e8f9a0b1c",
+        "prefix_titles": [
+          [
+            "title",
+            "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements"
+          ],
+          [
+            "section",
+            "Petrophysics"
+          ],
+          [
+            "subsection",
+            "Porosity"
+          ]
+        ],
+        "content": "",
+        "cites": [],
+        "cite_extract_rate": 0,
+        "origin_cites_number": 0
+      },
+      {
+        "id": "e9f0a1b2-c3d4-45e6-9f7a-8b9c0d1e2f3a",
+        "title": "Pore size distribution",
+        "level": "subsection",
+        "subsections": [],
+        "parent_id": "g7b8c9d0-e1f2-43a4-9b5c-6d7e8f9a0b1c",
+        "prefix_titles": [
+          [
+            "title",
+            "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements"
+          ],
+          [
+            "section",
+            "Petrophysics"
+          ],
+          [
+            "subsection",
+            "Pore size distribution"
+          ]
+        ],
+        "content": "",
+        "cites": [],
+        "cite_extract_rate": 0,
+        "origin_cites_number": 0
+      },
+      {
+        "id": "f0a1b2c3-d4e5-46f7-9a8b-9c0d1e2f3a4b",
+        "title": "Permeability",
+        "level": "subsection",
+        "subsections": [],
+        "parent_id": "g7b8c9d0-e1f2-43a4-9b5c-6d7e8f9a0b1c",
+        "prefix_titles": [
+          [
+            "title",
+            "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements"
+          ],
+          [
+            "section",
+            "Petrophysics"
+          ],
+          [
+            "subsection",
+            "Permeability"
+          ]
+        ],
+        "content": "",
+        "cites": [],
+        "cite_extract_rate": 0,
+        "origin_cites_number": 0
+      },
+      {
+        "id": "a1b2c3d4-e5f6-47a8-9b0c-1d2e3f4a5b6d",
+        "title": "Fluid saturation",
+        "level": "subsection",
+        "subsections": [],
+        "parent_id": "g7b8c9d0-e1f2-43a4-9b5c-6d7e8f9a0b1c",
+        "prefix_titles": [
+          [
+            "title",
+            "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements"
+          ],
+          [
+            "section",
+            "Petrophysics"
+          ],
+          [
+            "subsection",
+            "Fluid saturation"
+          ]
+        ],
+        "content": "",
+        "cites": [],
+        "cite_extract_rate": 0,
+        "origin_cites_number": 0
+      },
+      {
+        "id": "b2c3d4e5-f6a7-48b9-9c0d-1e2f3a4b5c6e",
+        "title": "Capillary pressure",
+        "level": "subsection",
+        "subsections": [],
+        "parent_id": "g7b8c9d0-e1f2-43a4-9b5c-6d7e8f9a0b1c",
+        "prefix_titles": [
+          [
+            "title",
+            "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements"
+          ],
+          [
+            "section",
+            "Petrophysics"
+          ],
+          [
+            "subsection",
+            "Capillary pressure"
+          ]
+        ],
+        "content": "",
+        "cites": [],
+        "cite_extract_rate": 0,
+        "origin_cites_number": 0
+      },
+      {
+        "id": "c3d4e5f6-a7b8-49c0-9d1e-2f3a4b5c6d7f",
+        "title": "Wettability",
+        "level": "subsection",
+        "subsections": [],
+        "parent_id": "g7b8c9d0-e1f2-43a4-9b5c-6d7e8f9a0b1c",
+        "prefix_titles": [
+          [
+            "title",
+            "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements"
+          ],
+          [
+            "section",
+            "Petrophysics"
+          ],
+          [
+            "subsection",
+            "Wettability"
+          ]
+        ],
+        "content": "",
+        "cites": [],
+        "cite_extract_rate": 0,
+        "origin_cites_number": 0
+      },
+      {
+        "id": "h8c9d0e1-f2a3-44b5-9c6d-7e8f9a0b1c2d",
+        "title": "Enhanced oil recovery applications",
+        "level": "section",
+        "subsections": [],
+        "parent_id": "f1a2b3c4-d5e6-47f8-9a0b-1c2d3e4f5a6b",
+        "prefix_titles": [
+          [
+            "title",
+            "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements"
+          ],
+          [
+            "section",
+            "Enhanced oil recovery applications"
+          ]
+        ],
+        "content": "",
+        "cites": [],
+        "cite_extract_rate": 0,
+        "origin_cites_number": 0
+      },
+      {
+        "id": "i9d0e1f2-a3b4-45c6-9d7e-8f9a0b1c2d3e",
+        "title": "Special topics",
+        "level": "section",
+        "subsections": [
+          "d0e1f2a3-b4c5-46d7-9e8f-9a0b1c2d3e4f",
+          "e1f2a3b4-c5d6-47e8-9f9a-0b1c2d3e4f5a",
+          "f2a3b4c5-d6e7-48f9-9a0b-1c2d3e4f5a6b",
+          "a3b4c5d6-e7f8-49a0-9b1c-2d3e4f5a6b7c"
+        ],
+        "parent_id": "f1a2b3c4-d5e6-47f8-9a0b-1c2d3e4f5a6b",
+        "prefix_titles": [
+          [
+            "title",
+            "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements"
+          ],
+          [
+            "section",
+            "Special topics"
+          ]
+        ],
+        "content": "",
+        "cites": [],
+        "cite_extract_rate": 0,
+        "origin_cites_number": 0
+      },
+      {
+        "id": "d0e1f2a3-b4c5-46d7-9e8f-9a0b1c2d3e4f",
+        "title": "Evaluation of mud filtrate invasion characteristic",
+        "level": "subsection",
+        "subsections": [],
+        "parent_id": "i9d0e1f2-a3b4-45c6-9d7e-8f9a0b1c2d3e",
+        "prefix_titles": [
+          [
+            "title",
+            "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements"
+          ],
+          [
+            "section",
+            "Special topics"
+          ],
+          [
+            "subsection",
+            "Evaluation of mud filtrate invasion characteristic"
+          ]
+        ],
+        "content": "",
+        "cites": [],
+        "cite_extract_rate": 0,
+        "origin_cites_number": 0
+      },
+      {
+        "id": "e1f2a3b4-c5d6-47e8-9f9a-0b1c2d3e4f5a",
+        "title": "Emulsion droplet size determination using PFG NMR",
+        "level": "subsection",
+        "subsections": [],
+        "parent_id": "i9d0e1f2-a3b4-45c6-9d7e-8f9a0b1c2d3e",
+        "prefix_titles": [
+          [
+            "title",
+            "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements"
+          ],
+          [
+            "section",
+            "Special topics"
+          ],
+          [
+            "subsection",
+            "Emulsion droplet size determination using PFG NMR"
+          ]
+        ],
+        "content": "",
+        "cites": [],
+        "cite_extract_rate": 0,
+        "origin_cites_number": 0
+      },
+      {
+        "id": "f2a3b4c5-d6e7-48f9-9a0b-1c2d3e4f5a6b",
+        "title": "Common misinterpretation in conventional rocks",
+        "level": "subsection",
+        "subsections": [],
+        "parent_id": "i9d0e1f2-a3b4-45c6-9d7e-8f9a0b1c2d3e",
+        "prefix_titles": [
+          [
+            "title",
+            "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements"
+          ],
+          [
+            "section",
+            "Special topics"
+          ],
+          [
+            "subsection",
+            "Common misinterpretation in conventional rocks"
+          ]
+        ],
+        "content": "",
+        "cites": [],
+        "cite_extract_rate": 0,
+        "origin_cites_number": 0
+      },
+      {
+        "id": "a3b4c5d6-e7f8-49a0-9b1c-2d3e4f5a6b7c",
+        "title": "Unconventional rock characterization using different NMR techniques",
+        "level": "subsection",
+        "subsections": [],
+        "parent_id": "i9d0e1f2-a3b4-45c6-9d7e-8f9a0b1c2d3e",
+        "prefix_titles": [
+          [
+            "title",
+            "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements"
+          ],
+          [
+            "section",
+            "Special topics"
+          ],
+          [
+            "subsection",
+            "Unconventional rock characterization using different NMR techniques"
+          ]
+        ],
+        "content": "",
+        "cites": [],
+        "cite_extract_rate": 0,
+        "origin_cites_number": 0
+      },
+      {
+        "id": "b4c5d6e7-f8a9-40b1-9c2d-3e4f5a6b7c8d",
+        "title": "NMR applications in field scale",
+        "level": "section",
+        "subsections": [
+          "c5d6e7f8-a9b0-41c2-9d3e-4f5a6b7c8d9e",
+          "a0b1c2d3-e4f5-46a7-9b8c-0d1e2f3a4b5c"
+        ],
+        "parent_id": "f1a2b3c4-d5e6-47f8-9a0b-1c2d3e4f5a6b",
+        "prefix_titles": [
+          [
+            "title",
+            "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements"
+          ],
+          [
+            "section",
+            "NMR applications in field scale"
+          ]
+        ],
+        "content": "",
+        "cites": [],
+        "cite_extract_rate": 0,
+        "origin_cites_number": 0
+      },
+      {
+        "id": "a0b1c2d3-e4f5-46a7-9b8c-0d1e2f3a4b5c",
+        "title": "Design and improvements in LWD-NMR",
+        "level": "subsection",
+        "subsections": [],
+        "parent_id": "b4c5d6e7-f8a9-40b1-9c2d-3e4f5a6b7c8d",
+        "prefix_titles": [
+          [
+            "title",
+            "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements"
+          ],
+          [
+            "section",
+            "NMR applications in field scale"
+          ],
+          [
+            "subsection",
+            "Design and improvements in LWD-NMR"
+          ]
+        ],
+        "content": "",
+        "cites": [],
+        "cite_extract_rate": 0,
+        "origin_cites_number": 0
+      },
+      {
+        "id": "c5d6e7f8-a9b0-41c2-9d3e-4f5a6b7c8d9e",
+        "title": "Field implementation and applications",
+        "level": "subsection",
+        "subsections": [
+          "d6e7f8a9-b0c1-42d3-9e4f-5a6b7c8d9e0f",
+          "e7f8a9b0-c1d2-43e4-9f5a-6b7c8d9e0f1a"
+        ],
+        "parent_id": "b4c5d6e7-f8a9-40b1-9c2d-3e4f5a6b7c8d",
+        "prefix_titles": [
+          [
+            "title",
+            "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements"
+          ],
+          [
+            "section",
+            "NMR applications in field scale"
+          ],
+          [
+            "subsection",
+            "Field implementation and applications"
+          ]
+        ],
+        "content": "",
+        "cites": [],
+        "cite_extract_rate": 0,
+        "origin_cites_number": 0
+      },
+      {
+        "id": "d6e7f8a9-b0c1-42d3-9e4f-5a6b7c8d9e0f",
+        "title": "Tar detection in carbonates",
+        "level": "subsubsection",
+        "subsections": [],
+        "parent_id": "c5d6e7f8-a9b0-41c2-9d3e-4f5a6b7c8d9e",
+        "prefix_titles": [
+          [
+            "title",
+            "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements"
+          ],
+          [
+            "section",
+            "NMR applications in field scale"
+          ],
+          [
+            "subsection",
+            "Field implementation and applications"
+          ],
+          [
+            "subsubsection",
+            "Tar detection in carbonates"
+          ]
+        ],
+        "content": "",
+        "cites": [],
+        "cite_extract_rate": 0,
+        "origin_cites_number": 0
+      },
+      {
+        "id": "e7f8a9b0-c1d2-43e4-9f5a-6b7c8d9e0f1a",
+        "title": "Geosteering and well placement optimization",
+        "level": "subsubsection",
+        "subsections": [],
+        "parent_id": "c5d6e7f8-a9b0-41c2-9d3e-4f5a6b7c8d9e",
+        "prefix_titles": [
+          [
+            "title",
+            "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements"
+          ],
+          [
+            "section",
+            "NMR applications in field scale"
+          ],
+          [
+            "subsection",
+            "Field implementation and applications"
+          ],
+          [
+            "subsubsection",
+            "Geosteering and well placement optimization"
+          ]
+        ],
+        "content": "",
+        "cites": [],
+        "cite_extract_rate": 0,
+        "origin_cites_number": 0
+      },
+      {
+        "id": "f8a9b0c1-d2e3-44f5-9a6b-7c8d9e0f1a2b",
+        "title": "Future research directions",
+        "level": "section",
+        "subsections": [],
+        "parent_id": "f1a2b3c4-d5e6-47f8-9a0b-1c2d3e4f5a6b",
+        "prefix_titles": [
+          [
+            "title",
+            "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements"
+          ],
+          [
+            "section",
+            "Future research directions"
+          ]
+        ],
+        "content": "",
+        "cites": [],
+        "cite_extract_rate": 0,
+        "origin_cites_number": 0
+      },
+      {
+        "id": "a9b0c1d2-e3f4-45a6-9b7c-8d9e0f1a2b3c",
+        "title": "Concluding remarks",
+        "level": "section",
+        "subsections": [],
+        "parent_id": "f1a2b3c4-d5e6-47f8-9a0b-1c2d3e4f5a6b",
+        "prefix_titles": [
+          [
+            "title",
+            "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements"
+          ],
+          [
+            "section",
+            "Concluding remarks"
+          ]
+        ],
+        "content": "",
+        "cites": [],
+        "cite_extract_rate": 0,
+        "origin_cites_number": 0
+      },
+      {
+        "id": "c0d1e2f3-a4b5-46c7-9d8e-0f1a2b3c4d5e",
+        "title": "Funding",
+        "level": "section",
+        "subsections": [],
+        "parent_id": "f1a2b3c4-d5e6-47f8-9a0b-1c2d3e4f5a6b",
+        "prefix_titles": [
+          [
+            "title",
+            "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements"
+          ],
+          [
+            "section",
+            "Funding"
+          ]
+        ],
+        "content": "",
+        "cites": [],
+        "cite_extract_rate": 0,
+        "origin_cites_number": 0
+      },
+      {
+        "id": "d1e2f3a4-b5c6-47d8-9e9f-1a2b3c4d5e6f",
+        "title": "Declaration",
+        "level": "section",
+        "subsections": [],
+        "parent_id": "f1a2b3c4-d5e6-47f8-9a0b-1c2d3e4f5a6b",
+        "prefix_titles": [
+          [
+            "title",
+            "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements"
+          ],
+          [
+            "section",
+            "Declaration"
+          ]
+        ],
+        "content": "",
+        "cites": [],
+        "cite_extract_rate": 0,
+        "origin_cites_number": 0
+      },
+      {
+        "id": "e2f3a4b5-c6d7-48e9-9f0a-2b3c4d5e6f7a",
+        "title": "Open Access",
+        "level": "section",
+        "subsections": [],
+        "parent_id": "f1a2b3c4-d5e6-47f8-9a0b-1c2d3e4f5a6b",
+        "prefix_titles": [
+          [
+            "title",
+            "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements"
+          ],
+          [
+            "section",
+            "Open Access"
+          ]
+        ],
+        "content": "",
+        "cites": [],
+        "cite_extract_rate": 0,
+        "origin_cites_number": 0
+      }
+    ],
+    "survey_id": 0,
+    "all_cites": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314
+    ],
+    "Bertopic_CD": 0
+  }
+]

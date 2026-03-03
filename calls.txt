@@ -5,3 +5,43 @@ python src/test_final.py --passage_dir ./baselines/ID/output --save_path ./basel
 Transformar latex em markdown:
 pandoc main.tex --from latex --to markdown --wrap=none > main.md --syntax-highlighting=none
 
+Quero que você crie um código em Python com o objetivo de extrair dados de um pdf.c
+
+Vou te passar uma seção de referências de um pdf.
+
+Entrada arquivo markdown com as referências: 
+
+Abdul Jameel AG (2021) Identification and quantification of hydrocarbon functional groups in gasoline using 1H-NMR spectroscopy for property prediction. Molecules 26:6989. <https://doi.org/10.3390/molecules26226989>
+
+
+Saída arquivo em .json
+
+{
+        "Title": "Identification and Quantification of Hydrocarbon Functional Groups in Gasoline Using 1H-NMR Spectroscopy for Property Prediction ",
+        "Authors": [
+            " Abdul Gani Abdul Jameel",
+        ],
+        "Date": "2021-11-19",
+        "Year": "2021",
+        "Abstract": "Gasoline is one of the most important distillate fuels obtained from crude refining; it is mainly used as an automotive fuel to propel spark-ignited (SI) engines. It is a complex hydrocarbon fuel that is known to possess several hundred individual molecules of varying sizes and chemical classes. These large numbers of individual molecules can be assembled into a finite set of molecular moieties or functional groups that can independently represent the chemical composition. Identification and quantification of groups enables the prediction of many fuel properties that otherwise may be difficult and expensive to measure experimentally. In the present work, high resolution 1H nuclear magnetic resonance (NMR) spectroscopy, an advanced structure elucidation technique, was employed for the molecular characterization of a gasoline sample in order to analyze the functional groups. The chemical composition of the gasoline sample was then expressed using six hydrocarbon functional groups, as follows: paraffinic groups (CH, CH2 and CH3), naphthenic CH-CH2 groups and aromatic C-CH groups. The obtained functional groups were then used to predict a number of fuel properties, including research octane number (RON), motor octane number (MON), derived cetane number (DCN), threshold sooting index (TSI) and yield sooting index (YSI).",
+        "Category": "cs.HC",
+        "doc_id": 0
+    },
+
+Acesse o link dos artigos
+
+
+linha 117
+
+
+
+Vou te passar uma seção de referências de um pdf.
+
+Quero que você entre nos links associados a esses artigos e extraia a data, autores, título e abstract.
+
+Se tiver alguma dúvida me pergunte antes de começar.
+
+Entrada arquivo markdown com as referências: 
+
+Abdul Jameel AG (2021) Identification and quantification of hydrocarbon functional groups in gasoline using 1H-NMR spectroscopy for property prediction. Molecules 26:6989. <https://doi.org/10.3390/molecules26226989>
+
