@@ -6,17 +6,17 @@ from scipy.spatial.distance import pdist
 import gc
 
 def eval_coverage(target_cites:list, gen_cite_map:dict):
-   # print(f"target cites: {target_cites}")
-    #print("*****")
-    #print(f"generated cites: {gen_cite_map}")
+    print(f"target cites: {target_cites}")
+    print("*****")
+    print(f"generated cites: {gen_cite_map}")
     gen_cites = []
     for k,v in gen_cite_map.items():
         gen_cites.append(v)
         
     all = len(target_cites)
     hit = 0
-   # print("*****")
-    #print(f"gen cites: {gen_cites}")
+    print("*****")
+    print(f"gen cites: {gen_cites}")
     for c in target_cites:
         if c in gen_cites:
             hit += 1
@@ -29,7 +29,7 @@ def eval_relevance_paper(target_survey,gen_cite_map:dict,cite_content:dict,nli_m
     print("target_survey: {target_survey}")
     print(f"Dict {gen_cite_map}")
     print(f"Cite content {cite_content}")
-    print(f"nli_model {nli_model}")
+    #print(f"nli_model {nli_model}")
     if len(gen_cite_map) == 0:
         return 0
     

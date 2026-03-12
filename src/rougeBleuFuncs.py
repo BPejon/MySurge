@@ -13,6 +13,9 @@ import sacrebleu
 
 def calculate_average_rouge_bleu(A, B):
 
+    #print("Len A:", len(A))
+    #print("Len B:", len(B))
+    
     scorer = rouge_scorer.RougeScorer(['rouge1', 'rouge2', 'rougeL'], use_stemmer=True)
 
     rouge1_scores = []
@@ -59,6 +62,9 @@ def get_content_list(psg_node:MarkdownNode):
 def eval_rougeBleu(target_survey,psg_node: MarkdownNode):
     
     target_content = []
+
+    #print("target_survey:", target_survey)
+    #print("psg_node:", psg_node)
 
     for section in target_survey['structure']:
         if len(section['content']) < 100:

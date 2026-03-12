@@ -63,6 +63,15 @@ def parse_refs(file_path):
     """Parse the references from the markdown file.
     
     Simple approach: split by "." and pick the longest segment.
+
+    Possible formatos of references:
+    Início obrigatório com colchetes: Cada linha deve começar com um número entre colchetes, como:
+    [1]
+    [42]
+    [100]
+    Formato completo esperado:
+
+    [número] Autor(es). Título do artigo. Informações de publicação.
     """
     references = {}
     
@@ -86,58 +95,81 @@ def parse_refs(file_path):
             # Remove espaços em branco de cada segmento
             segments = [seg.strip() for seg in segments if seg.strip()]
             
-            # Ignora segmentos que são claramente autores ou informações de publicação
-            candidate_segments = []
+            # Identifica o título - geralmente é o segundo segmento (após os autores)
+            if len(segments) >= 2:
+                # O segundo segmento geralmente é o título
+                title = segments[1]
+            else:
+                # Fallback: usa o segmento mais longo ignorando padrões de autor/publicação
+                # Remove espaços em branco de cada segmento
+                segments = [seg.strip() for seg in segments if seg.strip()]
+                
+                # Ignora segmentos que são claramente autores ou informações de publicação
+                candidate_segments = []
+                
+                for seg in segments:
+                    # Ignora segmentos muito curtos (provavelmente iniciais)
+                    if len(seg) <= 3:
+                        continue
+                    
+                    # Ignora segmentos que são só números ou datas
+                    if re.match(r'^\d+$', seg) or re.match(r'^\d{4}$', seg):
+                        continue
+                    
+                    # Ignora segmentos com "et al"
+                    if 'et al' in seg.lower():
+                        continue
+                    
+                    # Ignora segmentos com padrões de autoria (inicial + sobrenome)
+                    if re.match(r'^[A-Z]\.?\s+[A-Z][a-z]+$', seg):
+                        continue
+                    
+                    # Ignora segmentos com informações de publicação
+                    pub_patterns = [
+                        r'technical report',
+                        r'pp\.',
+                        r'volume',
+                        r'no\.',
+                        r'cornell',
+                        r'ieee',
+                        r'\d+\(\d+\):\d+--\d+',
+                        r'neurips',
+                        r'laboratory',
+                        r'in:',
+                        r'spe',
+                        r'<https?://',
+                        r'doi\.org',
+                    ]
+                    
+                    is_publication = False
+                    for pattern in pub_patterns:
+                        if re.search(pattern, seg.lower()):
+                            is_publication = True
+                            break
+                    
+                    # Ignora segmentos que parecem ser lista de autores (contém vírgulas e anos)
+                    if re.search(r'[A-Z][a-z]+(?:\s+[A-Z]\.?)?,\s+', seg) or re.search(r'\(\d{4}\)', seg):
+                        continue
+                    
+                    if not is_publication:
+                        candidate_segments.append(seg)
+                
+                # Se temos candidatos, escolhe o mais longo
+                if candidate_segments:
+                    # Ordena por comprimento (do mais longo para o mais curto)
+                    candidate_segments.sort(key=len, reverse=True)
+                    title = candidate_segments[0]
+                else:
+                    # Se não encontrou candidatos, usa o segundo segmento se existir
+                    title = segments[1] if len(segments) > 1 else segments[0]
             
-            for seg in segments:
-                # Ignora segmentos muito curtos (provavelmente iniciais)
-                if len(seg) <= 3:
-                    continue
-                
-                # Ignora segmentos que são só números ou datas
-                if re.match(r'^\d+$', seg) or re.match(r'^\d{4}$', seg):
-                    continue
-                
-                # Ignora segmentos com "et al"
-                if 'et al' in seg.lower():
-                    continue
-                
-                # Ignora segmentos com padrões de autoria (inicial + sobrenome)
-                if re.match(r'^[A-Z]\.?\s+[A-Z][a-z]+$', seg):
-                    continue
-                
-                # Ignora segmentos com informações de publicação
-                pub_patterns = [
-                    r'technical report',
-                    r'pp\.',
-                    r'volume',
-                    r'no\.',
-                    r'cornell',
-                    r'ieee',
-                    r'\d+\(\d+\):\d+--\d+',
-                    r'neurips',
-                    r'laboratory',
-                ]
-                
-                is_publication = False
-                for pattern in pub_patterns:
-                    if re.search(pattern, seg.lower()):
-                        is_publication = True
-                        break
-                
-                if not is_publication:
-                    candidate_segments.append(seg)
-            
-            # Se temos candidatos, escolhe o mais longo
-    
-            # Ordena por comprimento (do mais longo para o mais curto)
-            candidate_segments.sort(key=len, reverse=True)
-            title = candidate_segments[0]
-                
             # Limpeza básica
             title = title.rstrip(',;:')
             title = re.sub(r'\s+', ' ', title).strip()
-                
+            
+            # Remove "In:" se estiver no início
+            title = re.sub(r'^In:\s*', '', title, flags=re.IGNORECASE)
+            
             references[ref_id] = title
             #print(f"Extracted reference - ID: {ref_id}, Title: {title}")
     

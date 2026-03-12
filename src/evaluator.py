@@ -88,7 +88,7 @@ class SurGEvaluator:
                 refid2docid[refid] = ref_docid
             else:
                 refid2docid[refid] = ref_title
-        print(f"ref2docid: {refid2docid}")
+        #print(f"ref2docid: {refid2docid}")
         eval_result = {
             "Information_Collection": {
                 "Comprehensiveness": {
@@ -303,6 +303,7 @@ class SurGEvaluator:
             
         
     def eval_all(self,passage_dir,eval_list,save_path = None):
+        print(f"Starting evaluation with passage_dir: {passage_dir}, eval_list: {eval_list}, save_path: {save_path}")
         if save_path != None :
             with open (save_path,"w",encoding='utf-8') as f:
                 f.write('')
@@ -311,6 +312,7 @@ class SurGEvaluator:
             d for d in os.listdir(passage_dir)
             if os.path.isdir(os.path.join(passage_dir, d))
         ]
+        print("survey_ids:", survey_ids)
 
         length = len(survey_ids)
         
