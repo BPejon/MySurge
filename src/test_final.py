@@ -60,7 +60,7 @@ if __name__ == '__main__':
     print("args device:", args.device)
     print("args survey_path:", args.survey_path)
     print("args corpus_path:", args.corpus_path)
-    print("args api_key:", args.api_key)
+    #print("args api_key:", args.api_key)
 
     result = evaluator.eval_all(
         passage_dir=args.passage_dir,

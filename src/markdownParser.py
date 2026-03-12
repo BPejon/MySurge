@@ -60,118 +60,173 @@ def parse_markdown(file_path):
     return root
 
 def parse_refs(file_path):
-    """Parse the references from the markdown file.
-    
-    Simple approach: split by "." and pick the longest segment.
-
-    Possible formatos of references:
-    Início obrigatório com colchetes: Cada linha deve começar com um número entre colchetes, como:
-    [1]
-    [42]
-    [100]
-    Formato completo esperado:
-
-    [número] Autor(es). Título do artigo. Informações de publicação.
-    """
+    """Parse the references from the markdown file, handling multi-line references."""
     references = {}
-    
     with open(file_path, "r", encoding="utf-8") as file:
-        for line in file:
-            line = line.strip()
-            if not line.startswith("["):
-                continue
-            
-            # Extrai o número da referência
-            id_match = re.match(r'^\[(\d+)\]', line)
-            if not id_match:
-                continue
-            
-            ref_id = int(id_match.group(1))
-            content = line[id_match.end():].strip()
-            
-            # Divide a string por pontos
-            segments = content.split('.')
-            
-            # Remove espaços em branco de cada segmento
-            segments = [seg.strip() for seg in segments if seg.strip()]
-            
-            # Identifica o título - geralmente é o segundo segmento (após os autores)
-            if len(segments) >= 2:
-                # O segundo segmento geralmente é o título
-                title = segments[1]
-            else:
-                # Fallback: usa o segmento mais longo ignorando padrões de autor/publicação
-                # Remove espaços em branco de cada segmento
-                segments = [seg.strip() for seg in segments if seg.strip()]
-                
-                # Ignora segmentos que são claramente autores ou informações de publicação
-                candidate_segments = []
-                
-                for seg in segments:
-                    # Ignora segmentos muito curtos (provavelmente iniciais)
-                    if len(seg) <= 3:
-                        continue
-                    
-                    # Ignora segmentos que são só números ou datas
-                    if re.match(r'^\d+$', seg) or re.match(r'^\d{4}$', seg):
-                        continue
-                    
-                    # Ignora segmentos com "et al"
-                    if 'et al' in seg.lower():
-                        continue
-                    
-                    # Ignora segmentos com padrões de autoria (inicial + sobrenome)
-                    if re.match(r'^[A-Z]\.?\s+[A-Z][a-z]+$', seg):
-                        continue
-                    
-                    # Ignora segmentos com informações de publicação
-                    pub_patterns = [
-                        r'technical report',
-                        r'pp\.',
-                        r'volume',
-                        r'no\.',
-                        r'cornell',
-                        r'ieee',
-                        r'\d+\(\d+\):\d+--\d+',
-                        r'neurips',
-                        r'laboratory',
-                        r'in:',
-                        r'spe',
-                        r'<https?://',
-                        r'doi\.org',
-                    ]
-                    
-                    is_publication = False
-                    for pattern in pub_patterns:
-                        if re.search(pattern, seg.lower()):
-                            is_publication = True
-                            break
-                    
-                    # Ignora segmentos que parecem ser lista de autores (contém vírgulas e anos)
-                    if re.search(r'[A-Z][a-z]+(?:\s+[A-Z]\.?)?,\s+', seg) or re.search(r'\(\d{4}\)', seg):
-                        continue
-                    
-                    if not is_publication:
-                        candidate_segments.append(seg)
-                
-                # Se temos candidatos, escolhe o mais longo
-                if candidate_segments:
-                    # Ordena por comprimento (do mais longo para o mais curto)
-                    candidate_segments.sort(key=len, reverse=True)
-                    title = candidate_segments[0]
-                else:
-                    # Se não encontrou candidatos, usa o segundo segmento se existir
-                    title = segments[1] if len(segments) > 1 else segments[0]
-            
-            # Limpeza básica
-            title = title.rstrip(',;:')
-            title = re.sub(r'\s+', ' ', title).strip()
-            
-            # Remove "In:" se estiver no início
-            title = re.sub(r'^In:\s*', '', title, flags=re.IGNORECASE)
-            
-            references[ref_id] = title
-            #print(f"Extracted reference - ID: {ref_id}, Title: {title}")
-    
+        lines = file.readlines()
+
+    current_ref_lines = []
+    current_ref_id = None
+
+    for line in lines:
+        line = line.rstrip('\n')
+        id_match = re.match(r'^\[(\d+)\]', line.strip())
+
+        if id_match:
+            # Processa referência anterior
+            if current_ref_lines and current_ref_id is not None:
+                full_ref = ' '.join(current_ref_lines)
+                title = extract_title_from_ref(full_ref)
+                references[current_ref_id] = title
+
+            # Inicia nova referência
+            current_ref_id = int(id_match.group(1))
+            current_ref_lines = [line]
+        else:
+            if current_ref_id is not None:
+                # Acumula linhas subsequentes (inclusive vazias, para não perder informação)
+                current_ref_lines.append(line)
+
+    # Processa última referência
+    if current_ref_lines and current_ref_id is not None:
+        full_ref = ' '.join(current_ref_lines)
+        title = extract_title_from_ref(full_ref)
+        references[current_ref_id] = title
+
     return references
 
+
+def extract_title_from_ref(ref_text):
+    """Extrai o título de uma string de referência completa usando múltiplas estratégias."""
+    # Remove o ID inicial [n] e espaços
+    content = re.sub(r'^\[\d+\]\s*', '', ref_text).strip()
+
+    # Normaliza aspas curvas para retas (facilita a detecção)
+    content = content.replace('“', '"').replace('”', '"').replace('‘', "'").replace('’', "'")
+
+    # --- Estratégia 1: título entre aspas (duplas ou simples) ---
+    quote_match = re.search(r'"([^"]+)"', content)  # aspas duplas
+    if not quote_match:
+        quote_match = re.search(r"'([^']+)'", content)  # aspas simples
+    if quote_match:
+        candidate = quote_match.group(1).strip()
+        # Evita falsos positivos (ex.: aspas vazias ou muito curtas)
+        if len(candidate) > 3 and not re.match(r'^\d+$', candidate):
+            return clean_title(candidate)
+
+    # --- Estratégia 2: título em itálico (marcado com * ou _ no Markdown) ---
+    italic_match = re.search(r'\*([^*]+)\*', content)
+    if not italic_match:
+        italic_match = re.search(r'_([^_]+)_', content)
+    if italic_match:
+        candidate = italic_match.group(1).strip()
+        if len(candidate) > 3 and not re.match(r'^\d+$', candidate):
+            return clean_title(candidate)
+
+    # --- Estratégia 3: divisão por pontos e identificação do título baseada em padrões ---
+    segments = content.split('.')
+    segments = [seg.strip() for seg in segments if seg.strip()]
+
+    if len(segments) >= 2:
+        # Tenta localizar o início da publicação (onde aparecem ano, volume, páginas, DOI, etc.)
+        pub_start = None
+        for i, seg in enumerate(segments):
+            if is_publication_segment(seg):
+                pub_start = i
+                break
+
+        if pub_start is not None and pub_start > 1:
+            # Título = segmentos do índice 1 até antes da publicação
+            title_segments = segments[1:pub_start]
+            if title_segments:
+                return clean_title('. '.join(title_segments))
+        elif pub_start is not None and pub_start == 1:
+            # O segundo segmento já é publicação; talvez o título seja o primeiro se não for autor
+            if not is_author_segment(segments[0]):
+                return clean_title(segments[0])
+
+        # Se não encontrou marcador de publicação, usa o segundo segmento se não for autor/publicação
+        candidate = segments[1]
+        if not is_author_segment(candidate) and not is_publication_segment(candidate):
+            return clean_title(candidate)
+
+    # --- Estratégia 4: fallback - escolher o segmento mais longo que não seja autor/publicação ---
+    candidate_segments = []
+    for seg in segments:
+        if len(seg) <= 3:
+            continue
+        if is_author_segment(seg) or is_publication_segment(seg):
+            continue
+        candidate_segments.append(seg)
+
+    if candidate_segments:
+        candidate_segments.sort(key=len, reverse=True)
+        return clean_title(candidate_segments[0])
+
+    # --- Último recurso: pegar o segmento mais longo (ou primeiro) e torcer ---
+    if segments:
+        segments.sort(key=len, reverse=True)
+        return clean_title(segments[0])
+
+    return ''
+
+
+def is_author_segment(seg):
+    """Retorna True se o segmento parece ser parte de uma lista de autores."""
+    seg_lower = seg.lower()
+    # Padrões comuns em autores
+    if re.search(r'[A-Z]\.\s+[A-Z][a-z]+', seg):  # Inicial + Sobrenome (ex: J. Smith)
+        return True
+    if re.search(r'[A-Z][a-z]+,\s+[A-Z]\.', seg):  # Sobrenome, Inicial (ex: Smith, J.)
+        return True
+    if re.search(r'\band\b', seg_lower) and re.search(r'[A-Z]\.', seg):  # "and" com iniciais
+        return True
+    if 'et al' in seg_lower:
+        return True
+    # Se contém muitas palavras comuns, provavelmente não é autor
+    common_words = ['the', 'of', 'in', 'on', 'at', 'for', 'with', 'from', 'to', 'and', 'a', 'an']
+    words = seg_lower.split()
+    if words and sum(1 for w in words if w in common_words) > len(words) // 2:
+        return False
+    return False
+
+
+def is_publication_segment(seg):
+    """Retorna True se o segmento parece ser informação de publicação."""
+    seg_lower = seg.lower()
+    # Padrões típicos de publicação
+    pub_patterns = [
+        r'\(\d{4}\)',                    # ano entre parênteses
+        r'\b\d{4}\b',                    # ano solto (4 dígitos)
+        r'vol\.?\s*\d+',                  # volume
+        r'no\.?\s*\d+',                   # número
+        r'pp\.?\s*\d+',                    # páginas
+        r'pages?\s*\d+',
+        r'\d+\(\d+\):\d+--\d+',           # formato comum: 12(3):45--67
+        r'doi:\s*10\.\d{4,}',              # DOI
+        r'https?://',
+        r'technical report',
+        r'conference',
+        r'proceedings',
+        r'journal',
+        r'transactions',
+        r'magazine',
+        r'press',
+        r'university',
+        r'laboratory',
+        r'in:\s',                          # "In:" geralmente precede o nome do evento/livro
+    ]
+    for pattern in pub_patterns:
+        if re.search(pattern, seg_lower):
+            return True
+    return False
+
+
+def clean_title(title):
+    """Limpeza básica do título."""
+    title = title.rstrip(',;:.')
+    title = re.sub(r'\s+', ' ', title).strip()
+    title = re.sub(r'^In:\s*', '', title, flags=re.IGNORECASE)
+    # Remove aspas remanescentes no início/fim
+    title = re.sub(r'^[\'"]+|[\'"]+$', '', title)
+    return title

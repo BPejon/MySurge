@@ -1,26 +1,26 @@
 {
     "Information_Collection": {
         "Comprehensiveness": {
-            "Coverage": 0.9617834394904459
+            "Coverage": 0.044585987261146494
         },
         "Relevance": {
-            "Paper_Level": 0.9728434504792333,
-            "Section_Level": 0.2268370607028754,
-            "Sentence_Level": 0.24281150159744408
+            "Paper_Level": 0.08433734939759036,
+            "Section_Level": 0.02099236641221374,
+            "Sentence_Level": 0.022900763358778626
         }
     },
     "Survey_Structure": {
         "Structure_Quality(LLM_as_judge)": 0,
-        "SH-Recall": 0.9961970219019101
+        "SH-Recall": 0.9706196972580786
     },
     "Survey_Content": {
         "Relevance": {
-            "ROUGE-1": 0.9098722598172896,
-            "ROUGE-2": 0.8916645523795111,
-            "ROUGE-L": 0.8970105821907524,
-            "BLEU": 90.67172684142591
+            "ROUGE-1": 0.35597768705352956,
+            "ROUGE-2": 0.08098817884621512,
+            "ROUGE-L": 0.14074168740902926,
+            "BLEU": 13.595535984295921
         },
-        "Logic": 3.55
+        "Logic": 3.9375
     },
     "survey_id": "0"
 }
@@ -28,26 +28,26 @@
 {
     "Information_Collection": {
         "Comprehensiveness": {
-            "Coverage": 0.9617834394904459
+            "Coverage": 0.044585987261146494
         },
         "Relevance": {
-            "Paper_Level": 0.9728434504792333,
-            "Section_Level": 0.2268370607028754,
-            "Sentence_Level": 0.24281150159744408
+            "Paper_Level": 0.08433734939759036,
+            "Section_Level": 0.02099236641221374,
+            "Sentence_Level": 0.022900763358778626
         }
     },
     "Survey_Structure": {
         "Structure_Quality(LLM_as_judge)": 0.0,
-        "SH-Recall": 0.9961970219019101
+        "SH-Recall": 0.9706196972580786
     },
     "Survey_Content": {
         "Relevance": {
-            "ROUGE-1": 0.9098722598172896,
-            "ROUGE-2": 0.8916645523795111,
-            "ROUGE-L": 0.8970105821907524,
-            "BLEU": 90.67172684142591
+            "ROUGE-1": 0.35597768705352956,
+            "ROUGE-2": 0.08098817884621512,
+            "ROUGE-L": 0.14074168740902926,
+            "BLEU": 13.595535984295921
         },
-        "Logic": 3.55
+        "Logic": 3.9375
     },
     "survey_id": "Average"
 }
