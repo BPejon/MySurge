@@ -16,6 +16,12 @@
 
 ## SurveyForge - [2503.04629] SurveyForge: On the Outline Heuristics, Memory-Driven Generation, and Multi-dimensional Evaluation for Automated Survey Writing SURVEYFORGE : On the Outline Heuristics, Memory-Driven Generation, and Multi-dimensional Evaluation for Automated Survey Writing - ACL Anthology
 
+pip install -r requirements.txt
+
+ERROR: Could not find a version that satisfies the requirement torch==2.1.0 (from versions: 2.2.0, 2.2.1, 2.2.2, 2.3.0, 2.3.1, 2.4.0, 2.4.1, 2.5.0, 2.5.1, 2.6.0, 2.7.0, 2.7.1, 2.8.0, 2.9.0, 2.9.1, 2.10.0)
+ERROR: No matching distribution found for torch==2.1.0
+
+
 ## LIRA LiRA: A Multi-Agent Framework for Reliable and Readable Literature Review Generation https://github.com/lira-workflow/auto-review-writing
 
 Conda activate automated-lit-review

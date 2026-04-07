@@ -11,7 +11,9 @@
     },
     "Survey_Structure": {
         "Structure_Quality(LLM_as_judge)": 0,
-        "SH-Recall": 0.9706196972580786
+        "SH-Recall": 0.9706196972580783,
+        "Subtitle_similarity": null,
+        "subtitle_similarity": 0.7692307692307693
     },
     "Survey_Content": {
         "Relevance": {
@@ -20,7 +22,7 @@
             "ROUGE-L": 0.14074168740902926,
             "BLEU": 13.595535984295921
         },
-        "Logic": 3.9375
+        "Content LLM as a judge": 79
     },
     "survey_id": "0"
 }
@@ -38,7 +40,8 @@
     },
     "Survey_Structure": {
         "Structure_Quality(LLM_as_judge)": 0.0,
-        "SH-Recall": 0.9706196972580786
+        "SH-Recall": 0.9706196972580783,
+        "subtitle_similarity": 0.7692307692307693
     },
     "Survey_Content": {
         "Relevance": {
@@ -47,7 +50,7 @@
             "ROUGE-L": 0.14074168740902926,
             "BLEU": 13.595535984295921
         },
-        "Logic": 3.9375
+        "Content LLM as a judge": 79.0
     },
     "survey_id": "Average"
 }

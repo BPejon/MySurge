@@ -10,6 +10,8 @@ from tqdm import tqdm
 from FlagEmbedding import FlagModel
 from openai import OpenAI
 import httpx
+import numpy as np
+from scipy.spatial.distance import cdist
 
 def normalize_string(s):
         letters = re.findall(r'[a-zA-Z]', s)
@@ -71,11 +73,127 @@ class SurGEvaluator:
             self.nli_model_path = nli_model_path
             
         self.nli_model = None
+    
+    def compare_section_titles(self, survey_id, psg_node):
+        """
+        Compara os títulos das seções do artigo gerado pela LLM com os do Golden Truth
+        
+        Args:
+            survey_id: ID do survey no Golden Truth
+            psg_node: Nó raiz do artigo gerado (MarkdownNode)
+        
+        Returns:
+            dict com resultados da comparação
+        """
+        # Extrai títulos do artigo GT
+        gt_titles = []
+        if survey_id in self.survey_map:
+            for section in self.survey_map[survey_id]['structure']:
+                if len(section.get('content', '')) >= 10:  # Filtra seções com conteúdo relevante
+                    gt_titles.append(section['title'])
+        
+        # Extrai títulos do artigo gerado pela LLM
+        llm_titles = structureFuncs.get_title_list(psg_node)
+        
+        # Filtra os títulos: remove o primeiro (título do artigo) e seções indesejadas
+        excluded_titles = {"Abstract", "References", "Declaration", "Open Access", "Funding", "Acknowledgements", "Author Contributions", "Conflict of Interest"}
+        llm_titles = [title for i, title in enumerate(llm_titles) if i > 0 and title not in excluded_titles]
+        
+        print(f"\n{'='*80}")
+        print(f"COMPARAÇÃO DE TÍTULOS DE SEÇÕES - Survey ID: {survey_id}")
+        print(f"{'='*80}")
+        print(f"Títulos do Golden Truth (GT): {len(gt_titles)}")
+        for i, title in enumerate(gt_titles):
+            print(f"  {i+1}. {title}")
+        print(f"\nTítulos do Artigo LLM: {len(llm_titles)}")
+        for i, title in enumerate(llm_titles):
+            print(f"  {i+1}. {title}")
+        
+        # Se não há títulos para comparar, retorna vazio
+        if len(gt_titles) == 0 or len(llm_titles) == 0:
+            print("\nAviso: Não há títulos suficientes para comparação.")
+            return {"gt_titles": gt_titles, "llm_titles": llm_titles, "comparisons": []}
+        
+        # Gera embeddings usando FlagModel
+        if self.flag_model is None:
+            self.flag_model = FlagModel(self.flag_model_path, 
+                query_instruction_for_retrieval="Generate a representation for this title to calculate the similarity between titles:",
+                use_fp16=True)
+        
+        # Codifica os títulos
+        gt_embeddings = self.flag_model.encode(gt_titles)
+        llm_embeddings = self.flag_model.encode(llm_titles)
+        
+        # Normaliza os embeddings para calcular distância coseno
+        gt_embeddings_norm = gt_embeddings / np.linalg.norm(gt_embeddings, axis=1, keepdims=True)
+        llm_embeddings_norm = llm_embeddings / np.linalg.norm(llm_embeddings, axis=1, keepdims=True)
+        
+        # Calcula matrix de similaridade coseno
+        similarity_matrix = np.dot(gt_embeddings_norm, llm_embeddings_norm.T)
+        
+        # Converte para distância (1 - similaridade)
+        distance_matrix = 1 - similarity_matrix
+        
+        # Para cada título do GT, encontra o título do LLM mais próximo
+        comparisons = []
+        for gt_idx, gt_title in enumerate(gt_titles):
+            # Encontra o índice do título LLM mais próximo
+            min_distance_idx = np.argmin(distance_matrix[gt_idx])
+            min_distance = distance_matrix[gt_idx, min_distance_idx]
+            llm_title = llm_titles[min_distance_idx]
+            
+            comparisons.append({
+                "gt_title": gt_title,
+                "llm_title": llm_title,
+                "distance": float(min_distance),
+                "similarity": float(similarity_matrix[gt_idx, min_distance_idx])
+            })
+        
+        # Ordena por distância (menor distância = mais similar)
+        comparisons_sorted = sorted(comparisons, key=lambda x: x['distance'])
+        
+        # Filtra apenas comparações com similaridade > 0.8
+        threshold = 0.8
+        comparisons_above_threshold = [comp for comp in comparisons_sorted if comp['similarity'] > threshold]
+        
+        # Imprime resultados
+        print(f"\n{'-'*120}")
+        print("RESULTADOS DA COMPARAÇÃO (Ordenados por menor distância):")
+        print(f"Exibindo apenas títulos com similaridade > {threshold}")
+        print(f"{'-'*120}")
+        print(f"{'Distância':<12} {'Similaridade':<15} {'Título GT':<50} {'Título LLM':<50}")
+        print(f"{'-'*120}")
+        
+        if comparisons_above_threshold:
+            for comp in comparisons_above_threshold:
+                print(f"{comp['distance']:<12.4f} {comp['similarity']:<15.4f} {comp['gt_title']:<50} {comp['llm_title']:<50}")
+        else:
+            print("Nenhum título encontrado com similaridade acima do threshold.")
+        
+        print(f"{'='*80}\n")
+        
+        # Calcula a métrica de similaridade de títulos
+        print("len(comparisons_above_threshold):", len(comparisons_above_threshold))
+        print("len(llm_titles):", len(llm_titles))
+
+        subtitle_similarity = len(comparisons_above_threshold) / len(llm_titles) if len(llm_titles) > 0 else 0
+        
+        return {
+            "gt_titles": gt_titles,
+            "llm_titles": llm_titles,
+            "comparisons": comparisons_sorted,
+            "subtitle_similarity": subtitle_similarity
+        }
             
     def single_eval(self,survey_id,passage_path,eval_list):
         psg_node = markdownParser.parse_markdown(passage_path)
         refs  = markdownParser.parse_refs(passage_path)
         refid2docid = {}
+        
+        # Compara títulos das seções se solicitado
+        title_comparison_result = None
+        if "Compare_Section_Titles" in eval_list or "ALL" in eval_list:
+            title_comparison_result = self.compare_section_titles(survey_id, psg_node)
 
         #print("*****")
         #print(f"psg node: {psg_node}")
@@ -102,7 +220,8 @@ class SurGEvaluator:
             },
             "Survey_Structure": {
                 "Structure_Quality(LLM_as_judge)": None,
-                "SH-Recall": None
+                "SH-Recall": None,
+                "Subtitle_similarity": None
             },
             "Survey_Content": {
                 "Relevance": {
@@ -111,7 +230,7 @@ class SurGEvaluator:
                         "ROUGE-L": None,
                         "BLEU": None,
                     },
-                "Logic": None
+                "Content LLM as a judge": None
             }
         }
         
@@ -121,6 +240,10 @@ class SurGEvaluator:
             eval_result["Survey_Content"]["Relevance"]["ROUGE-2"] = r2
             eval_result["Survey_Content"]["Relevance"]["ROUGE-L"] = rl
             eval_result["Survey_Content"]["Relevance"]["BLEU"] = bleu
+        
+        if "subtitle_similarity" in eval_list or "ALL" in eval_list:
+            if title_comparison_result is not None:
+                eval_result["Survey_Structure"]["subtitle_similarity"] = float(title_comparison_result["subtitle_similarity"])
         
         if "SH-Recall" in eval_list or "ALL" in eval_list:
             if self.flag_model == None:
@@ -285,19 +408,12 @@ class SurGEvaluator:
             sentence_relevance = informationFuncs.eval_relevance_sentence(nli_pairs_sentence,self.nli_model)
             eval_result["Information_Collection"]["Relevance"]["Sentence_Level"] = sentence_relevance
             
-        if "Logic" in eval_list or "ALL" in eval_list:
-            # if self.judge_model == None and self.using_openai == False:
-            #     self.judge_model = AutoModelForCausalLM.from_pretrained(
-            #         self.judge_model_path,
-            #         torch_dtype= torch.float16,
-            #         device_map="auto"
-            #     )
+        if "Content" in eval_list or "ALL" in eval_list:
             if self.using_openai == True:
-                logic = informationFuncs.eval_logic_client(psg_node,self.client)
+                content_llm_judge = informationFuncs.eval_content_client(psg_node,self.client)
             else:
                 pass 
-                #logic = informationFuncs.eval_logic(psg_node,self.judge_model,self.judge_model_tokenizer)
-            eval_result["Survey_Content"]["Logic"] = logic   
+            eval_result["Survey_Content"]["Content LLM as a judge"] = content_llm_judge   
         
         return eval_result
             
@@ -329,7 +445,8 @@ class SurGEvaluator:
             },
             "Survey_Structure": {
                 "Structure_Quality(LLM_as_judge)": None,
-                "SH-Recall": None
+                "SH-Recall": None,
+                "subtitle_similarity": None
             },
             "Survey_Content": {
                 "Relevance": {
@@ -338,7 +455,7 @@ class SurGEvaluator:
                         "ROUGE-L": None,
                         "BLEU": None,
                     },
-                "Logic": None
+                "Content LLM as a judge": None,
             }
         }
 

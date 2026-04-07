@@ -26,9 +26,9 @@ def eval_coverage(target_cites:list, gen_cite_map:dict):
     return hit/all
 
 def eval_relevance_paper(target_survey,gen_cite_map:dict,cite_content:dict,nli_model):
-    print("target_survey: {target_survey}")
-    print(f"Dict {gen_cite_map}")
-    print(f"Cite content {cite_content}")
+    #print("target_survey: {target_survey}")
+    #print(f"Dict {gen_cite_map}")
+    #print(f"Cite content {cite_content}")
     #print(f"nli_model {nli_model}")
     if len(gen_cite_map) == 0:
         return 0
@@ -190,97 +190,46 @@ def get_content_list(psg_node:MarkdownNode):
         
     return res
 
-def get_logic_check_prompt(sentence):
-    prompt = evaluation_prompt = f"""You are an advanced AI language evaluator. Your task is to assess the logical coherence and clarity of text based on the following criteria:
+def get_content_check_prompt(sentence):
+    print(f"Check content: {sentence}")
+    prompt = f"""
+**Task:** As an expert literature review evaluator, assess only the **coverage quality** of a generated literature review 
+**Coverage Quality Definition:**
+Coverage quality refers to the comprehensiveness, depth, and balance of topic treatment within a literature review, including the breadth of relevant concepts covered and the proportional attention given to each area.
 
-1. **Fluency & Coherence** – Does the text flow naturally? Are the sentences well-connected and easy to read?
-2. **Logical Clarity** – Is the reasoning clear and structured? Does the argument progress logically without contradictions?
-3. **Avoidance of Redundancy** – Does the text avoid unnecessary repetition?
-4. **Clarity of Description** – Are ideas, concepts, or events described in a way that is easy to understand?
-5. **Absence of Errors** – Does the text contain grammatical mistakes, spelling errors, or factual inconsistencies?
-
-You will provide a **score from 0 to 5** based on these criteria, along with no explanation.
-
-### **Scoring Guide**
-
-**5 – Excellent**
-- The text is highly fluent, with smooth transitions and a natural flow.
-- The logical progression is clear, well-structured, and easy to follow.
-- There is no redundancy; each sentence contributes meaningfully.
-- Descriptions are precise and unambiguous.
-- No spelling, grammatical, or factual errors.
-
-**Example (5/5):**
-"The rise of artificial intelligence has transformed industries worldwide. From healthcare to finance, AI-driven innovations have streamlined processes and improved efficiency. As companies integrate AI technologies, they must also address ethical concerns to ensure responsible use."
-
+Generated Review for Evaluation:
 ---
-
-**4 – Good**
-- The text is mostly fluent, with minor awkward transitions.
-- Logical progression is clear but may contain slight inconsistencies.
-- Some minor redundancy or repetition.
-- Descriptions are mostly clear, with minor ambiguities.
-- Very few spelling or grammatical errors.
-
-**Example (4/5):**
-"Artificial intelligence is changing industries such as healthcare and finance. AI helps improve efficiency, and many businesses are adopting AI. However, ethical concerns remain, and companies must ensure responsible AI use."
-
+{sentence}
 ---
+**Coverage Evaluation Criteria (100 points total):**
+1. **Topic Comprehensiveness (35 points)** 2. **Discussion Depth (35 points)**
+- Range of essential topics covered - Detail level of concept analysis
+- Inclusion of emerging areas - Development of key arguments
+- Identification of key concepts - Thoroughness of explanations
+Scoring Guide: Scoring Guide:
+- 30-35: Comprehensive coverage with emerging topics - 30-35: Exceptional depth across topics
+- 20-29: Good coverage with minor gaps - 20-29: Good depth with some variation
+- 0-19: Significant omissions or major gaps - 0-19: Consistently superficial treatment
+3. **Content Balance (30 points)**
+- Proportional coverage of topics
+- Appropriate emphasis distribution
+- Logical allocation of space
+Scoring Guide:
+- 25-30: Well-balanced coverage throughout
+- 15-24: Generally balanced with minor issues
+- 0-14: Significant imbalance issues
+**Scoring Requirements:**
+- Prioritize accuracy over conservatism
+- AVOID "safe" middle-range scores that don't reflect true quality. Score based purely on merit, not on scoring "comfort zones"
+- Each score must reflect precise performance level, not range averages (e.g., 25 for 20-29 range)
+- Use full scoring range (0-100)
+- Base scores on objective comparison to human reference
+- Acknowledge that best practices may evolve
 
-**3 – Average**
-- The text is understandable but has noticeable awkward phrasing.
-- Logical flow is inconsistent; some points may feel out of place.
-- Some redundancy or repetition that slightly affects readability.
-- Certain descriptions are vague or unclear.
-- Contains some spelling or grammatical mistakes but remains readable.
+**Output Format:**
+Return only a single numerical score (0-100). No additional commentary.
 
-**Example (3/5):**
-"Artificial intelligence has many applications. In healthcare, finance, and many other sectors, AI helps a lot. Companies are using AI more and more. But AI has risks, and companies need to consider them. AI can be useful if used correctly."
 
----
-
-**2 – Poor**
-- The text is difficult to read due to awkward structure and poor fluency.
-- Logical inconsistencies make the argument unclear.
-- Repetitive phrases make the content tedious.
-- Descriptions are vague, making it hard to understand key points.
-- Multiple grammatical and spelling errors.
-
-**Example (2/5):**
-"AI is being used in many places. AI is in healthcare. AI is in finance. AI is also used in business. Many people use AI, and AI is useful. But AI has risks. AI must be used in the right way. AI is good, but it can be bad."
-
----
-
-**1 – Very Poor**
-- The text is highly disjointed, making it hard to read.
-- Logical flow is almost nonexistent, with abrupt topic shifts.
-- Redundant sentences add no value.
-- Descriptions are confusing or overly vague.
-- Frequent spelling and grammatical mistakes.
-
-**Example (1/5):**
-"AI is good. AI is everywhere. In finance. In hospitals. People use AI. Many companies AI. But AI risk. AI must be safe. AI can help. AI problem big. AI future."
-
----
-
-**0 – Incoherent**
-- The text is completely nonsensical or unreadable.
-- No logical progression or coherence.
-- Extreme redundancy or word salad.
-- Severe errors make it impossible to understand.
-
-**Example (0/5):**
-"AI good. Many AI. Business AI. Finance hospital AI. More AI need. AI problem bad. Future AI better. AI help. Risk AI."
-
----
-### **Instruction**  
-Now evaluate the following paragraph based on the criteria above and provide a score from 0 to 5.  
-
-### **Paragraph:**  
-{sentence}  
-
-### **Output Format:**  
-Provide only the score as a single number (0-5), without any additional explanation or comments.
 """
     return prompt
 
@@ -288,7 +237,7 @@ Provide only the score as a single number (0-5), without any additional explanat
 def chat_openai(prompt, client,try_number):
     if try_number == 5:
         print("Failed to get valid response after 5 tries.")
-        #result_queue.put(None)
+        return None
     #print(f"Try {try_number} time")
     #print("Query:")
     #print(prompt)
@@ -306,7 +255,7 @@ def chat_openai(prompt, client,try_number):
         #print(f"Answer:{response.choices[0].message.content}")
         
         ans = None
-        if not re.match(r'^[0-5]$', response.choices[0].message.content):
+        if not (response.choices[0].message.content.isdigit() and 0 <= int(response.choices[0].message.content) <= 100):
             ans =  chat_openai(prompt,client,try_number + 1)
         else :
             ans = int(response.choices[0].message.content)
@@ -317,26 +266,23 @@ def chat_openai(prompt, client,try_number):
         
     return ans
 
-
-
     
-def eval_logic_client(psg_node: MarkdownNode, client):
+def eval_content_client(psg_node: MarkdownNode, client):
     psgs = get_content_list(psg_node)
-    np.random.seed(42)
-    num_samples = min(len(psgs), 20)
-    psgs = np.random.choice(psgs, num_samples, replace=False)
-
-    result = 0
     
-    for i in range(len(psgs)):
-        if len(psgs[i]) > 1000:
-            psgs[i] = psgs[i][:1000]
-            if psgs[i][-1] != '.':
-                psgs[i] = psgs[i][:psgs[i].rfind('.')]
-        result += chat_openai(get_logic_check_prompt(psgs[i]), client, 0)
-
-        
-    return result/len(psgs)
+    # Concatenar todos os conteúdos em um documento único
+    full_article = "\n\n".join(psgs)
+    
+    # Limitar o tamanho total do artigo se necessário
+    if len(full_article) > 5000:
+        full_article = full_article[:5000]
+        if full_article[-1] != '.':
+            full_article = full_article[:full_article.rfind('.')]
+    
+    # Avaliar o artigo inteiro uma única vez
+    score = chat_openai(get_content_check_prompt(full_article), client, 0)
+    
+    return score
 
 
 # def chat(text,model,tokenizer,try_number):

@@ -1,0 +1,72 @@
+Inicializando avaliador...
+
+Testando comparação de títulos de seções...
+
+================================================================================
+COMPARAÇÃO DE TÍTULOS DE SEÇÕES - Survey ID: 0
+================================================================================
+Títulos do Golden Truth (GT): 25
+  1. Introduction
+  2. NMR theory
+  3. Relaxation measurements
+  4. Diffusion measurements
+  5. Two-dimensional NMR measurements
+  6. NMR applications in laboratory scale
+  7. Petrophysics
+  8. Porosity
+  9. Pore size distribution
+  10. Permeability
+  11. Fluid saturation
+  12. Capillary pressure
+  13. Wettability
+  14. Enhanced oil recovery applications
+  15. Evaluation of mud filtrate invasion characteristic
+  16. Emulsion droplet size determination using PFG NMR
+  17. Common misinterpretation in conventional rocks
+  18. Unconventional rock characterization using different NMR techniques
+  19. NMR applications in field scale
+  20. Design and improvements in LWD-NMR
+  21. Tar detection in carbonates
+  22. Geosteering and well placement optimization
+  23. Future research directions
+  24. Concluding remarks
+  25. Open Access
+
+Títulos do Artigo LLM: 16
+  1. Multiscale NMR Characterization in Shale: From Relaxation Mechanisms to Porous Media Research Frontiers
+  2. ABSTRACT
+  3. 1. Introduction
+  4. 2. Basic Principles of NMR Spectroscopy
+  5. 3. Brief Description of Relaxation Theory for Porous Media
+  6. 4. Multiscale NMR Characterization in Shale
+  7. 4.1 Fluid Typing
+  8. 4.2 Dynamic Oil-Water Migration Mechanisms in Shale
+  9. 4.3 Evaluation of Fluid Saturation and Viscosity Under Shale Matrix-Fluid Interface Coupling
+  10. 4.4 NMR Characterization of Nanoscale Pore Structures and Low Permeability
+  11. 4.5 Conversion of Pore Size Distribution via Surface Relaxivity and NMR Cryoporometry
+  12. 4.6 Wettability and Fluid-Rock Interactions
+  13. 4.7 Dynamic Visualization of Nonuniform Pore Multiphase Seepage in Shale Based on Magnetic Resonance Imaging (MRI)
+  14. 5. Conclusions and Future Perspectives
+  15. Author Contributions
+  16. References
+
+------------------------------------------------------------------------------------------------------------------------
+RESULTADOS DA COMPARAÇÃO (Ordenados por menor distância):
+Exibindo apenas títulos com similaridade > 0.8
+------------------------------------------------------------------------------------------------------------------------
+Distância    Similaridade    Título GT                                          Título LLM                                        
+------------------------------------------------------------------------------------------------------------------------
+0.0918       0.9082          Introduction                                       1. Introduction                                   
+0.1309       0.8691          Unconventional rock characterization using different NMR techniques 4. Multiscale NMR Characterization in Shale       
+0.1704       0.8296          Wettability                                        4.6 Wettability and Fluid-Rock Interactions       
+0.1714       0.8286          NMR theory                                         2. Basic Principles of NMR Spectroscopy           
+0.1724       0.8276          Future research directions                         5. Conclusions and Future Perspectives            
+0.1768       0.8232          Two-dimensional NMR measurements                   2. Basic Principles of NMR Spectroscopy           
+0.1797       0.8203          NMR applications in laboratory scale               2. Basic Principles of NMR Spectroscopy           
+0.1821       0.8179          Concluding remarks                                 5. Conclusions and Future Perspectives            
+0.1890       0.8110          Pore size distribution                             4.5 Conversion of Pore Size Distribution via Surface Relaxivity and NMR Cryoporometry
+0.1904       0.8096          NMR applications in field scale                    4. Multiscale NMR Characterization in Shale       
+================================================================================
+
+
+✓ Teste concluído com sucesso!
