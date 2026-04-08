@@ -14,8 +14,19 @@ import numpy as np
 from scipy.spatial.distance import cdist
 
 def normalize_string(s):
-        letters = re.findall(r'[a-zA-Z]', s)
-        return ''.join(letters).lower()
+        """
+        Normaliza uma string para comparação.
+        Remove pontuação mantendo estrutura básica do título.
+        """
+        # Converte para minúscula
+        s = s.lower()
+        # Remove espaços múltiplos
+        s = re.sub(r'\s+', ' ', s).strip()
+        # Remove pontuação especial, mantendo apenas letras, números e espaços
+        s = re.sub(r'[^a-z0-9\s]', '', s)
+        # Remove espaços extras novamente após remover pontuação
+        s = re.sub(r'\s+', ' ', s).strip()
+        return s
 
 class SurGEvaluator:
     def __init__(self,device:str = None,survey_path:str = None,corpus_path:str = None,flag_model_path:str = None, judge_model_path:str = None, bertopic_model_path:str = None,bertopic_embedding_model_path:str = None, nli_model_path:str = None, using_openai:bool = True, api_key:str = None):

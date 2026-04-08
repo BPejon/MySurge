@@ -1,0 +1,56 @@
+{
+    "Information_Collection": {
+        "Comprehensiveness": {
+            "Coverage": 0.8343949044585988
+        },
+        "Relevance": {
+            "Paper_Level": 0.84185303514377,
+            "Section_Level": 0.19488817891373802,
+            "Sentence_Level": 0.20607028753993611
+        }
+    },
+    "Survey_Structure": {
+        "Structure_Quality(LLM_as_judge)": 5,
+        "SH-Recall": 0.988203125,
+        "Subtitle_similarity": null,
+        "subtitle_similarity": 0.9230769230769231
+    },
+    "Survey_Content": {
+        "Relevance": {
+            "ROUGE-1": 0.9098722598172896,
+            "ROUGE-2": 0.8916645523795111,
+            "ROUGE-L": 0.8970105821907524,
+            "BLEU": 90.67172684142591
+        },
+        "Content LLM as a judge": 74
+    },
+    "survey_id": "0"
+}
+
+{
+    "Information_Collection": {
+        "Comprehensiveness": {
+            "Coverage": 0.8343949044585988
+        },
+        "Relevance": {
+            "Paper_Level": 0.84185303514377,
+            "Section_Level": 0.19488817891373802,
+            "Sentence_Level": 0.20607028753993611
+        }
+    },
+    "Survey_Structure": {
+        "Structure_Quality(LLM_as_judge)": 5.0,
+        "SH-Recall": 0.988203125,
+        "subtitle_similarity": 0.9230769230769231
+    },
+    "Survey_Content": {
+        "Relevance": {
+            "ROUGE-1": 0.9098722598172896,
+            "ROUGE-2": 0.8916645523795111,
+            "ROUGE-L": 0.8970105821907524,
+            "BLEU": 90.67172684142591
+        },
+        "Content LLM as a judge": 74.0
+    },
+    "survey_id": "Average"
+}

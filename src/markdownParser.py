@@ -128,27 +128,32 @@ def extract_title_from_ref(ref_text):
     segments = [seg.strip() for seg in segments if seg.strip()]
 
     if len(segments) >= 2:
-        # Tenta localizar o início da publicação (onde aparecem ano, volume, páginas, DOI, etc.)
+        # Estratégia: o segundo segmento costuma ser o título
+        # Estrutura típica: [Autor (Ano)]. [TÍTULO]. [Publicação/DOI]
+        
+        # Se encontramos segmento [1] e não é muito curto, use-o
+        if len(segments) >= 2:
+            candidate = segments[1].strip()
+            
+            # Verificar se é realmente um título (tamanho > 15 caracteres, não é autor/pub)
+            if (len(candidate) > 15 and 
+                not is_author_segment(candidate) and 
+                not is_publication_segment(candidate)):
+                return clean_title(candidate)
+        
+        # Fallback: procura por padrão de publicação e pega só o antes
         pub_start = None
-        for i, seg in enumerate(segments):
-            if is_publication_segment(seg):
+        for i in range(1, len(segments)):
+            if is_publication_segment(segments[i]):
                 pub_start = i
                 break
-
-        if pub_start is not None and pub_start > 1:
-            # Título = segmentos do índice 1 até antes da publicação
+        
+        if pub_start is not None and pub_start >= 2:
+            # Título = segmento 1 até antes da publicação
             title_segments = segments[1:pub_start]
-            if title_segments:
-                return clean_title('. '.join(title_segments))
-        elif pub_start is not None and pub_start == 1:
-            # O segundo segmento já é publicação; talvez o título seja o primeiro se não for autor
-            if not is_author_segment(segments[0]):
-                return clean_title(segments[0])
-
-        # Se não encontrou marcador de publicação, usa o segundo segmento se não for autor/publicação
-        candidate = segments[1]
-        if not is_author_segment(candidate) and not is_publication_segment(candidate):
-            return clean_title(candidate)
+            candidate = '. '.join(title_segments).strip()
+            if len(candidate) > 15:
+                return clean_title(candidate)
 
     # --- Estratégia 4: fallback - escolher o segmento mais longo que não seja autor/publicação ---
     candidate_segments = []
@@ -205,16 +210,16 @@ def is_publication_segment(seg):
         r'\d+\(\d+\):\d+--\d+',           # formato comum: 12(3):45--67
         r'doi:\s*10\.\d{4,}',              # DOI
         r'https?://',
-        r'technical report',
-        r'conference',
-        r'proceedings',
-        r'journal',
-        r'transactions',
-        r'magazine',
-        r'press',
-        r'university',
-        r'laboratory',
-        r'in:\s',                          # "In:" geralmente precede o nome do evento/livro
+        r'\btechnical\s+report\b',        # technical report (word boundary)
+        r'\bconference\b',                # conference (word boundary)
+        r'\bproceedings\b',              # proceedings (word boundary)
+        r'\bjournal\b',                  # journal (word boundary)
+        r'\btransactions\b',             # transactions (word boundary)
+        r'\bmagazine\b',                 # magazine (word boundary)
+        r'\bpress\b(?!\s*ure)',          # press (word boundary, but not "pressure")
+        r'\buniversity\b',               # university (word boundary)
+        r'\blaboratory\b',               # laboratory (word boundary)
+        r'in:\s',                        # "In:" geralmente precede o nome do evento/livro
     ]
     for pattern in pub_patterns:
         if re.search(pattern, seg_lower):

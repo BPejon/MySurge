@@ -22,34 +22,47 @@ def normalize_sims(sims):
 
 
 def soft_heading_recall(G, P, model):
+    """
+    Calcula Soft Heading Recall entre títulos alvo (G) e gerados (P).
     
-    def soft_cardinality(T):
-        card = 0
-        sims = calc_sim(T,T,model)
+    SH-Recall mede a fração dos títulos alvo que foram "recuperados" nos títulos
+    gerados, considerando similaridade semântica (não apenas matches exatos).
+    
+    A fórmula: SH-Recall = sum(max_similarity_com_P[i]) / |G|
+    Para cada título alvo G[i], encontra o título gerado P[j] mais similar,
+    e retorna a média dessa máxima similaridade como indicador de recuperação.
+    
+    Args:
+        G: Lista de títulos alvo (referência/ground truth)
+        P: Lista de títulos gerados
+        model: Modelo de embedding para calcular similaridades
         
-        sims = normalize_sims(sims)
-        
-        for i in range(len(T)):
-            tmp_sum = sum(sims[i])
-            #print(sum(sims[i]),"below",1/tmp_sum)
-            #print(sims[i])
-            card += (1 / tmp_sum) if tmp_sum != 0 else 0
-        #print(f'card={card}')
-        return card
-
-    def intersection_soft_cardinality(R, G):
-        R_card = soft_cardinality(R)
-        G_card = soft_cardinality(G)
-        RG_union = list(set(R + G))
-        union_card = soft_cardinality(RG_union)  
-        return R_card + G_card - union_card
-
-    # Soft Cardinality for R and R ∩ G
-    card_R = soft_cardinality(G)
-    card_R_intersect_G = intersection_soft_cardinality(G, P)
-
-    # Soft Heading Recall
-    soft_recall = card_R_intersect_G / card_R if card_R != 0 else 0
+    Returns:
+        float: SH-Recall entre 0 e 1
+    """
+    
+    # Se não há títulos alvo, não há nada para recuperar
+    if len(G) == 0:
+        return 0
+    
+    # Se não há títulos gerados, nada foi recuperado
+    if len(P) == 0:
+        return 0
+    
+    # Calcula matriz de similaridades: |G| x |P|
+    # sims[i][j] = similaridade entre G[i] e P[j]
+    sims = calc_sim(G, P, model)  # shape: (len(G), len(P))
+    
+    # Para cada título alvo, encontra a máxima similaridade com qualquer título gerado
+    # Isto representa "foi recuperado?"
+    max_similarities = []
+    for i in range(len(G)):
+        max_sim = max(sims[i]) if len(P) > 0 else 0
+        max_similarities.append(max_sim)
+    
+    # SH-Recall é a média das máximas similaridades
+    # Isto responde: "Em média, qual é a similaridade do melhor match para cada título alvo?"
+    soft_recall = sum(max_similarities) / len(G) if len(G) > 0 else 0
     
     return soft_recall
 
@@ -246,10 +259,17 @@ def chat_openai(prompt, client, try_number):
 
 def eval_structure_quality_client(target_survey,psg_node:MarkdownNode,client):
     target_titles = ""
+    
+    # Procura pela seção raiz: pode ser title=="root" OU parent_id==None
+    root_section = None
     for section in target_survey['structure']:
-        if section['title'] == "root":
-            target_titles = get_target_title_structure(target_survey,section['id'],1)
+        if section['title'] == "root" or section.get('parent_id') is None:
+            root_section = section
             break
+    
+    if root_section:
+        root_id = root_section['id'] if 'id' in root_section else None
+        target_titles = get_target_title_structure(target_survey, root_id, 1)
     
     gen_titles = get_generate_title_structure(psg_node,1)
     
