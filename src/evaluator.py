@@ -15,16 +15,14 @@ from scipy.spatial.distance import cdist
 
 def normalize_string(s):
         """
-        Normaliza uma string para comparação.
-        Remove pontuação mantendo estrutura básica do título.
+        Normaliza uma string para comparação, mantendo a informação importante.
+        Remove pontuação especial e converte para minúsculas, mas preserva estrutura.
         """
         # Converte para minúscula
         s = s.lower()
+        # Remove caracteres especiais mas mantém letras, números e espaços
+        s = re.sub(r'[^\w\s]', ' ', s)
         # Remove espaços múltiplos
-        s = re.sub(r'\s+', ' ', s).strip()
-        # Remove pontuação especial, mantendo apenas letras, números e espaços
-        s = re.sub(r'[^a-z0-9\s]', '', s)
-        # Remove espaços extras novamente após remover pontuação
         s = re.sub(r'\s+', ' ', s).strip()
         return s
 
