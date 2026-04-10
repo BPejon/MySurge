@@ -10,8 +10,8 @@
         }
     },
     "Survey_Structure": {
-        "Structure_Quality(LLM_as_judge)": 3,
-        "SH-Recall": 0.80021484375,
+        "Structure_Quality(LLM_as_judge)": 2,
+        "SH-Recall": 0.8046061197916666,
         "Subtitle_similarity": null,
         "subtitle_similarity": 0.5
     },
@@ -20,9 +20,9 @@
             "ROUGE-1": 0.413805897143331,
             "ROUGE-2": 0.13466245762604287,
             "ROUGE-L": 0.18725267804035423,
-            "BLEU": 19.72385279458213
+            "BLEU": 18.656796832757234
         },
-        "Content LLM as a judge": 78
+        "Content LLM as a judge": 62
     },
     "survey_id": "0"
 }
@@ -39,8 +39,8 @@
         }
     },
     "Survey_Structure": {
-        "Structure_Quality(LLM_as_judge)": 3.0,
-        "SH-Recall": 0.80021484375,
+        "Structure_Quality(LLM_as_judge)": 2.0,
+        "SH-Recall": 0.8046061197916666,
         "subtitle_similarity": 0.5
     },
     "Survey_Content": {
@@ -48,9 +48,9 @@
             "ROUGE-1": 0.413805897143331,
             "ROUGE-2": 0.13466245762604287,
             "ROUGE-L": 0.18725267804035423,
-            "BLEU": 19.72385279458213
+            "BLEU": 18.656796832757234
         },
-        "Content LLM as a judge": 78.0
+        "Content LLM as a judge": 62.0
     },
     "survey_id": "Average"
 }
