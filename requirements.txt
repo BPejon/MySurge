@@ -4,6 +4,7 @@ safetensors
 torch==1.13.1+cu117 
 rouge-score
 sacrebleu
+bert-score>=0.3.12
 numpy==1.26.4
 openai
 transformers==4.44.2
