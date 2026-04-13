@@ -2,38 +2,38 @@
 COMPARAÇÃO DETALHADA DE SEÇÕES SIMILARES (Similaridade >= 0.85)
 ========================================================================================================================================================================================================
 
-Section LLM                              | Section GT                               | Distance        | Similarity      | BERTScore       | ROUGE-L        
------------------------------------------------------------------------------------------------------------------------------------------------------------
-A review on the applications of nuclear  | A review on the applications of nuclear  | 0.0000          | 1.0000          | 1.0000          | 1.0000         
-Abstract                                 | Abstract                                 | -0.0010         | 1.0010          | 1.0000          | 1.0000         
-Introduction                             | Introduction                             | -0.0010         | 1.0010          | 1.0000          | 1.0000         
-NMR theory                               | NMR theory                               | 0.0000          | 1.0000          | 1.0000          | 1.0000         
-Relaxation measurements                  | Relaxation measurements                  | -0.0010         | 1.0010          | 1.0000          | 1.0000         
-Diffusion measurements                   | Diffusion measurements                   | -0.0010         | 1.0010          | 1.0000          | 1.0000         
-Two-dimensional NMR measurements         | Two-dimensional NMR measurements         | 0.0000          | 1.0000          | 1.0000          | 1.0000         
-NMR applications in laboratory scale     | NMR applications in laboratory scale     | 0.0000          | 1.0000          | 1.0000          | 1.0000         
-Petrophysics                             | Petrophysics                             | 0.0000          | 1.0000          | 1.0000          | 1.0000         
-Porosity                                 | Porosity                                 | -0.0010         | 1.0010          | 1.0000          | 1.0000         
-Pore size distribution                   | Pore size distribution                   | 0.0000          | 1.0000          | 1.0000          | 1.0000         
-Permeability                             | Permeability                             | 0.0000          | 1.0000          | 1.0000          | 1.0000         
-Fluid saturation                         | Fluid saturation                         | -0.0010         | 1.0010          | 1.0000          | 1.0000         
-Capillary pressure                       | Capillary pressure                       | -0.0010         | 1.0010          | 1.0000          | 1.0000         
-Wettability                              | Wettability                              | 0.0000          | 1.0000          | 1.0000          | 1.0000         
-Enhanced oil recovery applications       | Enhanced oil recovery applications       | -0.0010         | 1.0010          | 1.0000          | 1.0000         
-Special topics                           | Special topics                           | -0.0010         | 1.0010          | 0.0000          | 0.0000         
-Evaluation of mud filtrate invasion char | Evaluation of mud filtrate invasion char | -0.0010         | 1.0010          | 1.0000          | 1.0000         
-Emulsion droplet size determination usin | Emulsion droplet size determination usin | -0.0010         | 1.0010          | 1.0000          | 1.0000         
-Common misinterpretation in conventional | Common misinterpretation in conventional | 0.0000          | 1.0000          | 1.0000          | 1.0000         
-Unconventional rock characterization usi | Unconventional rock characterization usi | 0.0000          | 1.0000          | 1.0000          | 1.0000         
-NMR applications in field scale          | NMR applications in field scale          | -0.0010         | 1.0010          | 1.0000          | 1.0000         
-Design and improvements in LWD-NMR       | Design and improvements in LWD-NMR       | -0.0010         | 1.0010          | 1.0000          | 1.0000         
-Field implementation and applications    | Field implementation and applications    | 0.0000          | 1.0000          | 0.0000          | 0.0000         
-Tar detection in carbonates              | Tar detection in carbonates              | -0.0010         | 1.0010          | 1.0000          | 1.0000         
-Geosteering and well placement optimizat | Geosteering and well placement optimizat | -0.0010         | 1.0010          | 1.0000          | 1.0000         
-Future research directions               | Future research directions               | -0.0010         | 1.0010          | 1.0000          | 1.0000         
-Concluding remarks                       | Concluding remarks                       | -0.0010         | 1.0010          | 1.0000          | 1.0000         
-Declaration                              | Declaration                              | -0.0010         | 1.0010          | 1.0000          | 1.0000         
-References                               | References                               | -0.0010         | 1.0010          | 1.0000          | 1.0000         
+Section LLM                                                                      | Section GT                                                                       | Distance        | Similarity      | BERTScore       | ROUGE-L        
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements | A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements | 0.0000          | 1.0000          | 1.0000          | 1.0000         
+Abstract                                                                         | Abstract                                                                         | -0.0010         | 1.0010          | 1.0000          | 1.0000         
+Introduction                                                                     | Introduction                                                                     | -0.0010         | 1.0010          | 1.0000          | 1.0000         
+NMR theory                                                                       | NMR theory                                                                       | 0.0000          | 1.0000          | 1.0000          | 1.0000         
+Relaxation measurements                                                          | Relaxation measurements                                                          | -0.0010         | 1.0010          | 1.0000          | 1.0000         
+Diffusion measurements                                                           | Diffusion measurements                                                           | -0.0010         | 1.0010          | 1.0000          | 1.0000         
+Two-dimensional NMR measurements                                                 | Two-dimensional NMR measurements                                                 | 0.0000          | 1.0000          | 1.0000          | 1.0000         
+NMR applications in laboratory scale                                             | NMR applications in laboratory scale                                             | 0.0000          | 1.0000          | 1.0000          | 1.0000         
+Petrophysics                                                                     | Petrophysics                                                                     | 0.0000          | 1.0000          | 1.0000          | 1.0000         
+Porosity                                                                         | Porosity                                                                         | -0.0010         | 1.0010          | 1.0000          | 1.0000         
+Pore size distribution                                                           | Pore size distribution                                                           | 0.0000          | 1.0000          | 1.0000          | 1.0000         
+Permeability                                                                     | Permeability                                                                     | 0.0000          | 1.0000          | 1.0000          | 1.0000         
+Fluid saturation                                                                 | Fluid saturation                                                                 | -0.0010         | 1.0010          | 1.0000          | 1.0000         
+Capillary pressure                                                               | Capillary pressure                                                               | -0.0010         | 1.0010          | 1.0000          | 1.0000         
+Wettability                                                                      | Wettability                                                                      | 0.0000          | 1.0000          | 1.0000          | 1.0000         
+Enhanced oil recovery applications                                               | Enhanced oil recovery applications                                               | -0.0010         | 1.0010          | 1.0000          | 1.0000         
+Special topics                                                                   | Special topics                                                                   | -0.0010         | 1.0010          | 0.0000          | 0.0000         
+Evaluation of mud filtrate invasion characteristic                               | Evaluation of mud filtrate invasion characteristic                               | -0.0010         | 1.0010          | 1.0000          | 1.0000         
+Emulsion droplet size determination using PFG NMR                                | Emulsion droplet size determination using PFG NMR                                | -0.0010         | 1.0010          | 1.0000          | 1.0000         
+Common misinterpretation in conventional rocks                                   | Common misinterpretation in conventional rocks                                   | 0.0000          | 1.0000          | 1.0000          | 1.0000         
+Unconventional rock characterization using different NMR techniques              | Unconventional rock characterization using different NMR techniques              | 0.0000          | 1.0000          | 1.0000          | 1.0000         
+NMR applications in field scale                                                  | NMR applications in field scale                                                  | -0.0010         | 1.0010          | 1.0000          | 1.0000         
+Design and improvements in LWD-NMR                                               | Design and improvements in LWD-NMR                                               | -0.0010         | 1.0010          | 1.0000          | 1.0000         
+Field implementation and applications                                            | Field implementation and applications                                            | 0.0000          | 1.0000          | 0.0000          | 0.0000         
+Tar detection in carbonates                                                      | Tar detection in carbonates                                                      | -0.0010         | 1.0010          | 1.0000          | 1.0000         
+Geosteering and well placement optimization                                      | Geosteering and well placement optimization                                      | -0.0010         | 1.0010          | 1.0000          | 1.0000         
+Future research directions                                                       | Future research directions                                                       | -0.0010         | 1.0010          | 1.0000          | 1.0000         
+Concluding remarks                                                               | Concluding remarks                                                               | -0.0010         | 1.0010          | 1.0000          | 1.0000         
+Declaration                                                                      | Declaration                                                                      | -0.0010         | 1.0010          | 1.0000          | 1.0000         
+References                                                                       | References                                                                       | -0.0010         | 1.0010          | 1.0000          | 1.0000         
 
 ========================================================================================================================================================================================================
 TEXTOS COMPLETOS DAS SEÇÕES

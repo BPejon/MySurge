@@ -162,7 +162,7 @@ class SurGEvaluator:
         comparisons_sorted = sorted(comparisons, key=lambda x: x['distance'])
         
         # Filtra apenas comparações com similaridade > 0.8
-        threshold = 0.8
+        threshold = 0.85
         comparisons_above_threshold = [comp for comp in comparisons_sorted if comp['similarity'] > threshold]
         
         # Imprime resultados
@@ -617,7 +617,7 @@ class SurGEvaluator:
         
         return comparison_results
     
-    def _find_node_by_title(self, root_node: 'MarkdownNode', title: str) -> 'MarkdownNode':
+    def _find_node_by_title(self, root_node: 'markdownParser.MarkdownNode', title: str) -> 'MarkdownNode':
         """
         Encontra um nó na árvore MarkdownNode pelo título.
         
@@ -663,7 +663,7 @@ class SurGEvaluator:
             
             # Cabeçalho da tabela
             headers = ["Section LLM", "Section GT", "Distance", "Similarity", "BERTScore", "ROUGE-L"]
-            col_widths = [40, 40, 15, 15, 15, 15]
+            col_widths = [80, 80, 15, 15, 15, 15]
             
             header_line = " | ".join(f"{h:<{col_widths[i]}}" for i, h in enumerate(headers))
             f.write(header_line + "\n")
@@ -672,14 +672,14 @@ class SurGEvaluator:
             # Escreve linhas de dados
             for item in comparison_data:
                 row = [
-                    item['section_llm_name'][:40],
-                    item['section_gt_name'][:40],
+                    item['section_llm_name'],
+                    item['section_gt_name'],
                     f"{item['distance']:.4f}",
                     f"{item['similarity']:.4f}",
                     f"{item['bertscore_f1']:.4f}",
                     f"{item['rouge_l']:.4f}"
                 ]
-                formatted_row = " | ".join(f"{r:<{col_widths[i]}}" for i, r in enumerate(row))
+                formatted_row = " | ".join(f"{str(r):<{col_widths[i]}}" for i, r in enumerate(row))
                 f.write(formatted_row + "\n")
             
             # Escreve textos das seções
