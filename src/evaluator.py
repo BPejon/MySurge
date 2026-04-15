@@ -193,6 +193,178 @@ class SurGEvaluator:
             "comparisons": comparisons_sorted,
             "subtitle_similarity": subtitle_similarity
         }
+    
+    def extract_section_text_from_gt(self, section_dict):
+        """
+        Extrai o texto de conteúdo de uma seção do Ground Truth (estrutura JSON).
+        
+        Args:
+            section_dict (dict): Dicionário da seção com chave 'content'
+            
+        Returns:
+            str: Texto da seção ou NaN se vazio/inválido
+        """
+        import numpy as np
+        
+        if section_dict is None or not isinstance(section_dict, dict):
+            return np.nan
+        
+        content = section_dict.get('content', '')
+        
+        if not content or not str(content).strip():
+            return np.nan
+        
+        return str(content).strip()
+    
+    def find_section_by_title(self, title, section_list):
+        """
+        Encontra uma seção pelo título na lista de seções.
+        
+        Args:
+            title (str): Título da seção a buscar
+            section_list (list): Lista de seções (dicts com 'title' e 'content')
+            
+        Returns:
+            dict: Seção encontrada ou None
+        """
+        for section in section_list:
+            if section.get('title') == title:
+                return section
+        return None
+    
+    def find_markdown_section_by_title(self, title, markdown_node):
+        """
+        Encontra um nó MarkdownNode pelo título na árvore de markdown.
+        Busca em largura (BFS) para evitar recursão profunda.
+        
+        Args:
+            title (str): Título a buscar
+            markdown_node (MarkdownNode): Nó raiz para começar busca
+            
+        Returns:
+            MarkdownNode: Nó encontrado ou None
+        """
+        if markdown_node is None:
+            return None
+        
+        from collections import deque
+        
+        queue = deque([markdown_node])
+        
+        while queue:
+            node = queue.popleft()
+            
+            if hasattr(node, 'title') and node.title == title:
+                return node
+            
+            if hasattr(node, 'children') and node.children:
+                for child in node.children:
+                    queue.append(child)
+        
+        return None
+    
+    def generate_comparison_table(self, comparison_result, psg_node):
+        """
+        Gera tabela de comparação entre seções GT e LLM com BERTScore.
+        
+        Args:
+            comparison_result (dict): Resultado de compare_section_titles()
+            psg_node (MarkdownNode): Raiz do artigo LLM parseado
+            
+        Returns:
+            pandas.DataFrame: Tabela com colunas de comparação e BERTScore
+        """
+        import pandas as pd
+        from rougeBleuFuncs import calculate_bertscore_for_sections
+        from structureFuncs import extract_section_text_from_markdown
+        import numpy as np
+        
+        comparisons = comparison_result.get('comparisons', [])
+        
+        if not comparisons:
+            print("Nenhuma comparação para gerar tabela.")
+            return pd.DataFrame()
+        
+        # Dados para a tabela
+        table_data = []
+        
+        for comp in comparisons:
+            gt_title = comp.get('gt_title', '')
+            llm_title = comp.get('llm_title', '')
+            distance = comp.get('distance', np.nan)
+            similarity = comp.get('similarity', np.nan)
+            
+            # Extrair textos das seções
+            text_gt = np.nan
+            text_llm = np.nan
+            
+            # Extrair texto GT
+            if hasattr(self, 'survey_map'):
+                for survey_id in self.survey_map:
+                    survey = self.survey_map[survey_id]
+                    if 'structure' in survey:
+                        gt_section = self.find_section_by_title(gt_title, survey['structure'])
+                        if gt_section:
+                            text_gt = self.extract_section_text_from_gt(gt_section)
+                            break
+            
+            # Extrair texto LLM
+            llm_section = self.find_markdown_section_by_title(llm_title, psg_node)
+            if llm_section:
+                text_llm = extract_section_text_from_markdown(llm_section)
+                if not text_llm or not text_llm.strip():
+                    text_llm = np.nan
+            
+            # Calcular BERTScore
+            bertscore_dict = calculate_bertscore_for_sections(
+                str(text_llm) if not pd.isna(text_llm) else "",
+                str(text_gt) if not pd.isna(text_gt) else ""
+            )
+            
+            # Montar linha da tabela
+            table_data.append({
+                'seção_llm': llm_title[:40] + '...' if len(str(llm_title)) > 40 else llm_title,
+                'seção_gt': gt_title[:40] + '...' if len(str(gt_title)) > 40 else gt_title,
+                'distância': round(distance, 4) if not pd.isna(distance) else np.nan,
+                'similaridade': round(similarity, 4) if not pd.isna(similarity) else np.nan,
+                'bertscore_f1': round(bertscore_dict.get('f1', np.nan), 4),
+                'texto_llm': (str(text_llm)[:100] + '...') if not pd.isna(text_llm) and len(str(text_llm)) > 100 else (str(text_llm) if not pd.isna(text_llm) else 'N/A'),
+                'texto_gt': (str(text_gt)[:100] + '...') if not pd.isna(text_gt) and len(str(text_gt)) > 100 else (str(text_gt) if not pd.isna(text_gt) else 'N/A')
+            })
+        
+        df = pd.DataFrame(table_data)
+        return df
+    
+    def print_comparison_table(self, df):
+        """
+        Imprime a tabela de comparação em formato legível.
+        
+        Args:
+            df (pandas.DataFrame): DataFrame com dados de comparação
+        """
+        if df.empty:
+            print("Tabela vazia.")
+            return
+        
+        print("\n" + "="*200)
+        print("ANÁLISE COMPARATIVA: BERTSCORE E SIMILARIDADE DE SEÇÕES")
+        print("="*200)
+        
+        # Imprime cabeçalho
+        print(f"{'Seção LLM':<45} {'Seção GT':<45} {'Dist':<8} {'Sim':<8} {'F1':<8} {'Texto LLM':<55} {'Texto GT':<55}")
+        print("-"*200)
+        
+        # Imprime cada linha
+        for idx, row in df.iterrows():
+            print(f"{str(row['seção_llm']):<45} {str(row['seção_gt']):<45} "
+                  f"{str(row['distância']):<8} {str(row['similaridade']):<8} "
+                  f"{str(row['bertscore_f1']):<8} {str(row['texto_llm']):<55} {str(row['texto_gt']):<55}")
+        
+        print("="*200)
+        print(f"Total de seções comparadas: {len(df)}")
+        print(f"BERTScore F1 Médio: {df['bertscore_f1'].mean():.4f}")
+        print(f"Similaridade Média: {df['similaridade'].mean():.4f}")
+        print()
             
     def single_eval(self,survey_id,passage_path,eval_list):
         psg_node = markdownParser.parse_markdown(passage_path)
@@ -203,6 +375,14 @@ class SurGEvaluator:
         title_comparison_result = None
         if "Compare_Section_Titles" in eval_list or "ALL" in eval_list:
             title_comparison_result = self.compare_section_titles(survey_id, psg_node)
+            
+            # Gera análise com BERTScore se comparação foi feita
+            try:
+                comparison_df = self.generate_comparison_table(title_comparison_result, psg_node)
+                if not comparison_df.empty:
+                    self.print_comparison_table(comparison_df)
+            except Exception as e:
+                print(f"Erro ao gerar tabela de comparação com BERTScore: {e}")
 
         #print("*****")
         #print(f"psg node: {psg_node}")
@@ -526,174 +706,3 @@ class SurGEvaluator:
             print(eval_result)
             
         return eval_result
-    
-    def compare_sections_detailed(self, llm_md_path: str, gt_md_path: str, threshold: float = 0.85):
-        """
-        Compara seções/subseções entre artigo LLM e GT com análise detalhada de conteúdo.
-        
-        Args:
-            llm_md_path: Caminho do arquivo markdown gerado pela LLM
-            gt_md_path: Caminho do arquivo markdown do Ground Truth
-            threshold: Threshold de similaridade para filtrar matches (default 0.85)
-            
-        Returns:
-            list de dicts com comparações detalhadas
-        """
-        import re
-        
-        # Parse dos dois arquivos markdown
-        llm_node = markdownParser.parse_markdown(llm_md_path)
-        gt_node = markdownParser.parse_markdown(gt_md_path)
-        
-        # Extrai listas de títulos
-        llm_titles = structureFuncs.get_title_list(llm_node)
-        gt_titles = structureFuncs.get_title_list(gt_node)
-        
-        print(f"\n{'='*100}")
-        print(f"ANÁLISE DETALHADA DE SEÇÕES COM CONTEÚDO")
-        print(f"{'='*100}")
-        print(f"Títulos LLM: {len(llm_titles)}")
-        print(f"Títulos GT: {len(gt_titles)}")
-        
-        if len(gt_titles) == 0 or len(llm_titles) == 0:
-            print("Aviso: Não há títulos suficientes para comparação.")
-            return []
-        
-        # Gera embeddings
-        if self.flag_model is None:
-            self.flag_model = FlagModel(self.flag_model_path,
-                query_instruction_for_retrieval="Generate a representation for this title:",
-                use_fp16=True)
-        
-        gt_embeddings = self.flag_model.encode(gt_titles)
-        llm_embeddings = self.flag_model.encode(llm_titles)
-        
-        # Normaliza embeddings
-        gt_embeddings_norm = gt_embeddings / np.linalg.norm(gt_embeddings, axis=1, keepdims=True)
-        llm_embeddings_norm = llm_embeddings / np.linalg.norm(llm_embeddings, axis=1, keepdims=True)
-        
-        # Calcula matriz de similaridade
-        similarity_matrix = np.dot(gt_embeddings_norm, llm_embeddings_norm.T)
-        distance_matrix = 1 - similarity_matrix
-        
-        # Encontra aplicar matching greedy e filtra por threshold
-        comparison_results = []
-        
-        for gt_idx, gt_title in enumerate(gt_titles):
-            min_distance_idx = np.argmin(distance_matrix[gt_idx])
-            min_distance = distance_matrix[gt_idx, min_distance_idx]
-            similarity = similarity_matrix[gt_idx, min_distance_idx]
-            llm_title = llm_titles[min_distance_idx]
-            
-            # Filtra por threshold
-            if similarity >= threshold:
-                # Extrai nó correspondente em GT
-                gt_section_node = self._find_node_by_title(gt_node, gt_title)
-                # Extrai nó correspondente em LLM
-                llm_section_node = self._find_node_by_title(llm_node, llm_title)
-                
-                # Extrai textos
-                text_gt = structureFuncs.extract_section_text(gt_section_node) if gt_section_node else ""
-                text_llm = structureFuncs.extract_section_text(llm_section_node) if llm_section_node else ""
-                
-                # Calcula métricas se houver texto
-                metrics = {'bertscore_f1': 0.0, 'rouge_l': 0.0}
-                if len(text_gt) > 50 and len(text_llm) > 50:
-                    metrics = structureFuncs.calculate_content_metrics(text_llm, text_gt)
-                
-                comparison_results.append({
-                    'section_llm_name': llm_title,
-                    'section_gt_name': gt_title,
-                    'distance': float(min_distance),
-                    'similarity': float(similarity),
-                    'bertscore_f1': float(metrics['bertscore_f1']),
-                    'rouge_l': float(metrics['rouge_l']),
-                    'text_llm': text_llm,
-                    'text_gt': text_gt
-                })
-        
-        print(f"Matches encontrados com similaridade >= {threshold}: {len(comparison_results)}")
-        print(f"{'='*100}\n")
-        
-        return comparison_results
-    
-    def _find_node_by_title(self, root_node: 'markdownParser.MarkdownNode', title: str) -> 'MarkdownNode':
-        """
-        Encontra um nó na árvore MarkdownNode pelo título.
-        
-        Args:
-            root_node: Nó raiz para começar a busca
-            title: Título a buscar
-            
-        Returns:
-            MarkdownNode encontrado ou None
-        """
-        if root_node.title == title:
-            return root_node
-        
-        for child in root_node.children:
-            result = self._find_node_by_title(child, title)
-            if result:
-                return result
-        
-        return None
-    
-    def export_sections_comparison(self, comparison_data: list, output_path: str) -> None:
-        """
-        Exporta comparação detalhada de seções em formato de tabela em arquivo texto.
-        
-        Args:
-            comparison_data: Lista de dicts com comparações
-            output_path: Caminho do arquivo de saída
-        """
-        import os
-        
-        # Cria diretório se não existir
-        os.makedirs(os.path.dirname(output_path) if os.path.dirname(output_path) else '.', exist_ok=True)
-        
-        with open(output_path, 'w', encoding='utf-8') as f:
-            # Escreve cabeçalho
-            f.write("="*200 + "\n")
-            f.write("COMPARAÇÃO DETALHADA DE SEÇÕES SIMILARES (Similaridade >= 0.85)\n")
-            f.write("="*200 + "\n\n")
-            
-            if not comparison_data:
-                f.write("Nenhuma seção encontrada com similaridade acima do threshold.\n")
-                return
-            
-            # Cabeçalho da tabela
-            headers = ["Section LLM", "Section GT", "Distance", "Similarity", "BERTScore", "ROUGE-L"]
-            col_widths = [80, 80, 15, 15, 15, 15]
-            
-            header_line = " | ".join(f"{h:<{col_widths[i]}}" for i, h in enumerate(headers))
-            f.write(header_line + "\n")
-            f.write("-" * len(header_line) + "\n")
-            
-            # Escreve linhas de dados
-            for item in comparison_data:
-                row = [
-                    item['section_llm_name'],
-                    item['section_gt_name'],
-                    f"{item['distance']:.4f}",
-                    f"{item['similarity']:.4f}",
-                    f"{item['bertscore_f1']:.4f}",
-                    f"{item['rouge_l']:.4f}"
-                ]
-                formatted_row = " | ".join(f"{str(r):<{col_widths[i]}}" for i, r in enumerate(row))
-                f.write(formatted_row + "\n")
-            
-            # Escreve textos das seções
-            f.write("\n" + "="*200 + "\n")
-            f.write("TEXTOS COMPLETOS DAS SEÇÕES\n")
-            f.write("="*200 + "\n\n")
-            
-            for idx, item in enumerate(comparison_data, 1):
-                f.write(f"\n{'-'*200}\n")
-                f.write(f"SEÇÃO {idx}: {item['section_gt_name']} (GT) ↔ {item['section_llm_name']} (LLM)\n")
-                f.write(f"Similaridade: {item['similarity']:.4f} | BERTScore: {item['bertscore_f1']:.4f} | ROUGE-L: {item['rouge_l']:.4f}\n")
-                f.write(f"{'-'*200}\n")
-                
-                f.write(f"\n[TEXTO GT]:\n{item['text_gt']}\n")
-                f.write(f"\n[TEXTO LLM]:\n{item['text_llm']}\n")
-        
-        print(f"Comparação exportada para: {output_path}")

@@ -279,4 +279,39 @@ def eval_structure_quality_client(target_survey,psg_node:MarkdownNode,client):
     prompt = gen_title_structure_compare_prompt(target_titles,gen_titles)
     
     return chat_openai(prompt,client,0)
+
+
+def extract_section_text_from_markdown(markdown_node):
+    """
+    Extrai o texto de conteúdo de uma seção MarkdownNode e suas subsecções.
+    
+    Args:
+        markdown_node: MarkdownNode - nó da seção a ser extraída
+        
+    Returns:
+        str: Texto concatenado da seção (conteúdo + subsecções)
+    """
+    if markdown_node is None:
+        return ""
+    
+    # Começa com o conteúdo do nó atual
+    text_parts = []
+    
+    # Adiciona conteúdo do nó atual
+    if hasattr(markdown_node, 'content') and markdown_node.content:
+        # Filtra linhas vazias e une
+        content_lines = [line.strip() for line in markdown_node.content if line.strip()]
+        if content_lines:
+            text_parts.append("\n".join(content_lines))
+    
+    # Adiciona conteúdo recursivo de todas as subsecções
+    if hasattr(markdown_node, 'children') and markdown_node.children:
+        for child in markdown_node.children:
+            child_text = extract_section_text_from_markdown(child)
+            if child_text.strip():
+                text_parts.append(child_text)
+    
+    # Junta tudo com quebra de linha dupla para separar seções
+    final_text = "\n\n".join(text_parts)
+    return final_text
     
