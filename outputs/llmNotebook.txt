@@ -1,0 +1,174 @@
+args device: 0
+args survey_path: dataMatScience/surveysMatScience.json
+args corpus_path: dataMatScience/corpusMatScience.json
+Starting evaluation with passage_dir: ./baselines/ID/output, eval_list: ['ALL'], save_path: ./baselines/ID/output/log.json
+survey_ids: ['0']
+
+================================================================================
+COMPARAÇÃO DE TÍTULOS DE SEÇÕES - Survey ID: 0
+================================================================================
+Títulos do Golden Truth (GT): 24
+  1. Introduction
+  2. NMR theory
+  3. Relaxation measurements
+  4. Diffusion measurements
+  5. Two-dimensional NMR measurements
+  6. NMR applications in laboratory scale
+  7. Petrophysics
+  8. Porosity
+  9. Pore size distribution
+  10. Permeability
+  11. Fluid saturation
+  12. Capillary pressure
+  13. Wettability
+  14. Enhanced oil recovery applications
+  15. Evaluation of mud filtrate invasion characteristic
+  16. Emulsion droplet size determination using PFG NMR
+  17. Common misinterpretation in conventional rocks
+  18. Unconventional rock characterization using different NMR techniques
+  19. NMR applications in field scale
+  20. Design and improvements in LWD-NMR
+  21. Tar detection in carbonates
+  22. Geosteering and well placement optimization
+  23. Future research directions
+  24. Concluding remarks
+
+Títulos do Artigo LLM: 42
+  1. 1. Introduction
+  2. 1.1 NMR as a Paradigm Shift: From Lab to Borehole
+  3. 1.2 Core Advantages: Matrix Independence and Direct Fluid Sensing
+  4. 1.3 Scope of the Review: Multiscale Characterization and Future Trends
+  5. 2. Fundamentals of NMR Physics and Relaxation Mechanisms
+  6. 2.1 Nuclear Magnetism and the Larmor Condition
+  7. 2.2 Relaxation Mechanisms in Porous Media
+  8. 2.3 Mathematical Descriptions
+  9. 3. Advanced NMR Techniques: Pulse Sequences and Data Processing
+  10. 3.1 1D Pulse Sequences: CPMG and Inversion Recovery
+  11. 3.2 2D and 3D Correlation Maps
+  12. 3.3 Data Inversion and Pre-treatment
+  13. 4. Laboratory Petrophysics and Reservoir Characterization
+  14. 4.1 Porosity Partitioning
+  15. 4.2 Pore Size Distribution (PSD) and MICP Correlation
+  16. 4.3 Permeability Modeling
+  17. 4.4 Wettability Assessment
+  18. 4.5 NMR Cryoporometry
+  19. 5. Unconventional Reservoir Characterization (Shale and Tight Gas)
+  20. 5.1 Organic Matter Analysis
+  21. 5.2 Maturity and Geochemistry
+  22. 5.3 Stress-Dependent Permeability
+  23. 6. Field-Scale Applications: Wireline and LWD Logging
+  24. 6.1 Logging While Drilling (LWD-NMR)
+  25. 6.2 Tool Design Innovations
+  26. 6.3 Special Logging Challenges
+  27. 7. Production Optimization and Flow Assurance
+  28. 7.1 Multiphase Flow Metering
+  29. 7.2 Enhanced Oil Recovery (EOR) Monitoring
+  30. 7.3 Emulsion Characterization
+  31. 8. Digital Oilfield: Integration of AI and Machine Learning
+  32. 8.1 Data-Driven Inversion and SNR Enhancement
+  33. 8.2 Automated Fluid Identification
+  34. 8.3 Physics-Informed Neural Networks (PINNs)
+  35. 9. NMR in the Energy Transition
+  36. 9.1 Carbon Capture and Geo-Sequestration (CCS)
+  37. 9.2 Underground Hydrogen Storage (UHS)
+  38. 9.3 Geothermal and High-Temperature Reservoir Characterization
+  39. 10. Strategic Synthesis and Future Outlook
+  40. 10.1 Persistent Challenges
+  41. 10.2 Future Directions: Multi-frequency NMR and Digital Integration
+  42. 10.3 Concluding Remarks
+
+------------------------------------------------------------------------------------------------------------------------
+RESULTADOS DA COMPARAÇÃO (Ordenados por menor distância):
+Exibindo apenas títulos com similaridade > 0.85
+------------------------------------------------------------------------------------------------------------------------
+Distância    Similaridade    Título GT                                          Título LLM                                        
+------------------------------------------------------------------------------------------------------------------------
+0.0610       0.9390          Concluding remarks                                 10.3 Concluding Remarks                           
+0.0918       0.9082          Introduction                                       1. Introduction                                   
+0.1108       0.8892          Wettability                                        4.4 Wettability Assessment                        
+0.1191       0.8809          Pore size distribution                             4.2 Pore Size Distribution (PSD) and MICP Correlation
+0.1426       0.8574          NMR applications in laboratory scale               3. Advanced NMR Techniques: Pulse Sequences and Data Processing
+================================================================================
+
+len(comparisons_above_threshold): 5
+len(llm_titles): 42
+
+========================================================================================================================================================================================================
+ANÁLISE COMPARATIVA: BERTSCORE E SIMILARIDADE DE SEÇÕES
+========================================================================================================================================================================================================
+Seção LLM                                     Seção GT                                      Dist     Sim      F1       Texto LLM                                               Texto GT                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+10.3 Concluding Remarks                       Concluding remarks                            0.061    0.939    0.8171   Nuclear magnetic resonance has fundamentally changed formation evaluation by providing a direct, **l... This paper reviews wide range of NMR applications in the oil and gas industry including laboratory a...
+1. Introduction                               Introduction                                  0.0918   0.9082   0.8302   Understanding the complex interactions between rocks and fluids in porous media is critical for both... Understanding the rock- fluid interaction phenomena in porous media is an imperative issue in oil an...
+4.4 Wettability Assessment                    Wettability                                   0.1108   0.8892   0.8128   Wettability describes the preference of a rock surface to be in contact with a specific fluid. In la... The sensitivity of NMR measurements to rock- fluid interaction is well known; wetting fluids contact...
+4.2 Pore Size Distribution (PSD) and MIC...   Pore size distribution                        0.1191   0.8809   0.8388   The $T_2$ distribution is a direct proxy for the pore size distribution in water-saturated rocks bec... NMR relaxation time is proportional to the pore size, that is, small pores have smaller values of T2...
+3. Advanced NMR Techniques: Pulse Sequen...   NMR applications in laboratory scale          0.1426   0.8574   0.7922   While basic NMR physics provides the foundation, advanced pulse sequences and sophisticated data pro... NMR relaxation in porous media is primarily defined in terms of biphasic fast exchange between free ...
+1.1 NMR as a Paradigm Shift: From Lab to...   NMR applications in field scale               0.1621   0.8379   0.8188   The evolution of NMR in the petroleum industry represents a significant technical leap from its root... NMR applications in field scaleNMR technology has been widely used for the oil industry for borehole...
+3. Advanced NMR Techniques: Pulse Sequen...   Design and improvements in LWD-NMR            0.1724   0.8276   0.7881   While basic NMR physics provides the foundation, advanced pulse sequences and sophisticated data pro... The first tool of LWD- NMR prototype was designed and field tested in 1999 by (Prammer et al. 2000a,...
+1.1 NMR as a Paradigm Shift: From Lab to...   Unconventional rock characterization usi...   0.1738   0.8262   0.7908   The evolution of NMR in the petroleum industry represents a significant technical leap from its root... Shale rocks are fine- grained sedimentary rocks with high total organic content at least over \(2\%\...
+2. Fundamentals of NMR Physics and Relax...   Two-dimensional NMR measurements              0.1802   0.8198   0.7999   Nuclear magnetic resonance (NMR) is a quantum mechanical phenomenon based on the interaction between... It is often the case to correlate the relaxation time constants to obtain system's \(T_{I}\) and \(T...
+7.3 Emulsion Characterization                 Emulsion droplet size determination usin...   0.1807   0.8193   0.822    Flow assurance is often challenged by the formation of stable emulsions (dispersions of oil in water... Emulsions are dispersion of oil in water or water in oil, it can be more complicated structure (Wong...
+2. Fundamentals of NMR Physics and Relax...   NMR theory                                    0.1836   0.8164   0.796    Nuclear magnetic resonance (NMR) is a quantum mechanical phenomenon based on the interaction between... The underlying principle of NMR is that some of the nuclei are inherently magnetic. Chemical and iso...
+4.3 Permeability Modeling                     Permeability                                  0.1855   0.8145   0.8296   NMR offers a unique way to estimate permeability without flow tests by using the relationship betwee... Permeability is the ease at which fluid flows through a porous medium, and it is one of the fundamen...
+4. Laboratory Petrophysics and Reservoir...   Petrophysics                                  0.1934   0.8066   0.8015   Laboratory NMR measurements on core plugs serve as the "gold standard" for calibrating borehole logs... The relaxation time is a function of the fluid in the pores and the characteristics of the porous me...
+4.1 Porosity Partitioning                     Porosity                                      0.1982   0.8018   0.8028   One of the most powerful applications of NMR is the ability to partition total porosity into differe... Porosity is the primary storage property of the rock (Watson and Chang 1997). Carbonate reservoirs o...
+2. Fundamentals of NMR Physics and Relax...   Relaxation measurements                       0.1992   0.8008   0.8184   Nuclear magnetic resonance (NMR) is a quantum mechanical phenomenon based on the interaction between... There are two main forms of NMR relaxation: longitudinal relaxation \((T_{I})\) and transverse relax...
+7.2 Enhanced Oil Recovery (EOR) Monitori...   Enhanced oil recovery applications            0.2085   0.7915   0.8285   NMR provides a unique "pore-scale window" into displacement mechanisms, making it superior to macros... Nuclear magnetic resonance (NMR) presents an effective tool to characterize different operations suc...
+10. Strategic Synthesis and Future Outlo...   Future research directions                    0.25     0.75     0.8254   The final section of the review synthesizes the current state of NMR technology and looks forward to... Extensive efforts have been done across the academia and industry in the application of NMR with the...
+4. Laboratory Petrophysics and Reservoir...   Common misinterpretation in conventional...   0.2905   0.7095   0.8006   Laboratory NMR measurements on core plugs serve as the "gold standard" for calibrating borehole logs... Pore (diffusional) coupling, and the internal magnetic field are two common issues that could mislea...
+4.1 Porosity Partitioning                     Geosteering and well placement optimizat...   0.2915   0.7085   0.7802   One of the most powerful applications of NMR is the ability to partition total porosity into differe... Geosteering horizontal section in thin sand was achieved by (Oguntona et al. 2004), using LWD- NMR a...
+8.2 Automated Fluid Identification            Fluid saturation                              0.292    0.708    0.8033   Machine learning models are increasingly used to classify hydrocarbon phases by processing multi-dim... The NMR \(T_{2}\) spectrum usually shows a highest amplitude when fully saturated (Isah et al. 2021a...
+4.4 Wettability Assessment                    Evaluation of mud filtrate invasion char...   0.2988   0.7012   0.805    Wettability describes the preference of a rock surface to be in contact with a specific fluid. In la... Different studies have used NMR technology to assess formation damage induced by drilling fluid inva...
+1.3 Scope of the Review: Multiscale Char...   Diffusion measurements                        0.3022   0.6978   0.7774   This review examines the comprehensive application of NMR across multiple scales, ranging from nanom... The main difference between relaxation and diffusion measurements is the application of magnetic fie...
+5.3 Stress-Dependent Permeability             Capillary pressure                            0.3149   0.6851   0.8003   Shale reservoirs are highly sensitive to confining pressure, which significantly impacts their stora... When a rock pore of capillary size is saturated with two or more immiscible fluids, capillary pressu...
+7.2 Enhanced Oil Recovery (EOR) Monitori...   Tar detection in carbonates                   0.3296   0.6704   0.8087   NMR provides a unique "pore-scale window" into displacement mechanisms, making it superior to macros... During the drilling, Tar must be detected as early as possible, which requires LWD technologies. Tar...
+========================================================================================================================================================================================================
+Total de seções comparadas: 24
+BERTScore F1 Médio: 0.8079
+Similaridade Média: 0.7945
+
+[9.460687531061163, 2.6929410053086333, 11.524999204616515, 6.208515234123498, 0.8258682672459616, 28.195163594911282, 35.78039148969277, 20.744478818058536, 0.003984598285630749, 44.23915475995302, 10.606177938143908, 10.8279293876615, 0.01748454144966312, 13.33421870243172, 16.520955233682496, 17.131716471589364, 2.146191534220294, 8.111293739346621, 0.09243226600450016, 29.19275742988521, 7.741614968448214, 1.3552603658081905, 0.4120609489445951, 7.413676687580824, 10.18072997771163, 11.61300632958736, 0.009348898182400894, 8.764744181077926, 6.376455839220838, 24.36882658925515, 0.08215317514368278, 6.490237184463008, 3.410240385914337, 6.600801431478542, 0.04145533873895336, 6.840083437946994, 15.897965033554437, 11.214974691287807, 0.09384087978734104, 4.734365245378159, 4.201494118786101, 1.161214136532108, 5.550920308522975]
+target cites: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314]
+*****
+generated cites: {1: 'Gas Science and Engineering', 2: 'Journal of Petroleum Exploration and Production Technology', 3: 'Practical NMR for Oil and Gas Exploration', 4: 'NMR Logging Principles and Applications', 5: 'Processes', 6: 'Processes', 7: 'Molecules', 8: 'Advances in Engineering Research', 9: 'Journal of Canadian Petroleum Technology', 10: 'Atmosphere', 11: 'Preprints.org', 12: 'Fuel', 13: 'Physics Reports', 14: 'Journal of Petroleum Science and Engineering', 15: 'Geophysics', 16: 'Petrophysics', 17: 'SPE Annual Technical Conference and Exhibition', 18: 'Petroleum Exploration and Development', 19: 'Magnetic Resonance Imaging', 20: 'Journal of Magnetic Resonance', 21: 'Petroleum Science', 22: 'Cejing Jishu/Well Logging Technology', 23: 'Application of Nuclear Magnetic Resonance to Investigate Enhanced Oil Recovery and Geostorage of CO₂ and H₂', 24: 'Progress in Nuclear Magnetic Resonance Spectroscopy', 25: 'Shiyou Shiyan Dizhi/Petroleum Geology and Experiment'}
+*****
+gen cites: ['Gas Science and Engineering', 'Journal of Petroleum Exploration and Production Technology', 'Practical NMR for Oil and Gas Exploration', 'NMR Logging Principles and Applications', 'Processes', 'Processes', 'Molecules', 'Advances in Engineering Research', 'Journal of Canadian Petroleum Technology', 'Atmosphere', 'Preprints.org', 'Fuel', 'Physics Reports', 'Journal of Petroleum Science and Engineering', 'Geophysics', 'Petrophysics', 'SPE Annual Technical Conference and Exhibition', 'Petroleum Exploration and Development', 'Magnetic Resonance Imaging', 'Journal of Magnetic Resonance', 'Petroleum Science', 'Cejing Jishu/Well Logging Technology', 'Application of Nuclear Magnetic Resonance to Investigate Enhanced Oil Recovery and Geostorage of CO₂ and H₂', 'Progress in Nuclear Magnetic Resonance Spectroscopy', 'Shiyou Shiyan Dizhi/Petroleum Geology and Experiment']
+hit: 0, all: 314, coverage: 0.0
+Paper Relevance: 0.0
+Check content: 
+Understanding the complex interactions between rocks and fluids in porous media is critical for both academic research and industrial operations in the oil and gas sector. Accurate determination of reservoir properties, such as pore connectivity and fluid saturation, is essential for assessing the value of hydrocarbon assets and designing effective completion strategies. While traditional logging tools like resistivity, density, and neutron logs provide useful data, they often respond to the rock matrix or framework rather than the fluids alone, making interpretation difficult in complex lithologies. **Nuclear Magnetic Resonance (NMR) has emerged as a superior alternative because it provides direct, non-destructive measurements of the hydrogen nuclei (protons) contained within reservoir fluids.** By probing these protons, NMR offers a "window" into the pore space, enabling precise characterization of porosity, permeability, and fluid types that conventional methods cannot match.
+
+
+
+The evolution of NMR in the petroleum industry represents a significant technical leap from its roots in laboratory molecular structure determination and medical diagnostics. Originally discovered in 1946, the technology was commercialized for oilfield use in the early 1990s. A fundamental shift occurred with the development of **"inside-out" NMR logging tools**; unlike laboratory spectrometers or medical MRI machines where the subject is placed inside the magnet, borehole NMR tools are placed inside the wellbore to analyze the surrounding formation. This transition required overcoming massive engineering challenges, including inhomogeneous magnetic fields and extreme downhole conditions of temperature and pressure. Today, the technology has matured from a niche laboratory experiment into a primary formation evaluation tool used in both wireline and logging-while-drilling (LWD) environments.
+
+
+
+The primary advantage of NMR over conventional logging tools is its **lithology-independent measurement of porosity [1.2, 496, 1161].** Traditional porosity tools, such as neutron and bulk-density logs, are influenced by the rock framework and mineralogy, requiring complex calibrations for different lithologies. In contrast, because NMR signals only originate from the fluids (water, oil, and gas) and the solids produce signals that decay too fast to be recorded, the resulting porosity measurement is independent of the rock matrix. Furthermore, NMR is uniquely capable of providing three distinct types of information simultaneously:
+
+- **Fluid Quantity:** Direct measurement of hydrogen density to determine apparent porosity.
+- **Fluid Properties:** Using relaxation times ($T_1$ and $T_2$) and diffusivity ($D$) to distinguish between bound water, movable water, gas, and oils of varying viscosity.
+- **Pore Geometry:** Relating relaxation spectra to pore size distributions, which is critical for estimating formation permeability.
+
+
+
+This review examines the comprehensive application of NMR across multiple scales, ranging from nanometer-scale laboratory core analysis to decameter-scale field logging. It highlights how **low-field NMR (typically operating at ~2 MHz)** serves as a bridge, allowing for the cross-validation of laboratory findings with in-situ field data. The review covers advanced petrophysical characterization, including wettability assessment and damage evaluation from drilling mud invasion. Special emphasis is placed on the characterization of **unconventional reservoirs**, such as shale and tight gas, where NMR is essential for identifying organic vs. inorganic porosity. Finally, the scope extends to emerging developments in the "Digital Oilfield," including the integration of **Artificial Intelligence and Machine Learning** for automated data inversion, as well as the strategic role of NMR in the **energy transition**, specifically in carbon capture and hydrogen storage.
+
+
+
+Nuclear magnetic resonance (NMR) is a quantum mechanical phenomenon based on the interaction between the magnetic moments of specific atomic nuclei and an external magnetic field. In the oil and gas industry, the hydrogen nucleus ($^1H$), or proton, is the primary target of investigation due to its high natural abundance and large gyromagnetic ratio.
+
+
+
+Atomic nuclei with a non-zero spin quantum number ($I > 0$) possess an intrinsic magnetic moment. In the absence of an external field, these moments are randomly oriented. When placed in a static magnetic field ($B_0$), the nuclei align and precess around the field direction, a state described as polarization. The frequency of this precession, known as the **Larmor frequency ($\omega$)**, is directly proportional to the strength of the static field:
+
+$$ \omega = \gamma B_0 $$
+
+where $\gamma$ is the gyromagnetic ratio, a constant unique to each nucleus. Table 1 summarizes typical values for relevant nuclei
+Result of 0
+{'Information_Collection': {'Comprehensiveness': {'Coverage': 0.0}, 'Relevance': {'Paper_Level': 0.0, 'Section_Level': 0.0, 'Sentence_Level': 0.0}}, 'Survey_Structure': {'Structure_Quality(LLM_as_judge)': 2, 'SH-Recall': 0.7958780924479166, 'Subtitle_similarity': None, 'subtitle_similarity': 0.11904761904761904}, 'Survey_Content': {'Relevance': {'ROUGE-1': 0.232668292020992, 'ROUGE-2': 0.058836137295472934, 'ROUGE-L': 0.12842627963128248, 'BLEU': 9.586344462814509}, 'Content LLM as a judge': 80}, 'survey_id': '0'}
+Total Result:
+{'Information_Collection': {'Comprehensiveness': {'Coverage': 0.0}, 'Relevance': {'Paper_Level': 0.0, 'Section_Level': 0.0, 'Sentence_Level': 0.0}}, 'Survey_Structure': {'Structure_Quality(LLM_as_judge)': 2.0, 'SH-Recall': 0.7958780924479166, 'subtitle_similarity': 0.11904761904761904}, 'Survey_Content': {'Relevance': {'ROUGE-1': 0.232668292020992, 'ROUGE-2': 0.058836137295472934, 'ROUGE-L': 0.12842627963128248, 'BLEU': 9.586344462814509}, 'Content LLM as a judge': 80.0}, 'survey_id': 'Average'}
+
+Evaluation Results:
+{'Information_Collection': {'Comprehensiveness': {'Coverage': 0.0}, 'Relevance': {'Paper_Level': 0.0, 'Section_Level': 0.0, 'Sentence_Level': 0.0}}, 'Survey_Structure': {'Structure_Quality(LLM_as_judge)': 2.0, 'SH-Recall': 0.7958780924479166, 'subtitle_similarity': 0.11904761904761904}, 'Survey_Content': {'Relevance': {'ROUGE-1': 0.232668292020992, 'ROUGE-2': 0.058836137295472934, 'ROUGE-L': 0.12842627963128248, 'BLEU': 9.586344462814509}, 'Content LLM as a judge': 80.0}, 'survey_id': 'Average'}
