@@ -10,19 +10,19 @@
         }
     },
     "Survey_Structure": {
-        "Structure_Quality(LLM_as_judge)": 2,
-        "SH-Recall": 0.7958780924479166,
+        "Structure_Quality(LLM_as_judge)": 1,
+        "SH-Recall": 0.7949422200520834,
         "Subtitle_similarity": null,
         "subtitle_similarity": 0.11904761904761904
     },
     "Survey_Content": {
         "Relevance": {
-            "ROUGE-1": 0.232668292020992,
-            "ROUGE-2": 0.058836137295472934,
-            "ROUGE-L": 0.12842627963128248,
-            "BLEU": 9.586344462814509
+            "ROUGE-1": 0.23567457119843632,
+            "ROUGE-2": 0.06377264825312597,
+            "ROUGE-L": 0.13183057242517354,
+            "BLEU": 15.36079780843793
         },
-        "Content LLM as a judge": 80
+        "Content LLM as a judge": 85
     },
     "survey_id": "0"
 }
@@ -39,18 +39,18 @@
         }
     },
     "Survey_Structure": {
-        "Structure_Quality(LLM_as_judge)": 2.0,
-        "SH-Recall": 0.7958780924479166,
+        "Structure_Quality(LLM_as_judge)": 1.0,
+        "SH-Recall": 0.7949422200520834,
         "subtitle_similarity": 0.11904761904761904
     },
     "Survey_Content": {
         "Relevance": {
-            "ROUGE-1": 0.232668292020992,
-            "ROUGE-2": 0.058836137295472934,
-            "ROUGE-L": 0.12842627963128248,
-            "BLEU": 9.586344462814509
+            "ROUGE-1": 0.23567457119843632,
+            "ROUGE-2": 0.06377264825312597,
+            "ROUGE-L": 0.13183057242517354,
+            "BLEU": 15.36079780843793
         },
-        "Content LLM as a judge": 80.0
+        "Content LLM as a judge": 85.0
     },
     "survey_id": "Average"
 }
