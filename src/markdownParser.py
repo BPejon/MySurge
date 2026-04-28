@@ -97,14 +97,30 @@ def parse_refs(file_path):
 
 
 def extract_title_from_ref(ref_text):
-    """Extrai o título de uma string de referência completa usando múltiplas estratégias."""
+    """Extrai o título de uma string de referência completa usando múltiplas estratégias.
+    
+    Padrão esperado: [número] Nomes dos autores. Título. Revista, volume:página.
+    Estratégia: Detecta fim da seção de autores, depois extrai o título até a revista.
+    """
     # Remove o ID inicial [n] e espaços
     content = re.sub(r'^\[\d+\]\s*', '', ref_text).strip()
 
     # Normaliza aspas curvas para retas (facilita a detecção)
-    content = content.replace('“', '"').replace('”', '"').replace('‘', "'").replace('’', "'")
+    content = content.replace('"', '"').replace('"', '"').replace(''', "'").replace(''', "'")
 
-    # --- Estratégia 1: título entre aspas (duplas ou simples) ---
+    # --- Estratégia 1: Detectar padrão "and [Authors]. Title. Journal" ---
+    # Procura por "and [Nome/Inicial].  " que marca o fim da lista de autores
+    # Depois captura o título até a próxima palavra-chave de revista
+    pattern_end_authors = r'and\s+([A-Z]\.?)\s+(\w+)?\.\s+([A-Z][^.]*)\.\s+(?:J(?:ournal|Pet|Can)|Molecules|Petrophys|Fuel|Energy|Tech|SPWLA|SPE|Conference|Proceedings)'
+    match = re.search(pattern_end_authors, content, re.IGNORECASE)
+    if match:
+        candidate = match.group(3).strip()
+        if len(candidate) > 3 and not re.match(r'^\d+$', candidate):
+            # Verificar que não capturou apenas metadados de publicação
+            if not re.search(r'\bvol\.?|no\.?|pp\.?|pages?|vol\(\d+\)|:\d+', candidate):
+                return clean_title(candidate)
+
+    # --- Estratégia 2: título entre aspas (duplas ou simples) ---
     quote_match = re.search(r'"([^"]+)"', content)  # aspas duplas
     if not quote_match:
         quote_match = re.search(r"'([^']+)'", content)  # aspas simples
@@ -146,11 +162,12 @@ def extract_title_from_ref(ref_text):
                 return clean_title(segments[0])
 
         # Se não encontrou marcador de publicação, usa o segundo segmento se não for autor/publicação
-        candidate = segments[1]
-        if not is_author_segment(candidate) and not is_publication_segment(candidate):
-            return clean_title(candidate)
+        if len(segments) > 1:
+            candidate = segments[1]
+            if not is_author_segment(candidate) and not is_publication_segment(candidate):
+                return clean_title(candidate)
 
-    # --- Estratégia 4: fallback - escolher o segmento mais longo que não seja autor/publicação ---
+    # --- Estratégia 5: fallback - escolher o segmento mais longo que não seja autor/publicação ---
     candidate_segments = []
     for seg in segments:
         if len(seg) <= 3:

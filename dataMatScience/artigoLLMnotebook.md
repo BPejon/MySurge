@@ -342,52 +342,52 @@ Nuclear magnetic resonance has fundamentally changed formation evaluation by pro
 
 ## References
 
-[1] Yuan Y, Rezaee R, Zhou M-F, Iglauer S (2023). A comprehensive review on shale studies with emphasis on nuclear magnetic resonance (NMR) technique. *Gas Science and Engineering* 120:205163. <https://doi.org/10.1016/j.jgsce.2023.205163>
+[1] Yuan Y, Rezaee R, Zhou M-F, Iglauer S (2023). A comprehensive review on shale studies with emphasis on nuclear magnetic resonance (NMR) technique. Gas Science and Engineering 120:205163. <https://doi.org/10.1016/j.jgsce.2023.205163>
 
-[2] Elsayed M, Isah A, Hiba M, Hassan A, Al-Garadi K, Mahmoud M, El-Husseiny A, Radwan AE (2022). A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements. *Journal of Petroleum Exploration and Production Technology* 12:2747–2784. <https://doi.org/10.1007/s13202-022-01476-3>
+[2] Elsayed M, Isah A, Hiba M, Hassan A, Al-Garadi K, Mahmoud M, El-Husseiny A, Radwan AE (2022). A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements. Journal of Petroleum Exploration and Production Technology 12:2747–2784. <https://doi.org/10.1007/s13202-022-01476-3>
 
-[3] Xiao L (2023). *Practical NMR for Oil and Gas Exploration*. Royal Society of Chemistry. <https://doi.org/10.1039/9781782622253>
+[3] Xiao L (2023). Practical NMR for Oil and Gas Exploration. Royal Society of Chemistry. <https://doi.org/10.1039/9781782622253>
 
-[4] Coates GR, Xiao L, Prammer MG (1999). *NMR Logging Principles and Applications*. Halliburton Energy Services, Houston, TX.
+[4] Coates GR, Xiao L, Prammer MG (1999). NMR Logging Principles and Applications. Halliburton Energy Services, Houston, TX.
 
-[5] Tian J, Yue J, Liu X, Sheng J, Wang H (2025). Nuclear Magnetic Resonance (NMR) Quantifies Stress-Dependent Permeability in Shale: Heterogeneous Compressibility of Seepage and Adsorption Pores. *Processes* 13(6):1858. <https://doi.org/10.3390/pr13061858>
+[5] Tian J, Yue J, Liu X, Sheng J, Wang H (2025). Nuclear Magnetic Resonance (NMR) Quantifies Stress-Dependent Permeability in Shale: Heterogeneous Compressibility of Seepage and Adsorption Pores. Processes 13(6):1858. <https://doi.org/10.3390/pr13061858>
 
-[6] Li C, Shen B, Lu L, Pan A, Li Z, Zhu Q, Sun Z (2023). Quantitative Characterization of Shale Pores and Microfractures Based on NMR T₂ Analysis: A Case Study of the Lower Silurian Longmaxi Formation in Southeast Sichuan Basin, China. *Processes* 11(10):2823. <https://doi.org/10.3390/pr11102823>
+[6] Li C, Shen B, Lu L, Pan A, Li Z, Zhu Q, Sun Z (2023). Quantitative Characterization of Shale Pores and Microfractures Based on NMR T₂ Analysis: A Case Study of the Lower Silurian Longmaxi Formation in Southeast Sichuan Basin, China. Processes 11(10):2823. <https://doi.org/10.3390/pr11102823>
 
-[7] Tromp RR, Cerioni LMC (2021). Multiphase Flow Regime Characterization and Liquid Flow Measurement Using Low-Field Magnetic Resonance Imaging. *Molecules* 26(11):3349. <https://doi.org/10.3390/molecules26113349>
+[7] Tromp RR, Cerioni LMC (2021). Multiphase Flow Regime Characterization and Liquid Flow Measurement Using Low-Field Magnetic Resonance Imaging. Molecules 26(11):3349. <https://doi.org/10.3390/molecules26113349>
 
-[8] Chen S, Li L (2018). Wireline, LWD, and Surface NMR Instruments and Applications for Petroleum Reservoir Formation Evaluation. In: Petrova VM (ed) *Advances in Engineering Research*, chapter 1. Nova Science Publishers, Inc.
+[8] Chen S, Li L (2018). Wireline, LWD, and Surface NMR Instruments and Applications for Petroleum Reservoir Formation Evaluation. In: Petrova VM (ed) Advances in Engineering Research, chapter 1. Nova Science Publishers, Inc.
 
-[9] Bryan J, Kantzas A, Mirotchnik K (2003). Viscosity Determination of Heavy Oil and Bitumen Using NMR Relaxometry. *Journal of Canadian Petroleum Technology* 42(7). <https://doi.org/10.2118/03-07-02>
+[9] Bryan J, Kantzas A, Mirotchnik K (2003). Viscosity Determination of Heavy Oil and Bitumen Using NMR Relaxometry. Journal of Canadian Petroleum Technology 42(7). <https://doi.org/10.2118/03-07-02>
 
-[10] Zhao T, Ji Y (2022). Gas Diffusion and Flow in Shale Nanopores with Bound Water Films. *Atmosphere* 13(6):940. <https://doi.org/10.3390/atmos13060940>
+[10] Zhao T, Ji Y (2022). Gas Diffusion and Flow in Shale Nanopores with Bound Water Films. Atmosphere 13(6):940. <https://doi.org/10.3390/atmos13060940>
 
-[11] Bhorkade S (2025). Emerging Applications of AI and Machine Learning in Nuclear Science and Engineering. *Preprints.org*. <https://doi.org/10.20944/preprints202509.2504.v1>
+[11] Bhorkade S (2025). Emerging Applications of AI and Machine Learning in Nuclear Science and Engineering. Preprints.org. <https://doi.org/10.20944/preprints202509.2504.v1>
 
-[12] Silletta EV, Vila GS, Domené EA, Velasco MI, Bedini PC, Garro-Linck Y, Masiero D, Monti GA, Acosta RH (2022). Organic matter detection in shale reservoirs using a novel pulse sequence for T₁–T₂ relaxation maps at 2 MHz. *Fuel* 312:122863. <https://doi.org/10.1016/j.fuel.2021.122863>
+[12] Silletta EV, Vila GS, Domené EA, Velasco MI, Bedini PC, Garro-Linck Y, Masiero D, Monti GA, Acosta RH (2022). Organic matter detection in shale reservoirs using a novel pulse sequence for T₁–T₂ relaxation maps at 2 MHz. Fuel 312:122863. <https://doi.org/10.1016/j.fuel.2021.122863>
 
-[13] Webber JBW, Strange JH, et al. (2008). Review of NMR Cryoporometry. *Physics Reports*. <https://doi.org/10.1016/j.physrep.2008.02.001>
+[13] Webber JBW, Strange JH, et al. (2008). Review of NMR Cryoporometry. Physics Reports. <https://doi.org/10.1016/j.physrep.2008.02.001>
 
-[14] Al-Garadi K, El-Husseiny A, Elsayed M, Connolly P, Mahmoud M, Johns M, Adebayo A (2021). A rock core wettability index using NMR T₂ measurements. *Journal of Petroleum Science and Engineering* 208:109386. <https://doi.org/10.1016/j.petrol.2021.109386>
+[14] Al-Garadi K, El-Husseiny A, Elsayed M, Connolly P, Mahmoud M, Johns M, Adebayo A (2021). A rock core wettability index using NMR T₂ measurements. Journal of Petroleum Science and Engineering 208:109386. <https://doi.org/10.1016/j.petrol.2021.109386>
 
-[15] Albusairi M, Torres-Verdín C (2021). Rapid modeling of borehole measurements of nuclear magnetic resonance via spatial sensitivity functions. *Geophysics*. <https://doi.org/10.1190/geo2020-0388.1>
+[15] Albusairi M, Torres-Verdín C (2021). Rapid modeling of borehole measurements of nuclear magnetic resonance via spatial sensitivity functions. Geophysics. <https://doi.org/10.1190/geo2020-0388.1>
 
-[16] Anand V, Ali MR, Abubakar A, Iglesias JG (2017). Unlocking the potential of unconventional reservoirs through new generation NMR T₁/T₂ logging measurements integrated with advanced wireline logs. *Petrophysics* 58(2):126–140.
+[16] Anand V, Ali MR, Abubakar A, Iglesias JG (2017). Unlocking the potential of unconventional reservoirs through new generation NMR T₁/T₂ logging measurements integrated with advanced wireline logs. Petrophysics 58(2):126–140.
 
-[17] Balliet R, Chen S, Callirgos M, Beard D, Li L (2018). New Magnetic Resonance Wireline Sensor for High-Resolution, Faster Logging, and Better Fluid Typing. *SPE Annual Technical Conference and Exhibition*. <https://doi.org/10.2118/191506-MS>
+[17] Balliet R, Chen S, Callirgos M, Beard D, Li L (2018). New Magnetic Resonance Wireline Sensor for High-Resolution, Faster Logging, and Better Fluid Typing. SPE Annual Technical Conference and Exhibition. <https://doi.org/10.2118/191506-MS>
 
-[18] Deng F, Xiong C, Chen S, Xiao L (2020). A method and device for online magnetic resonance multiphase flow detection. *Petroleum Exploration and Development* 47(4):861–870. <https://doi.org/10.1016/S1876-3804(20)60101-7>
+[18] Deng F, Xiong C, Chen S, Xiao L (2020). A method and device for online magnetic resonance multiphase flow detection. Petroleum Exploration and Development 47(4):861–870. <https://doi.org/10.1016/S1876-3804(20)60101-7>
 
-[19] Hirasaki GJ, Lo S-W, Zhang Y (2003). NMR Properties of Petroleum Reservoir Fluids. *Magnetic Resonance Imaging* 21(3-4):269–277. <https://doi.org/10.1016/S0730-725X(03)00135-8>
+[19] Hirasaki GJ, Lo S-W, Zhang Y (2003). NMR Properties of Petroleum Reservoir Fluids. Magnetic Resonance Imaging 21(3-4):269–277. <https://doi.org/10.1016/S0730-725X(03)00135-8>
 
-[20] Liao G, Luo S, Xiao L (2021). Borehole Nuclear Magnetic Resonance Study at the China University of Petroleum. *Journal of Magnetic Resonance* 324:106915. <https://doi.org/10.1016/j.jmr.2021.106915>
+[20] Liao G, Luo S, Xiao L (2021). Borehole Nuclear Magnetic Resonance Study at the China University of Petroleum. Journal of Magnetic Resonance 324:106915. <https://doi.org/10.1016/j.jmr.2021.106915>
 
-[21] Luo S, Xiao L, Can L, Jin Y (2022). A Machine Learning Framework for Low-field NMR Data Processing. *Petroleum Science* 19(1):160–171. <https://doi.org/10.1016/j.petsci.2021.10.024>
+[21] Luo S, Xiao L, Can L, Jin Y (2022). A Machine Learning Framework for Low-field NMR Data Processing. Petroleum Science 19(1):160–171. <https://doi.org/10.1016/j.petsci.2021.10.024>
 
-[22] Luo G, Luo S, Xiao L, Fu S (2023). Progress and Prospect for Machine Learning Applied in NMR Logging. *Cejing Jishu/Well Logging Technology* 47(6). <https://doi.org/10.16489/j.issn.1004-1338.2023.06.001>
+[22] Luo G, Luo S, Xiao L, Fu S (2023). Progress and Prospect for Machine Learning Applied in NMR Logging. Cejing Jishu/Well Logging Technology 47(6). <https://doi.org/10.16489/j.issn.1004-1338.2023.06.001>
 
 [23] Mamoudou S (2025). Application of Nuclear Magnetic Resonance to Investigate Enhanced Oil Recovery and Geostorage of CO₂ and H₂. Dissertation, University of Oklahoma.
 
-[24] Song Y-Q, Kausik R (2019). NMR application in unconventional shale reservoirs – A new porous media research frontier. *Progress in Nuclear Magnetic Resonance Spectroscopy* 112-113:17–33. <https://doi.org/10.1016/j.pnmrs.2019.03.002>
+[24] Song Y-Q, Kausik R (2019). NMR application in unconventional shale reservoirs – A new porous media research frontier. Progress in Nuclear Magnetic Resonance Spectroscopy 112-113:17–33. <https://doi.org/10.1016/j.pnmrs.2019.03.002>
 
-[25] Sun Z, Li Z, Shen B, Zhu Q (2022). NMR technology in reservoir evaluation for shale oil and gas. *Shiyou Shiyan Dizhi/Petroleum Geology and Experiment* 44(5):901–911. <https://doi.org/10.11781/sysydz202205930>
+[25] Sun Z, Li Z, Shen B, Zhu Q (2022). NMR technology in reservoir evaluation for shale oil and gas. Shiyou Shiyan Dizhi/Petroleum Geology and Experiment 44(5):901–911. <https://doi.org/10.11781/sysydz202205930>
