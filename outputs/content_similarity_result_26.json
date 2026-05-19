@@ -1,0 +1,919 @@
+{
+  "survey_id": 26,
+  "passages_file": "baselines/Autosurvey/output/26/A Survey on Visual Transformer_.md",
+  "threshold": 0.8,
+  "statistics": {
+    "gt_sections_count": 110,
+    "llm_sections_count": 46,
+    "similar_pairs_count": 908
+  },
+  "statistics_details": {
+    "max_similarity": 0.91015625,
+    "mean_similarity": 0.828125,
+    "median_similarity": 0.822265625,
+    "min_similarity": 0.80029296875,
+    "std_similarity": 0.0237884521484375
+  },
+  "top_pairs": [
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "5.1 Image Classification",
+      "similarity": 0.91015625,
+      "gt_level": 4,
+      "llm_level": 3,
+      "gt_path": "root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "5.1 Image Classification",
+      "similarity": 0.91015625,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "Vision Transformer > Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "5.1 Image Classification",
+      "similarity": 0.91015625,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "5.1 Image Classification",
+      "similarity": 0.91015625,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "2.9 Convolutions in Vision Transformers",
+      "similarity": 0.8974609375,
+      "gt_level": 4,
+      "llm_level": 3,
+      "gt_path": "root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.9 Convolutions in Vision Transformers"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "2.9 Convolutions in Vision Transformers",
+      "similarity": 0.8974609375,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "Vision Transformer > Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.9 Convolutions in Vision Transformers"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "2.9 Convolutions in Vision Transformers",
+      "similarity": 0.8974609375,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.9 Convolutions in Vision Transformers"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "2.9 Convolutions in Vision Transformers",
+      "similarity": 0.8974609375,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.9 Convolutions in Vision Transformers"
+    },
+    {
+      "gt_title": "Challenges",
+      "llm_title": "5.1 Image Classification",
+      "similarity": 0.89697265625,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "root > Conclusions and Discussions > Challenges",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification"
+    },
+    {
+      "gt_title": "Challenges",
+      "llm_title": "5.1 Image Classification",
+      "similarity": 0.89697265625,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Conclusions and Discussions > Challenges",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification"
+    },
+    {
+      "gt_title": "Challenges",
+      "llm_title": "5.1 Image Classification",
+      "similarity": 0.89697265625,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Challenges",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification"
+    },
+    {
+      "gt_title": "Generic Object Detection",
+      "llm_title": "5.2 Object Detection",
+      "similarity": 0.89501953125,
+      "gt_level": 4,
+      "llm_level": 3,
+      "gt_path": "root > Vision Transformer > High/Mid-level Vision > Generic Object Detection",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection"
+    },
+    {
+      "gt_title": "Generic Object Detection",
+      "llm_title": "5.2 Object Detection",
+      "similarity": 0.89501953125,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "Vision Transformer > High/Mid-level Vision > Generic Object Detection",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection"
+    },
+    {
+      "gt_title": "Generic Object Detection",
+      "llm_title": "5.2 Object Detection",
+      "similarity": 0.89501953125,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "High/Mid-level Vision > Generic Object Detection",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection"
+    },
+    {
+      "gt_title": "Generic Object Detection",
+      "llm_title": "5.2 Object Detection",
+      "similarity": 0.89501953125,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Generic Object Detection",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "1.2 Key Concepts and Architecture Overview",
+      "similarity": 0.8935546875,
+      "gt_level": 4,
+      "llm_level": 3,
+      "gt_path": "root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.2 Key Concepts and Architecture Overview"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "1.2 Key Concepts and Architecture Overview",
+      "similarity": 0.8935546875,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "Vision Transformer > Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.2 Key Concepts and Architecture Overview"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "1.2 Key Concepts and Architecture Overview",
+      "similarity": 0.8935546875,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.2 Key Concepts and Architecture Overview"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "1.2 Key Concepts and Architecture Overview",
+      "similarity": 0.8935546875,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.2 Key Concepts and Architecture Overview"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "5.2 Object Detection",
+      "similarity": 0.89111328125,
+      "gt_level": 4,
+      "llm_level": 3,
+      "gt_path": "root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "5.2 Object Detection",
+      "similarity": 0.89111328125,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "Vision Transformer > Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "5.2 Object Detection",
+      "similarity": 0.89111328125,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "5.2 Object Detection",
+      "similarity": 0.89111328125,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection"
+    },
+    {
+      "gt_title": "Future Prospects",
+      "llm_title": "5.1 Image Classification",
+      "similarity": 0.88818359375,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "root > Conclusions and Discussions > Future Prospects",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification"
+    },
+    {
+      "gt_title": "Future Prospects",
+      "llm_title": "5.1 Image Classification",
+      "similarity": 0.88818359375,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Conclusions and Discussions > Future Prospects",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification"
+    },
+    {
+      "gt_title": "Future Prospects",
+      "llm_title": "5.1 Image Classification",
+      "similarity": 0.88818359375,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Future Prospects",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "5.3 Image Segmentation",
+      "similarity": 0.8837890625,
+      "gt_level": 4,
+      "llm_level": 3,
+      "gt_path": "root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "5.3 Image Segmentation",
+      "similarity": 0.8837890625,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "Vision Transformer > Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "5.3 Image Segmentation",
+      "similarity": 0.8837890625,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "5.3 Image Segmentation",
+      "similarity": 0.8837890625,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "1.1 Historical Context and Development",
+      "similarity": 0.8798828125,
+      "gt_level": 4,
+      "llm_level": 3,
+      "gt_path": "root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.1 Historical Context and Development"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "1.1 Historical Context and Development",
+      "similarity": 0.8798828125,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "Vision Transformer > Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.1 Historical Context and Development"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "1.1 Historical Context and Development",
+      "similarity": 0.8798828125,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.1 Historical Context and Development"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "1.1 Historical Context and Development",
+      "similarity": 0.8798828125,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.1 Historical Context and Development"
+    },
+    {
+      "gt_title": "Pure Transformer",
+      "llm_title": "5.1 Image Classification",
+      "similarity": 0.87939453125,
+      "gt_level": 4,
+      "llm_level": 3,
+      "gt_path": "root > Vision Transformer > Backbone for Representation Learning > Pure Transformer",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "References",
+      "similarity": 0.87939453125,
+      "gt_level": 4,
+      "llm_level": 2,
+      "gt_path": "root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > References"
+    },
+    {
+      "gt_title": "Pure Transformer",
+      "llm_title": "5.1 Image Classification",
+      "similarity": 0.87939453125,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "Vision Transformer > Backbone for Representation Learning > Pure Transformer",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "References",
+      "similarity": 0.87939453125,
+      "gt_level": 3,
+      "llm_level": 2,
+      "gt_path": "Vision Transformer > Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > References"
+    },
+    {
+      "gt_title": "Pure Transformer",
+      "llm_title": "5.1 Image Classification",
+      "similarity": 0.87939453125,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Backbone for Representation Learning > Pure Transformer",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "References",
+      "similarity": 0.87939453125,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > References"
+    },
+    {
+      "gt_title": "Pure Transformer",
+      "llm_title": "5.1 Image Classification",
+      "similarity": 0.87939453125,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Pure Transformer",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "References",
+      "similarity": 0.87939453125,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > References"
+    },
+    {
+      "gt_title": "Challenges",
+      "llm_title": "5.2 Object Detection",
+      "similarity": 0.87890625,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "root > Conclusions and Discussions > Challenges",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection"
+    },
+    {
+      "gt_title": "Challenges",
+      "llm_title": "5.2 Object Detection",
+      "similarity": 0.87890625,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Conclusions and Discussions > Challenges",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection"
+    },
+    {
+      "gt_title": "Challenges",
+      "llm_title": "5.2 Object Detection",
+      "similarity": 0.87890625,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Challenges",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection"
+    },
+    {
+      "gt_title": "Backbone for Representation Learning",
+      "llm_title": "5.1 Image Classification",
+      "similarity": 0.87744140625,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "root > Vision Transformer > Backbone for Representation Learning",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification"
+    },
+    {
+      "gt_title": "Challenges",
+      "llm_title": "3.4 Data Requirements and Learning Flexibility",
+      "similarity": 0.87744140625,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "root > Conclusions and Discussions > Challenges",
+      "llm_path": "A Survey on Visual Transformers > 3 Attention Mechanisms and Learning Processes > 3.4 Data Requirements and Learning Flexibility"
+    },
+    {
+      "gt_title": "Backbone for Representation Learning",
+      "llm_title": "5.1 Image Classification",
+      "similarity": 0.87744140625,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Vision Transformer > Backbone for Representation Learning",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification"
+    },
+    {
+      "gt_title": "Backbone for Representation Learning",
+      "llm_title": "5.1 Image Classification",
+      "similarity": 0.87744140625,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Backbone for Representation Learning",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification"
+    },
+    {
+      "gt_title": "Challenges",
+      "llm_title": "3.4 Data Requirements and Learning Flexibility",
+      "similarity": 0.87744140625,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Conclusions and Discussions > Challenges",
+      "llm_path": "A Survey on Visual Transformers > 3 Attention Mechanisms and Learning Processes > 3.4 Data Requirements and Learning Flexibility"
+    },
+    {
+      "gt_title": "Challenges",
+      "llm_title": "3.4 Data Requirements and Learning Flexibility",
+      "similarity": 0.87744140625,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Challenges",
+      "llm_path": "A Survey on Visual Transformers > 3 Attention Mechanisms and Learning Processes > 3.4 Data Requirements and Learning Flexibility"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "3.4 Data Requirements and Learning Flexibility",
+      "similarity": 0.876953125,
+      "gt_level": 4,
+      "llm_level": 3,
+      "gt_path": "root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 3 Attention Mechanisms and Learning Processes > 3.4 Data Requirements and Learning Flexibility"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "3.4 Data Requirements and Learning Flexibility",
+      "similarity": 0.876953125,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "Vision Transformer > Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 3 Attention Mechanisms and Learning Processes > 3.4 Data Requirements and Learning Flexibility"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "3.4 Data Requirements and Learning Flexibility",
+      "similarity": 0.876953125,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 3 Attention Mechanisms and Learning Processes > 3.4 Data Requirements and Learning Flexibility"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "3.4 Data Requirements and Learning Flexibility",
+      "similarity": 0.876953125,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 3 Attention Mechanisms and Learning Processes > 3.4 Data Requirements and Learning Flexibility"
+    },
+    {
+      "gt_title": "Challenges",
+      "llm_title": "References",
+      "similarity": 0.875,
+      "gt_level": 3,
+      "llm_level": 2,
+      "gt_path": "root > Conclusions and Discussions > Challenges",
+      "llm_path": "A Survey on Visual Transformers > References"
+    },
+    {
+      "gt_title": "Future Prospects",
+      "llm_title": "References",
+      "similarity": 0.875,
+      "gt_level": 3,
+      "llm_level": 2,
+      "gt_path": "root > Conclusions and Discussions > Future Prospects",
+      "llm_path": "A Survey on Visual Transformers > References"
+    },
+    {
+      "gt_title": "Challenges",
+      "llm_title": "References",
+      "similarity": 0.875,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "Conclusions and Discussions > Challenges",
+      "llm_path": "A Survey on Visual Transformers > References"
+    },
+    {
+      "gt_title": "Future Prospects",
+      "llm_title": "References",
+      "similarity": 0.875,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "Conclusions and Discussions > Future Prospects",
+      "llm_path": "A Survey on Visual Transformers > References"
+    },
+    {
+      "gt_title": "Challenges",
+      "llm_title": "References",
+      "similarity": 0.875,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "Challenges",
+      "llm_path": "A Survey on Visual Transformers > References"
+    },
+    {
+      "gt_title": "Future Prospects",
+      "llm_title": "References",
+      "similarity": 0.875,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "Future Prospects",
+      "llm_path": "A Survey on Visual Transformers > References"
+    },
+    {
+      "gt_title": "Pure Transformer",
+      "llm_title": "1.2 Key Concepts and Architecture Overview",
+      "similarity": 0.8740234375,
+      "gt_level": 4,
+      "llm_level": 3,
+      "gt_path": "root > Vision Transformer > Backbone for Representation Learning > Pure Transformer",
+      "llm_path": "A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.2 Key Concepts and Architecture Overview"
+    },
+    {
+      "gt_title": "Pure Transformer",
+      "llm_title": "1.2 Key Concepts and Architecture Overview",
+      "similarity": 0.8740234375,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "Vision Transformer > Backbone for Representation Learning > Pure Transformer",
+      "llm_path": "A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.2 Key Concepts and Architecture Overview"
+    },
+    {
+      "gt_title": "Pure Transformer",
+      "llm_title": "1.2 Key Concepts and Architecture Overview",
+      "similarity": 0.8740234375,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Backbone for Representation Learning > Pure Transformer",
+      "llm_path": "A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.2 Key Concepts and Architecture Overview"
+    },
+    {
+      "gt_title": "Pure Transformer",
+      "llm_title": "1.2 Key Concepts and Architecture Overview",
+      "similarity": 0.8740234375,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Pure Transformer",
+      "llm_path": "A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.2 Key Concepts and Architecture Overview"
+    },
+    {
+      "gt_title": "Challenges",
+      "llm_title": "6.3 Data Requirements",
+      "similarity": 0.8681640625,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "root > Conclusions and Discussions > Challenges",
+      "llm_path": "A Survey on Visual Transformers > 6 Challenges and Future Directions > 6.3 Data Requirements"
+    },
+    {
+      "gt_title": "Challenges",
+      "llm_title": "6.3 Data Requirements",
+      "similarity": 0.8681640625,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Conclusions and Discussions > Challenges",
+      "llm_path": "A Survey on Visual Transformers > 6 Challenges and Future Directions > 6.3 Data Requirements"
+    },
+    {
+      "gt_title": "Challenges",
+      "llm_title": "6.3 Data Requirements",
+      "similarity": 0.8681640625,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Challenges",
+      "llm_path": "A Survey on Visual Transformers > 6 Challenges and Future Directions > 6.3 Data Requirements"
+    },
+    {
+      "gt_title": "Segmentation",
+      "llm_title": "5.3 Image Segmentation",
+      "similarity": 0.86572265625,
+      "gt_level": 4,
+      "llm_level": 3,
+      "gt_path": "root > Vision Transformer > High/Mid-level Vision > Segmentation",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation"
+    },
+    {
+      "gt_title": "Challenges",
+      "llm_title": "1.1 Historical Context and Development",
+      "similarity": 0.86572265625,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "root > Conclusions and Discussions > Challenges",
+      "llm_path": "A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.1 Historical Context and Development"
+    },
+    {
+      "gt_title": "Segmentation",
+      "llm_title": "5.3 Image Segmentation",
+      "similarity": 0.86572265625,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "Vision Transformer > High/Mid-level Vision > Segmentation",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation"
+    },
+    {
+      "gt_title": "Segmentation",
+      "llm_title": "5.3 Image Segmentation",
+      "similarity": 0.86572265625,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "High/Mid-level Vision > Segmentation",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation"
+    },
+    {
+      "gt_title": "Segmentation",
+      "llm_title": "5.3 Image Segmentation",
+      "similarity": 0.86572265625,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Segmentation",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation"
+    },
+    {
+      "gt_title": "Challenges",
+      "llm_title": "1.1 Historical Context and Development",
+      "similarity": 0.86572265625,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Conclusions and Discussions > Challenges",
+      "llm_path": "A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.1 Historical Context and Development"
+    },
+    {
+      "gt_title": "Challenges",
+      "llm_title": "1.1 Historical Context and Development",
+      "similarity": 0.86572265625,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Challenges",
+      "llm_path": "A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.1 Historical Context and Development"
+    },
+    {
+      "gt_title": "Challenges",
+      "llm_title": "1.3 Comparison with Traditional Convolutional Neural Networks",
+      "similarity": 0.865234375,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "root > Conclusions and Discussions > Challenges",
+      "llm_path": "A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.3 Comparison with Traditional Convolutional Neural Networks"
+    },
+    {
+      "gt_title": "Challenges",
+      "llm_title": "1.3 Comparison with Traditional Convolutional Neural Networks",
+      "similarity": 0.865234375,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Conclusions and Discussions > Challenges",
+      "llm_path": "A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.3 Comparison with Traditional Convolutional Neural Networks"
+    },
+    {
+      "gt_title": "Challenges",
+      "llm_title": "1.3 Comparison with Traditional Convolutional Neural Networks",
+      "similarity": 0.865234375,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Challenges",
+      "llm_path": "A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.3 Comparison with Traditional Convolutional Neural Networks"
+    },
+    {
+      "gt_title": "Challenges",
+      "llm_title": "2.9 Convolutions in Vision Transformers",
+      "similarity": 0.86376953125,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "root > Conclusions and Discussions > Challenges",
+      "llm_path": "A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.9 Convolutions in Vision Transformers"
+    },
+    {
+      "gt_title": "Challenges",
+      "llm_title": "2.9 Convolutions in Vision Transformers",
+      "similarity": 0.86376953125,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Conclusions and Discussions > Challenges",
+      "llm_path": "A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.9 Convolutions in Vision Transformers"
+    },
+    {
+      "gt_title": "Challenges",
+      "llm_title": "2.9 Convolutions in Vision Transformers",
+      "similarity": 0.86376953125,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Challenges",
+      "llm_path": "A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.9 Convolutions in Vision Transformers"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "6.3 Data Requirements",
+      "similarity": 0.86181640625,
+      "gt_level": 4,
+      "llm_level": 3,
+      "gt_path": "root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 6 Challenges and Future Directions > 6.3 Data Requirements"
+    },
+    {
+      "gt_title": "Discussions",
+      "llm_title": "5.3 Image Segmentation",
+      "similarity": 0.86181640625,
+      "gt_level": 4,
+      "llm_level": 3,
+      "gt_path": "root > Vision Transformer > High/Mid-level Vision > Discussions",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "6.3 Data Requirements",
+      "similarity": 0.86181640625,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "Vision Transformer > Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 6 Challenges and Future Directions > 6.3 Data Requirements"
+    },
+    {
+      "gt_title": "Discussions",
+      "llm_title": "5.3 Image Segmentation",
+      "similarity": 0.86181640625,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "Vision Transformer > High/Mid-level Vision > Discussions",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "6.3 Data Requirements",
+      "similarity": 0.86181640625,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 6 Challenges and Future Directions > 6.3 Data Requirements"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "6.3 Data Requirements",
+      "similarity": 0.86181640625,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 6 Challenges and Future Directions > 6.3 Data Requirements"
+    },
+    {
+      "gt_title": "Discussions",
+      "llm_title": "5.3 Image Segmentation",
+      "similarity": 0.86181640625,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "High/Mid-level Vision > Discussions",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation"
+    },
+    {
+      "gt_title": "Discussions",
+      "llm_title": "5.3 Image Segmentation",
+      "similarity": 0.86181640625,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Discussions",
+      "llm_path": "A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation"
+    },
+    {
+      "gt_title": "Future Prospects",
+      "llm_title": "1.1 Historical Context and Development",
+      "similarity": 0.86083984375,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "root > Conclusions and Discussions > Future Prospects",
+      "llm_path": "A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.1 Historical Context and Development"
+    },
+    {
+      "gt_title": "Future Prospects",
+      "llm_title": "1.1 Historical Context and Development",
+      "similarity": 0.86083984375,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Conclusions and Discussions > Future Prospects",
+      "llm_path": "A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.1 Historical Context and Development"
+    },
+    {
+      "gt_title": "Future Prospects",
+      "llm_title": "1.1 Historical Context and Development",
+      "similarity": 0.86083984375,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Future Prospects",
+      "llm_path": "A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.1 Historical Context and Development"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "1.4 Inductive Biases and Data Requirements",
+      "similarity": 0.85986328125,
+      "gt_level": 4,
+      "llm_level": 3,
+      "gt_path": "root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.4 Inductive Biases and Data Requirements"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "1.4 Inductive Biases and Data Requirements",
+      "similarity": 0.85986328125,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "Vision Transformer > Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.4 Inductive Biases and Data Requirements"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "1.4 Inductive Biases and Data Requirements",
+      "similarity": 0.85986328125,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.4 Inductive Biases and Data Requirements"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "1.4 Inductive Biases and Data Requirements",
+      "similarity": 0.85986328125,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.4 Inductive Biases and Data Requirements"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "2.5 Mobile Deployment Strategies",
+      "similarity": 0.85888671875,
+      "gt_level": 4,
+      "llm_level": 3,
+      "gt_path": "root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.5 Mobile Deployment Strategies"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "2.5 Mobile Deployment Strategies",
+      "similarity": 0.85888671875,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "Vision Transformer > Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.5 Mobile Deployment Strategies"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "2.5 Mobile Deployment Strategies",
+      "similarity": 0.85888671875,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Backbone for Representation Learning > Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.5 Mobile Deployment Strategies"
+    },
+    {
+      "gt_title": "Transformer with Convolution",
+      "llm_title": "2.5 Mobile Deployment Strategies",
+      "similarity": 0.85888671875,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Transformer with Convolution",
+      "llm_path": "A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.5 Mobile Deployment Strategies"
+    }
+  ]
+}

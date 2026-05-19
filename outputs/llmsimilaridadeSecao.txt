@@ -1,0 +1,97 @@
+args device: 0
+args survey_path: dataMatScience/surveysMatScience.json
+args corpus_path: dataMatScience/corpusMatScience.json
+Starting evaluation with passage_dir: ./baselines/ID/output, eval_list: ['ALL'], save_path: ./baselines/ID/output/log.json
+survey_ids: ['0']
+
+================================================================================
+COMPARAÇÃO DE TÍTULOS DE SEÇÕES - Survey ID: 0
+================================================================================
+Títulos do Golden Truth (GT): 24
+  1. Introduction
+  2. NMR theory
+  3. Relaxation measurements
+  4. Diffusion measurements
+  5. Two-dimensional NMR measurements
+  6. NMR applications in laboratory scale
+  7. Petrophysics
+  8. Porosity
+  9. Pore size distribution
+  10. Permeability
+  11. Fluid saturation
+  12. Capillary pressure
+  13. Wettability
+  14. Enhanced oil recovery applications
+  15. Evaluation of mud filtrate invasion characteristic
+  16. Emulsion droplet size determination using PFG NMR
+  17. Common misinterpretation in conventional rocks
+  18. Unconventional rock characterization using different NMR techniques
+  19. NMR applications in field scale
+  20. Design and improvements in LWD-NMR
+  21. Tar detection in carbonates
+  22. Geosteering and well placement optimization
+  23. Future research directions
+  24. Concluding remarks
+
+Títulos do Artigo LLM: 26
+  1. Introduction
+  2. NMR theory
+  3. Relaxation measurements
+  4. Diffusion measurements
+  5. Two-dimensional NMR measurements
+  6. NMR applications in laboratory scale
+  7. Petrophysics
+  8. Porosity
+  9. Pore size distribution
+  10. Permeability
+  11. Fluid saturation
+  12. Capillary pressure
+  13. Wettability
+  14. Enhanced oil recovery applications
+  15. Special topics
+  16. Evaluation of mud filtrate invasion characteristic
+  17. Emulsion droplet size determination using PFG NMR
+  18. Common misinterpretation in conventional rocks
+  19. Unconventional rock characterization using different NMR techniques
+  20. NMR applications in field scale
+  21. Design and improvements in LWD-NMR
+  22. Field implementation and applications
+  23. Tar detection in carbonates
+  24. Geosteering and well placement optimization
+  25. Future research directions
+  26. Concluding remarks
+
+------------------------------------------------------------------------------------------------------------------------
+RESULTADOS DA COMPARAÇÃO (Ordenados por menor distância):
+Exibindo apenas títulos com similaridade > 0.85
+------------------------------------------------------------------------------------------------------------------------
+Distância    Similaridade    Título GT                                          Título LLM                                        
+------------------------------------------------------------------------------------------------------------------------
+-0.0000      1.0000          NMR theory                                         NMR theory                                        
+-0.0000      1.0000          NMR applications in laboratory scale               NMR applications in laboratory scale              
+-0.0000      1.0000          Permeability                                       Permeability                                      
+-0.0000      1.0000          Unconventional rock characterization using different NMR techniques Unconventional rock characterization using different NMR techniques
+-0.0000      1.0000          NMR applications in field scale                    NMR applications in field scale                   
+-0.0000      1.0000          Introduction                                       Introduction                                      
+-0.0000      1.0000          Relaxation measurements                            Relaxation measurements                           
+-0.0000      1.0000          Diffusion measurements                             Diffusion measurements                            
+-0.0000      1.0000          Petrophysics                                       Petrophysics                                      
+-0.0000      1.0000          Fluid saturation                                   Fluid saturation                                  
+-0.0000      1.0000          Evaluation of mud filtrate invasion characteristic Evaluation of mud filtrate invasion characteristic
+-0.0000      1.0000          Emulsion droplet size determination using PFG NMR  Emulsion droplet size determination using PFG NMR 
+-0.0000      1.0000          Design and improvements in LWD-NMR                 Design and improvements in LWD-NMR                
+-0.0000      1.0000          Geosteering and well placement optimization        Geosteering and well placement optimization       
+-0.0000      1.0000          Future research directions                         Future research directions                        
+0.0000       1.0000          Two-dimensional NMR measurements                   Two-dimensional NMR measurements                  
+0.0000       1.0000          Capillary pressure                                 Capillary pressure                                
+0.0000       1.0000          Enhanced oil recovery applications                 Enhanced oil recovery applications                
+0.0000       1.0000          Tar detection in carbonates                        Tar detection in carbonates                       
+0.0000       1.0000          Porosity                                           Porosity                                          
+0.0000       1.0000          Pore size distribution                             Pore size distribution                            
+0.0000       1.0000          Common misinterpretation in conventional rocks     Common misinterpretation in conventional rocks    
+0.0000       1.0000          Concluding remarks                                 Concluding remarks                                
+0.0000       1.0000          Wettability                                        Wettability                                       
+================================================================================
+
+len(comparisons_above_threshold): 24
+len(llm_titles): 26

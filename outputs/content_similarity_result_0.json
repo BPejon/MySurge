@@ -1,0 +1,919 @@
+{
+  "survey_id": 0,
+  "passages_file": "baselines/ID/output/0/0.md",
+  "threshold": 0.5,
+  "statistics": {
+    "gt_sections_count": 201,
+    "llm_sections_count": 28,
+    "similar_pairs_count": 1360
+  },
+  "statistics_details": {
+    "max_similarity": 0.61083984375,
+    "mean_similarity": 0.5244140625,
+    "median_similarity": 0.51904296875,
+    "min_similarity": 0.5,
+    "std_similarity": 0.020721435546875
+  },
+  "top_pairs": [
+    {
+      "gt_title": "Cachier and Precog",
+      "llm_title": "Relaxation measurements",
+      "similarity": 0.61083984375,
+      "gt_level": 3,
+      "llm_level": 2,
+      "gt_path": "root > Edge Computing Systems and Tools > Cachier and Precog",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements"
+    },
+    {
+      "gt_title": "Cachier and Precog",
+      "llm_title": "Relaxation measurements",
+      "similarity": 0.61083984375,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "Edge Computing Systems and Tools > Cachier and Precog",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements"
+    },
+    {
+      "gt_title": "Cachier and Precog",
+      "llm_title": "Relaxation measurements",
+      "similarity": 0.61083984375,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "Cachier and Precog",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements"
+    },
+    {
+      "gt_title": "Cachier and Precog",
+      "llm_title": "Two-dimensional NMR measurements",
+      "similarity": 0.6015625,
+      "gt_level": 3,
+      "llm_level": 2,
+      "gt_path": "root > Edge Computing Systems and Tools > Cachier and Precog",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Two-dimensional NMR measurements"
+    },
+    {
+      "gt_title": "Cachier and Precog",
+      "llm_title": "Two-dimensional NMR measurements",
+      "similarity": 0.6015625,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "Edge Computing Systems and Tools > Cachier and Precog",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Two-dimensional NMR measurements"
+    },
+    {
+      "gt_title": "Cachier and Precog",
+      "llm_title": "Two-dimensional NMR measurements",
+      "similarity": 0.6015625,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "Cachier and Precog",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Two-dimensional NMR measurements"
+    },
+    {
+      "gt_title": "Conclusions",
+      "llm_title": "Two-dimensional NMR measurements",
+      "similarity": 0.58984375,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "root > Conclusions",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Two-dimensional NMR measurements"
+    },
+    {
+      "gt_title": "Conclusions",
+      "llm_title": "Two-dimensional NMR measurements",
+      "similarity": 0.58984375,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "Conclusions",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Two-dimensional NMR measurements"
+    },
+    {
+      "gt_title": "Conclusions",
+      "llm_title": "Relaxation measurements",
+      "similarity": 0.5888671875,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "root > Conclusions",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements"
+    },
+    {
+      "gt_title": "Conclusions",
+      "llm_title": "Relaxation measurements",
+      "similarity": 0.5888671875,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "Conclusions",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements"
+    },
+    {
+      "gt_title": "Deep Learning Packages",
+      "llm_title": "Future research directions",
+      "similarity": 0.587890625,
+      "gt_level": 3,
+      "llm_level": 2,
+      "gt_path": "root > Deep Learning Optimization at the Edge > Deep Learning Packages",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Future research directions"
+    },
+    {
+      "gt_title": "Deep Learning Packages",
+      "llm_title": "Future research directions",
+      "similarity": 0.587890625,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "Deep Learning Optimization at the Edge > Deep Learning Packages",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Future research directions"
+    },
+    {
+      "gt_title": "Deep Learning Packages",
+      "llm_title": "Future research directions",
+      "similarity": 0.587890625,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "Deep Learning Packages",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Future research directions"
+    },
+    {
+      "gt_title": "Cachier and Precog",
+      "llm_title": "References",
+      "similarity": 0.58447265625,
+      "gt_level": 3,
+      "llm_level": 2,
+      "gt_path": "root > Edge Computing Systems and Tools > Cachier and Precog",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > References"
+    },
+    {
+      "gt_title": "Cachier and Precog",
+      "llm_title": "References",
+      "similarity": 0.58447265625,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "Edge Computing Systems and Tools > Cachier and Precog",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > References"
+    },
+    {
+      "gt_title": "Cachier and Precog",
+      "llm_title": "References",
+      "similarity": 0.58447265625,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "Cachier and Precog",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > References"
+    },
+    {
+      "gt_title": "Multi-domain Management and Cooperation",
+      "llm_title": "Declaration",
+      "similarity": 0.583984375,
+      "gt_level": 4,
+      "llm_level": 2,
+      "gt_path": "root > Key Design Issues > Mobility Support > Multi-domain Management and Cooperation",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Declaration"
+    },
+    {
+      "gt_title": "Multi-domain Management and Cooperation",
+      "llm_title": "Declaration",
+      "similarity": 0.583984375,
+      "gt_level": 3,
+      "llm_level": 2,
+      "gt_path": "Key Design Issues > Mobility Support > Multi-domain Management and Cooperation",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Declaration"
+    },
+    {
+      "gt_title": "Multi-domain Management and Cooperation",
+      "llm_title": "Declaration",
+      "similarity": 0.583984375,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "Mobility Support > Multi-domain Management and Cooperation",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Declaration"
+    },
+    {
+      "gt_title": "Multi-domain Management and Cooperation",
+      "llm_title": "Declaration",
+      "similarity": 0.583984375,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "Multi-domain Management and Cooperation",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Declaration"
+    },
+    {
+      "gt_title": "Comparative Study",
+      "llm_title": "Two-dimensional NMR measurements",
+      "similarity": 0.58349609375,
+      "gt_level": 3,
+      "llm_level": 2,
+      "gt_path": "root > Open Source Edge Computing Projects > Comparative Study",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Two-dimensional NMR measurements"
+    },
+    {
+      "gt_title": "Comparative Study",
+      "llm_title": "Two-dimensional NMR measurements",
+      "similarity": 0.58349609375,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "Open Source Edge Computing Projects > Comparative Study",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Two-dimensional NMR measurements"
+    },
+    {
+      "gt_title": "Comparative Study",
+      "llm_title": "Two-dimensional NMR measurements",
+      "similarity": 0.58349609375,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "Comparative Study",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Two-dimensional NMR measurements"
+    },
+    {
+      "gt_title": "Comparative Study",
+      "llm_title": "Future research directions",
+      "similarity": 0.58251953125,
+      "gt_level": 3,
+      "llm_level": 2,
+      "gt_path": "root > Open Source Edge Computing Projects > Comparative Study",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Future research directions"
+    },
+    {
+      "gt_title": "FPGA-based Hardware",
+      "llm_title": "Relaxation measurements",
+      "similarity": 0.58251953125,
+      "gt_level": 4,
+      "llm_level": 2,
+      "gt_path": "root > Deep Learning Optimization at the Edge > Hardware System > FPGA-based Hardware",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements"
+    },
+    {
+      "gt_title": "Comparative Study",
+      "llm_title": "Future research directions",
+      "similarity": 0.58251953125,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "Open Source Edge Computing Projects > Comparative Study",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Future research directions"
+    },
+    {
+      "gt_title": "Comparative Study",
+      "llm_title": "Future research directions",
+      "similarity": 0.58251953125,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "Comparative Study",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Future research directions"
+    },
+    {
+      "gt_title": "FPGA-based Hardware",
+      "llm_title": "Relaxation measurements",
+      "similarity": 0.58251953125,
+      "gt_level": 3,
+      "llm_level": 2,
+      "gt_path": "Deep Learning Optimization at the Edge > Hardware System > FPGA-based Hardware",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements"
+    },
+    {
+      "gt_title": "FPGA-based Hardware",
+      "llm_title": "Relaxation measurements",
+      "similarity": 0.58251953125,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "Hardware System > FPGA-based Hardware",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements"
+    },
+    {
+      "gt_title": "FPGA-based Hardware",
+      "llm_title": "Relaxation measurements",
+      "similarity": 0.58251953125,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "FPGA-based Hardware",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements"
+    },
+    {
+      "gt_title": "Comparative Study",
+      "llm_title": "Design and improvements in LWD-NMR",
+      "similarity": 0.57666015625,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "root > Open Source Edge Computing Projects > Comparative Study",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in field scale > Design and improvements in LWD-NMR"
+    },
+    {
+      "gt_title": "Comparative Study",
+      "llm_title": "Design and improvements in LWD-NMR",
+      "similarity": 0.57666015625,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Open Source Edge Computing Projects > Comparative Study",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in field scale > Design and improvements in LWD-NMR"
+    },
+    {
+      "gt_title": "Comparative Study",
+      "llm_title": "Design and improvements in LWD-NMR",
+      "similarity": 0.57666015625,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Comparative Study",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in field scale > Design and improvements in LWD-NMR"
+    },
+    {
+      "gt_title": "Cachier and Precog",
+      "llm_title": "Pore size distribution",
+      "similarity": 0.576171875,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "root > Edge Computing Systems and Tools > Cachier and Precog",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Petrophysics > Pore size distribution"
+    },
+    {
+      "gt_title": "Conclusions",
+      "llm_title": "Future research directions",
+      "similarity": 0.576171875,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "root > Conclusions",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Future research directions"
+    },
+    {
+      "gt_title": "Cachier and Precog",
+      "llm_title": "Pore size distribution",
+      "similarity": 0.576171875,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Edge Computing Systems and Tools > Cachier and Precog",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Petrophysics > Pore size distribution"
+    },
+    {
+      "gt_title": "Cachier and Precog",
+      "llm_title": "Pore size distribution",
+      "similarity": 0.576171875,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Cachier and Precog",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Petrophysics > Pore size distribution"
+    },
+    {
+      "gt_title": "Conclusions",
+      "llm_title": "Future research directions",
+      "similarity": 0.576171875,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "Conclusions",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Future research directions"
+    },
+    {
+      "gt_title": "Comparative Study",
+      "llm_title": "Introduction",
+      "similarity": 0.57421875,
+      "gt_level": 3,
+      "llm_level": 2,
+      "gt_path": "root > Open Source Edge Computing Projects > Comparative Study",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Introduction"
+    },
+    {
+      "gt_title": "Comparative Study",
+      "llm_title": "Introduction",
+      "similarity": 0.57421875,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "Open Source Edge Computing Projects > Comparative Study",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Introduction"
+    },
+    {
+      "gt_title": "Comparative Study",
+      "llm_title": "Introduction",
+      "similarity": 0.57421875,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "Comparative Study",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Introduction"
+    },
+    {
+      "gt_title": "Cachier and Precog",
+      "llm_title": "Future research directions",
+      "similarity": 0.57373046875,
+      "gt_level": 3,
+      "llm_level": 2,
+      "gt_path": "root > Edge Computing Systems and Tools > Cachier and Precog",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Future research directions"
+    },
+    {
+      "gt_title": "Comparative Study",
+      "llm_title": "Relaxation measurements",
+      "similarity": 0.57373046875,
+      "gt_level": 3,
+      "llm_level": 2,
+      "gt_path": "root > Open Source Edge Computing Projects > Comparative Study",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements"
+    },
+    {
+      "gt_title": "Cachier and Precog",
+      "llm_title": "Future research directions",
+      "similarity": 0.57373046875,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "Edge Computing Systems and Tools > Cachier and Precog",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Future research directions"
+    },
+    {
+      "gt_title": "Cachier and Precog",
+      "llm_title": "Future research directions",
+      "similarity": 0.57373046875,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "Cachier and Precog",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Future research directions"
+    },
+    {
+      "gt_title": "Comparative Study",
+      "llm_title": "Relaxation measurements",
+      "similarity": 0.57373046875,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "Open Source Edge Computing Projects > Comparative Study",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements"
+    },
+    {
+      "gt_title": "Comparative Study",
+      "llm_title": "Relaxation measurements",
+      "similarity": 0.57373046875,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "Comparative Study",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements"
+    },
+    {
+      "gt_title": "Deep Learning Packages",
+      "llm_title": "Relaxation measurements",
+      "similarity": 0.5732421875,
+      "gt_level": 3,
+      "llm_level": 2,
+      "gt_path": "root > Deep Learning Optimization at the Edge > Deep Learning Packages",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements"
+    },
+    {
+      "gt_title": "Deep Learning Packages",
+      "llm_title": "Relaxation measurements",
+      "similarity": 0.5732421875,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "Deep Learning Optimization at the Edge > Deep Learning Packages",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements"
+    },
+    {
+      "gt_title": "Deep Learning Packages",
+      "llm_title": "Relaxation measurements",
+      "similarity": 0.5732421875,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "Deep Learning Packages",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements"
+    },
+    {
+      "gt_title": "Deep Learning Packages",
+      "llm_title": "Two-dimensional NMR measurements",
+      "similarity": 0.57275390625,
+      "gt_level": 3,
+      "llm_level": 2,
+      "gt_path": "root > Deep Learning Optimization at the Edge > Deep Learning Packages",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Two-dimensional NMR measurements"
+    },
+    {
+      "gt_title": "Deep Learning Packages",
+      "llm_title": "Two-dimensional NMR measurements",
+      "similarity": 0.57275390625,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "Deep Learning Optimization at the Edge > Deep Learning Packages",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Two-dimensional NMR measurements"
+    },
+    {
+      "gt_title": "Deep Learning Packages",
+      "llm_title": "Two-dimensional NMR measurements",
+      "similarity": 0.57275390625,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "Deep Learning Packages",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Two-dimensional NMR measurements"
+    },
+    {
+      "gt_title": "At the Middle Edge Server Layer",
+      "llm_title": "Relaxation measurements",
+      "similarity": 0.57080078125,
+      "gt_level": 3,
+      "llm_level": 2,
+      "gt_path": "root > Enhancing Energy Efficiency of Edge Computing Systems > At the Middle Edge Server Layer",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements"
+    },
+    {
+      "gt_title": "At the Middle Edge Server Layer",
+      "llm_title": "NMR applications in laboratory scale",
+      "similarity": 0.57080078125,
+      "gt_level": 3,
+      "llm_level": 2,
+      "gt_path": "root > Enhancing Energy Efficiency of Edge Computing Systems > At the Middle Edge Server Layer",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in laboratory scale"
+    },
+    {
+      "gt_title": "At the Middle Edge Server Layer",
+      "llm_title": "Relaxation measurements",
+      "similarity": 0.57080078125,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "Enhancing Energy Efficiency of Edge Computing Systems > At the Middle Edge Server Layer",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements"
+    },
+    {
+      "gt_title": "At the Middle Edge Server Layer",
+      "llm_title": "NMR applications in laboratory scale",
+      "similarity": 0.57080078125,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "Enhancing Energy Efficiency of Edge Computing Systems > At the Middle Edge Server Layer",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in laboratory scale"
+    },
+    {
+      "gt_title": "At the Middle Edge Server Layer",
+      "llm_title": "Relaxation measurements",
+      "similarity": 0.57080078125,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "At the Middle Edge Server Layer",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements"
+    },
+    {
+      "gt_title": "At the Middle Edge Server Layer",
+      "llm_title": "NMR applications in laboratory scale",
+      "similarity": 0.57080078125,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "At the Middle Edge Server Layer",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in laboratory scale"
+    },
+    {
+      "gt_title": "Deep Learning Packages",
+      "llm_title": "Introduction",
+      "similarity": 0.5703125,
+      "gt_level": 3,
+      "llm_level": 2,
+      "gt_path": "root > Deep Learning Optimization at the Edge > Deep Learning Packages",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Introduction"
+    },
+    {
+      "gt_title": "Deep Learning Packages",
+      "llm_title": "Introduction",
+      "similarity": 0.5703125,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "Deep Learning Optimization at the Edge > Deep Learning Packages",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Introduction"
+    },
+    {
+      "gt_title": "Deep Learning Packages",
+      "llm_title": "Introduction",
+      "similarity": 0.5703125,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "Deep Learning Packages",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Introduction"
+    },
+    {
+      "gt_title": "Comparative Study",
+      "llm_title": "References",
+      "similarity": 0.56884765625,
+      "gt_level": 3,
+      "llm_level": 2,
+      "gt_path": "root > Open Source Edge Computing Projects > Comparative Study",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > References"
+    },
+    {
+      "gt_title": "Comparative Study",
+      "llm_title": "References",
+      "similarity": 0.56884765625,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "Open Source Edge Computing Projects > Comparative Study",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > References"
+    },
+    {
+      "gt_title": "Comparative Study",
+      "llm_title": "References",
+      "similarity": 0.56884765625,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "Comparative Study",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > References"
+    },
+    {
+      "gt_title": "Cachier and Precog",
+      "llm_title": "Diffusion measurements",
+      "similarity": 0.56689453125,
+      "gt_level": 3,
+      "llm_level": 2,
+      "gt_path": "root > Edge Computing Systems and Tools > Cachier and Precog",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Diffusion measurements"
+    },
+    {
+      "gt_title": "Deep Learning Packages",
+      "llm_title": "References",
+      "similarity": 0.56689453125,
+      "gt_level": 3,
+      "llm_level": 2,
+      "gt_path": "root > Deep Learning Optimization at the Edge > Deep Learning Packages",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > References"
+    },
+    {
+      "gt_title": "Cachier and Precog",
+      "llm_title": "Diffusion measurements",
+      "similarity": 0.56689453125,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "Edge Computing Systems and Tools > Cachier and Precog",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Diffusion measurements"
+    },
+    {
+      "gt_title": "Cachier and Precog",
+      "llm_title": "Diffusion measurements",
+      "similarity": 0.56689453125,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "Cachier and Precog",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Diffusion measurements"
+    },
+    {
+      "gt_title": "Deep Learning Packages",
+      "llm_title": "References",
+      "similarity": 0.56689453125,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "Deep Learning Optimization at the Edge > Deep Learning Packages",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > References"
+    },
+    {
+      "gt_title": "Deep Learning Packages",
+      "llm_title": "References",
+      "similarity": 0.56689453125,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "Deep Learning Packages",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > References"
+    },
+    {
+      "gt_title": "Deep Learning Packages",
+      "llm_title": "Design and improvements in LWD-NMR",
+      "similarity": 0.56640625,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "root > Deep Learning Optimization at the Edge > Deep Learning Packages",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in field scale > Design and improvements in LWD-NMR"
+    },
+    {
+      "gt_title": "Deep Learning Packages",
+      "llm_title": "Design and improvements in LWD-NMR",
+      "similarity": 0.56640625,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Deep Learning Optimization at the Edge > Deep Learning Packages",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in field scale > Design and improvements in LWD-NMR"
+    },
+    {
+      "gt_title": "Deep Learning Packages",
+      "llm_title": "Design and improvements in LWD-NMR",
+      "similarity": 0.56640625,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Deep Learning Packages",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in field scale > Design and improvements in LWD-NMR"
+    },
+    {
+      "gt_title": "Cloud-Sea Computing Systems",
+      "llm_title": "Future research directions",
+      "similarity": 0.5654296875,
+      "gt_level": 3,
+      "llm_level": 2,
+      "gt_path": "root > Edge Computing Systems and Tools > Cloud-Sea Computing Systems",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Future research directions"
+    },
+    {
+      "gt_title": "Conclusions",
+      "llm_title": "References",
+      "similarity": 0.5654296875,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "root > Conclusions",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > References"
+    },
+    {
+      "gt_title": "Cloud-Sea Computing Systems",
+      "llm_title": "Future research directions",
+      "similarity": 0.5654296875,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "Edge Computing Systems and Tools > Cloud-Sea Computing Systems",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Future research directions"
+    },
+    {
+      "gt_title": "Cloud-Sea Computing Systems",
+      "llm_title": "Future research directions",
+      "similarity": 0.5654296875,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "Cloud-Sea Computing Systems",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Future research directions"
+    },
+    {
+      "gt_title": "Conclusions",
+      "llm_title": "References",
+      "similarity": 0.5654296875,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "Conclusions",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > References"
+    },
+    {
+      "gt_title": "ASIC",
+      "llm_title": "Relaxation measurements",
+      "similarity": 0.56494140625,
+      "gt_level": 4,
+      "llm_level": 2,
+      "gt_path": "root > Deep Learning Optimization at the Edge > Hardware System > ASIC",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements"
+    },
+    {
+      "gt_title": "ASIC",
+      "llm_title": "Relaxation measurements",
+      "similarity": 0.56494140625,
+      "gt_level": 3,
+      "llm_level": 2,
+      "gt_path": "Deep Learning Optimization at the Edge > Hardware System > ASIC",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements"
+    },
+    {
+      "gt_title": "ASIC",
+      "llm_title": "Relaxation measurements",
+      "similarity": 0.56494140625,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "Hardware System > ASIC",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements"
+    },
+    {
+      "gt_title": "ASIC",
+      "llm_title": "Relaxation measurements",
+      "similarity": 0.56494140625,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "ASIC",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements"
+    },
+    {
+      "gt_title": "Cachier and Precog",
+      "llm_title": "Introduction",
+      "similarity": 0.5634765625,
+      "gt_level": 3,
+      "llm_level": 2,
+      "gt_path": "root > Edge Computing Systems and Tools > Cachier and Precog",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Introduction"
+    },
+    {
+      "gt_title": "Cachier and Precog",
+      "llm_title": "Introduction",
+      "similarity": 0.5634765625,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "Edge Computing Systems and Tools > Cachier and Precog",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Introduction"
+    },
+    {
+      "gt_title": "Cachier and Precog",
+      "llm_title": "Introduction",
+      "similarity": 0.5634765625,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "Cachier and Precog",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Introduction"
+    },
+    {
+      "gt_title": "Cloud-Sea Computing Systems",
+      "llm_title": "References",
+      "similarity": 0.56298828125,
+      "gt_level": 3,
+      "llm_level": 2,
+      "gt_path": "root > Edge Computing Systems and Tools > Cloud-Sea Computing Systems",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > References"
+    },
+    {
+      "gt_title": "Cloud-Sea Computing Systems",
+      "llm_title": "References",
+      "similarity": 0.56298828125,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "Edge Computing Systems and Tools > Cloud-Sea Computing Systems",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > References"
+    },
+    {
+      "gt_title": "Cloud-Sea Computing Systems",
+      "llm_title": "References",
+      "similarity": 0.56298828125,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "Cloud-Sea Computing Systems",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > References"
+    },
+    {
+      "gt_title": "At the Middle Edge Server Layer",
+      "llm_title": "Two-dimensional NMR measurements",
+      "similarity": 0.5615234375,
+      "gt_level": 3,
+      "llm_level": 2,
+      "gt_path": "root > Enhancing Energy Efficiency of Edge Computing Systems > At the Middle Edge Server Layer",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Two-dimensional NMR measurements"
+    },
+    {
+      "gt_title": "At the Middle Edge Server Layer",
+      "llm_title": "Two-dimensional NMR measurements",
+      "similarity": 0.5615234375,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "Enhancing Energy Efficiency of Edge Computing Systems > At the Middle Edge Server Layer",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Two-dimensional NMR measurements"
+    },
+    {
+      "gt_title": "At the Middle Edge Server Layer",
+      "llm_title": "Two-dimensional NMR measurements",
+      "similarity": 0.5615234375,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "At the Middle Edge Server Layer",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Two-dimensional NMR measurements"
+    },
+    {
+      "gt_title": "Conclusions",
+      "llm_title": "Design and improvements in LWD-NMR",
+      "similarity": 0.560546875,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "root > Conclusions",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in field scale > Design and improvements in LWD-NMR"
+    },
+    {
+      "gt_title": "Conclusions",
+      "llm_title": "Design and improvements in LWD-NMR",
+      "similarity": 0.560546875,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Conclusions",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in field scale > Design and improvements in LWD-NMR"
+    },
+    {
+      "gt_title": "Cachier and Precog",
+      "llm_title": "Tar detection in carbonates",
+      "similarity": 0.5595703125,
+      "gt_level": 3,
+      "llm_level": 4,
+      "gt_path": "root > Edge Computing Systems and Tools > Cachier and Precog",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in field scale > Field implementation and applications > Tar detection in carbonates"
+    },
+    {
+      "gt_title": "Cachier and Precog",
+      "llm_title": "Tar detection in carbonates",
+      "similarity": 0.5595703125,
+      "gt_level": 2,
+      "llm_level": 4,
+      "gt_path": "Edge Computing Systems and Tools > Cachier and Precog",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in field scale > Field implementation and applications > Tar detection in carbonates"
+    },
+    {
+      "gt_title": "Cachier and Precog",
+      "llm_title": "Tar detection in carbonates",
+      "similarity": 0.5595703125,
+      "gt_level": 1,
+      "llm_level": 4,
+      "gt_path": "Cachier and Precog",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in field scale > Field implementation and applications > Tar detection in carbonates"
+    },
+    {
+      "gt_title": "Cachier and Precog",
+      "llm_title": "Design and improvements in LWD-NMR",
+      "similarity": 0.55810546875,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "root > Edge Computing Systems and Tools > Cachier and Precog",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in field scale > Design and improvements in LWD-NMR"
+    },
+    {
+      "gt_title": "Cachier and Precog",
+      "llm_title": "Design and improvements in LWD-NMR",
+      "similarity": 0.55810546875,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Edge Computing Systems and Tools > Cachier and Precog",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in field scale > Design and improvements in LWD-NMR"
+    },
+    {
+      "gt_title": "Cachier and Precog",
+      "llm_title": "Design and improvements in LWD-NMR",
+      "similarity": 0.55810546875,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Cachier and Precog",
+      "llm_path": "A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in field scale > Design and improvements in LWD-NMR"
+    }
+  ]
+}

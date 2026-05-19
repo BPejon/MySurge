@@ -194,6 +194,298 @@ class SurGEvaluator:
             "subtitle_similarity": subtitle_similarity
         }
     
+    def extract_sections_hierarchical_from_llm(self, markdown_node, level=0, parent_path=None):
+        """
+        Extrai seções e subsecções da árvore MarkdownNode de forma hierárquica.
+        Retorna conteúdo DIRETO de cada nível (sem incluir subsecções aninhadas).
+        
+        Args:
+            markdown_node: MarkdownNode raiz
+            level: Nível hierárquico (0 = raiz, 1 = seção, 2 = subsecção, etc)
+            parent_path: Lista de títulos pais até este nó
+            
+        Returns:
+            list: Lista de dicts com estrutura:
+                {
+                    'title': str,
+                    'level': int,
+                    'content': str (conteúdo direto),
+                    'path_titles': list (caminho hierárquico),
+                    'node': MarkdownNode (referência ao nó)
+                }
+        """
+        sections = []
+        
+        if parent_path is None:
+            parent_path = []
+        
+        if markdown_node is None:
+            return sections
+        
+        # Pula o nó raiz (título do artigo)
+        if level > 0:
+            # Extrai conteúdo direto deste nó (sem recursão para filhos)
+            content_text = ""
+            if hasattr(markdown_node, 'content') and markdown_node.content:
+                content_text = "\n".join(markdown_node.content).strip()
+            
+            # Só adiciona se houver conteúdo ou título relevante
+            if content_text and len(content_text) >= 10:
+                current_path = parent_path + [markdown_node.title]
+                
+                sections.append({
+                    'title': markdown_node.title,
+                    'level': level,
+                    'content': content_text,
+                    'path_titles': current_path,
+                    'node': markdown_node
+                })
+        
+        # Processa filhos recursivamente
+        if hasattr(markdown_node, 'children') and markdown_node.children:
+            new_parent_path = parent_path + ([markdown_node.title] if level > 0 else [])
+            
+            for child in markdown_node.children:
+                child_sections = self.extract_sections_hierarchical_from_llm(
+                    child, 
+                    level=level + 1, 
+                    parent_path=new_parent_path
+                )
+                sections.extend(child_sections)
+        
+        return sections
+    
+    def extract_sections_hierarchical_from_gt(self, survey_id):
+        """
+        Extrai seções e subsecções do Ground Truth de forma hierárquica.
+        Retorna conteúdo DIRETO de cada nível (sem incluir subsecções aninjadas).
+        
+        Args:
+            survey_id: ID do survey no survey_map
+            
+        Returns:
+            list: Lista de dicts com estrutura:
+                {
+                    'title': str,
+                    'level': int,
+                    'content': str (conteúdo direto),
+                    'path_titles': list (caminho hierárquico),
+                    'section_dict': dict (referência à seção original)
+                }
+        """
+        sections = []
+        
+        if survey_id not in self.survey_map:
+            return sections
+        
+        survey = self.survey_map[survey_id]
+        
+        # Primeiro: construir mapa global de ID -> seção em UMA única passagem
+        id_to_section = {}
+        
+        def build_id_map(section_list):
+            """Constrói mapa de IDs em uma única passagem sem recursão"""
+            for section in section_list:
+                section_id = section.get('id')
+                if section_id:
+                    id_to_section[section_id] = section
+        
+        if 'structure' in survey:
+            build_id_map(survey['structure'])
+        
+        # Segundo: processar seções com limite de profundidade
+        MAX_DEPTH = 10  # Evita recursão infinita
+        
+        def process_sections_recursive(section_list, level, parent_path, depth=0):
+            """Processa recursivamente lista de seções com limite de profundidade"""
+            if not section_list or depth > MAX_DEPTH:
+                return
+            
+            for section in section_list:
+                # Extrai conteúdo direto
+                content = section.get('content', '').strip()
+                current_path = parent_path + [section['title']]
+                
+                # Só adiciona se houver conteúdo relevante
+                if content and len(content) >= 10:
+                    sections.append({
+                        'title': section['title'],
+                        'level': level,
+                        'content': content,
+                        'path_titles': current_path,
+                        'section_dict': section
+                    })
+                
+                # Processa subsecções usando o mapa de IDs
+                if 'subsections' in section and section['subsections'] and level < 5:
+                    subsection_objs = []
+                    for subsec_id in section['subsections']:
+                        if subsec_id in id_to_section:
+                            subsection_objs.append(id_to_section[subsec_id])
+                    
+                    if subsection_objs:
+                        process_sections_recursive(subsection_objs, level + 1, current_path, depth + 1)
+        
+        # Inicia processo recursivo
+        if 'structure' in survey:
+            process_sections_recursive(survey['structure'], 1, [], 0)
+        
+        return sections
+    
+    def compare_section_content_hierarchical(self, survey_id, psg_node, similarity_threshold=0.75):
+        """
+        Compara trechos de conteúdo de seções e subsecções entre GT e LLM.
+        Calcula matriz de similaridade coseno e identifica pares similares.
+        
+        Args:
+            survey_id: ID do survey
+            psg_node: Raiz MarkdownNode do artigo LLM
+            similarity_threshold: Threshold mínimo de similaridade (default 0.75)
+            
+        Returns:
+            dict com:
+                - gt_sections: Lista de seções GT extraídas
+                - llm_sections: Lista de seções LLM extraídas
+                - similarity_matrix: Matriz numpy de similaridades
+                - similar_pairs: Lista de pares similares ordenados
+                - comparison_df: DataFrame com resultados detalhados
+        """
+        import pandas as pd
+        
+        print(f"\n{'='*100}")
+        print(f"COMPARAÇÃO DE TRECHOS DE CONTEÚDO - Survey ID: {survey_id}")
+        print(f"{'='*100}")
+        
+        # Extrai seções hierarquicamente
+        print("Extraindo seções do Ground Truth...")
+        gt_sections = self.extract_sections_hierarchical_from_gt(survey_id)
+        print(f"  Total de seções/subsecções GT: {len(gt_sections)}")
+        
+        print("Extraindo seções do artigo LLM...")
+        llm_sections = self.extract_sections_hierarchical_from_llm(psg_node)
+        print(f"  Total de seções/subsecções LLM: {len(llm_sections)}")
+        
+        if len(gt_sections) == 0 or len(llm_sections) == 0:
+            print("Aviso: Não há seções suficientes para comparação.")
+            return {
+                "gt_sections": gt_sections,
+                "llm_sections": llm_sections,
+                "similarity_matrix": np.array([]),
+                "similar_pairs": [],
+                "comparison_df": pd.DataFrame()
+            }
+        
+        # Gera embeddings usando FlagModel
+        print("\nGerando embeddings dos trechos...")
+        if self.flag_model is None:
+            self.flag_model = FlagModel(self.flag_model_path,
+                query_instruction_for_retrieval="Generate a representation for this text to calculate similarity:",
+                use_fp16=True)
+        
+        # Extrai conteúdos e codifica
+        gt_contents = [sec['content'] for sec in gt_sections]
+        llm_contents = [sec['content'] for sec in llm_sections]
+        
+        gt_embeddings = self.flag_model.encode(gt_contents)
+        llm_embeddings = self.flag_model.encode(llm_contents)
+        
+        # Normaliza embeddings para similaridade coseno
+        gt_embeddings_norm = gt_embeddings / np.linalg.norm(gt_embeddings, axis=1, keepdims=True)
+        llm_embeddings_norm = llm_embeddings / np.linalg.norm(llm_embeddings, axis=1, keepdims=True)
+        
+        # Calcula matriz de similaridade coseno
+        similarity_matrix = np.dot(gt_embeddings_norm, llm_embeddings_norm.T)
+        
+        print(f"Matriz de similaridade gerada: {similarity_matrix.shape}")
+        
+        # Identifica pares similares
+        similar_pairs = []
+        
+        for i, gt_sec in enumerate(gt_sections):
+            for j, llm_sec in enumerate(llm_sections):
+                similarity = similarity_matrix[i, j]
+                
+                if similarity >= similarity_threshold:
+                    similar_pairs.append({
+                        'gt_title': gt_sec['title'],
+                        'gt_level': gt_sec['level'],
+                        'gt_content': gt_sec['content'],
+                        'gt_path': ' > '.join(gt_sec['path_titles']),
+                        'llm_title': llm_sec['title'],
+                        'llm_level': llm_sec['level'],
+                        'llm_content': llm_sec['content'],
+                        'llm_path': ' > '.join(llm_sec['path_titles']),
+                        'similarity': similarity,
+                        'gt_idx': i,
+                        'llm_idx': j
+                    })
+        
+        # Ordena por similaridade decrescente
+        similar_pairs = sorted(similar_pairs, key=lambda x: x['similarity'], reverse=True)
+        
+        print(f"\nPares similares encontrados (threshold >= {similarity_threshold}): {len(similar_pairs)}")
+        
+        # Cria DataFrame para exibição
+        comparison_data = []
+        for pair in similar_pairs:
+            comparison_data.append({
+                'GT_Título': pair['gt_title'],
+                'LLM_Título': pair['llm_title'],
+                'Nível_GT': f"Nível {pair['gt_level']}",
+                'Nível_LLM': f"Nível {pair['llm_level']}",
+                'Similaridade': round(pair['similarity'], 4),
+                'Caminho_GT': pair['gt_path'],
+                'Caminho_LLM': pair['llm_path'],
+                'Tamanho_GT': len(pair['gt_content'].split()),
+                'Tamanho_LLM': len(pair['llm_content'].split())
+            })
+        
+        comparison_df = pd.DataFrame(comparison_data)
+        
+        return {
+            "gt_sections": gt_sections,
+            "llm_sections": llm_sections,
+            "similarity_matrix": similarity_matrix,
+            "similar_pairs": similar_pairs,
+            "comparison_df": comparison_df
+        }
+    
+    def print_similar_pairs_table(self, comparison_result):
+        """
+        Imprime tabela formatada dos pares de seções mais similares.
+        
+        Args:
+            comparison_result: Dict retornado por compare_section_content_hierarchical()
+        """
+        comparison_df = comparison_result.get('comparison_df')
+        
+        if comparison_df is None or comparison_df.empty:
+            print("Tabela vazia. Nenhum par similar encontrado.")
+            return
+        
+        print("\n" + "="*180)
+        print("SEÇÕES MAIS SIMILARES - COMPARAÇÃO ENTRE GT E LLM")
+        print("="*180)
+        
+        # Cabeçalho
+        print(f"{'GT Título':<35} {'LLM Título':<35} {'Nível GT':<12} {'Nível LLM':<12} {'Similaridade':<14} {'Tamanho GT':<12} {'Tamanho LLM':<12}")
+        print("-"*180)
+        
+        # Dados
+        for idx, row in comparison_df.iterrows():
+            gt_title = str(row['GT_Título'])[:33]
+            llm_title = str(row['LLM_Título'])[:33]
+            
+            print(f"{gt_title:<35} {llm_title:<35} {str(row['Nível_GT']):<12} {str(row['Nível_LLM']):<12} "
+                  f"{row['Similaridade']:<14.4f} {row['Tamanho_GT']:<12} {row['Tamanho_LLM']:<12}")
+        
+        print("="*180)
+        print(f"Total de pares similares: {len(comparison_df)}")
+        print(f"Similaridade Média: {comparison_df['Similaridade'].mean():.4f}")
+        print(f"Similaridade Máxima: {comparison_df['Similaridade'].max():.4f}")
+        print(f"Similaridade Mínima: {comparison_df['Similaridade'].min():.4f}")
+        print()
+    
     def extract_section_text_from_gt(self, section_dict):
         """
         Extrai o texto de conteúdo de uma seção do Ground Truth (estrutura JSON).

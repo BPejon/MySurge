@@ -1,0 +1,620 @@
+====================================================================================================
+ANÁLISE DE SIMILARIDADE DE SEÇÕES - Survey 26
+====================================================================================================
+
+Arquivo: baselines/Autosurvey/output/26/A Survey on Visual Transformer_.md
+Threshold: 0.8
+Data: 2026-04-28 22:57:14
+
+ESTATÍSTICAS:
+  Seções GT: 110
+  Seções LLM: 46
+  Pares Similares: 908
+  Similaridade Máxima: 0.9102
+  Similaridade Média: 0.8281
+  Similaridade Mínima: 0.8003
+
+====================================================================================================
+TOP 100 PARES
+====================================================================================================
+
+  1. GT: Transformer with Convolution
+      LLM: 5.1 Image Classification
+      Similaridade: 0.9102
+      Níveis: Nível 4 -> Nível 3
+      Caminhos: root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+  2. GT: Transformer with Convolution
+      LLM: 5.1 Image Classification
+      Similaridade: 0.9102
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Transformer with Convolution / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+  3. GT: Transformer with Convolution
+      LLM: 5.1 Image Classification
+      Similaridade: 0.9102
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: Vision Transformer > Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+  4. GT: Transformer with Convolution
+      LLM: 5.1 Image Classification
+      Similaridade: 0.9102
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+  5. GT: Transformer with Convolution
+      LLM: 2.9 Convolutions in Vision Transformers
+      Similaridade: 0.8975
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: Vision Transformer > Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.9 Convolutions in Vision Transformers
+
+  6. GT: Transformer with Convolution
+      LLM: 2.9 Convolutions in Vision Transformers
+      Similaridade: 0.8975
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.9 Convolutions in Vision Transformers
+
+  7. GT: Transformer with Convolution
+      LLM: 2.9 Convolutions in Vision Transformers
+      Similaridade: 0.8975
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Transformer with Convolution / A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.9 Convolutions in Vision Transformers
+
+  8. GT: Transformer with Convolution
+      LLM: 2.9 Convolutions in Vision Transformers
+      Similaridade: 0.8975
+      Níveis: Nível 4 -> Nível 3
+      Caminhos: root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.9 Convolutions in Vision Transformers
+
+  9. GT: Challenges
+      LLM: 5.1 Image Classification
+      Similaridade: 0.8970
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: root > Conclusions and Discussions > Challenges / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+ 10. GT: Challenges
+      LLM: 5.1 Image Classification
+      Similaridade: 0.8970
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Conclusions and Discussions > Challenges / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+ 11. GT: Challenges
+      LLM: 5.1 Image Classification
+      Similaridade: 0.8970
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Challenges / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+ 12. GT: Generic Object Detection
+      LLM: 5.2 Object Detection
+      Similaridade: 0.8950
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Generic Object Detection / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection
+
+ 13. GT: Generic Object Detection
+      LLM: 5.2 Object Detection
+      Similaridade: 0.8950
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: High/Mid-level Vision > Generic Object Detection / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection
+
+ 14. GT: Generic Object Detection
+      LLM: 5.2 Object Detection
+      Similaridade: 0.8950
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: Vision Transformer > High/Mid-level Vision > Generic Object Detection / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection
+
+ 15. GT: Generic Object Detection
+      LLM: 5.2 Object Detection
+      Similaridade: 0.8950
+      Níveis: Nível 4 -> Nível 3
+      Caminhos: root > Vision Transformer > High/Mid-level Vision > Generic Object Detection / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection
+
+ 16. GT: Transformer with Convolution
+      LLM: 1.2 Key Concepts and Architecture Overview
+      Similaridade: 0.8936
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: Vision Transformer > Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.2 Key Concepts and Architecture Overview
+
+ 17. GT: Transformer with Convolution
+      LLM: 1.2 Key Concepts and Architecture Overview
+      Similaridade: 0.8936
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.2 Key Concepts and Architecture Overview
+
+ 18. GT: Transformer with Convolution
+      LLM: 1.2 Key Concepts and Architecture Overview
+      Similaridade: 0.8936
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Transformer with Convolution / A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.2 Key Concepts and Architecture Overview
+
+ 19. GT: Transformer with Convolution
+      LLM: 1.2 Key Concepts and Architecture Overview
+      Similaridade: 0.8936
+      Níveis: Nível 4 -> Nível 3
+      Caminhos: root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.2 Key Concepts and Architecture Overview
+
+ 20. GT: Transformer with Convolution
+      LLM: 5.2 Object Detection
+      Similaridade: 0.8911
+      Níveis: Nível 4 -> Nível 3
+      Caminhos: root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection
+
+ 21. GT: Transformer with Convolution
+      LLM: 5.2 Object Detection
+      Similaridade: 0.8911
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: Vision Transformer > Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection
+
+ 22. GT: Transformer with Convolution
+      LLM: 5.2 Object Detection
+      Similaridade: 0.8911
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection
+
+ 23. GT: Transformer with Convolution
+      LLM: 5.2 Object Detection
+      Similaridade: 0.8911
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Transformer with Convolution / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection
+
+ 24. GT: Future Prospects
+      LLM: 5.1 Image Classification
+      Similaridade: 0.8882
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: root > Conclusions and Discussions > Future Prospects / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+ 25. GT: Future Prospects
+      LLM: 5.1 Image Classification
+      Similaridade: 0.8882
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Conclusions and Discussions > Future Prospects / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+ 26. GT: Future Prospects
+      LLM: 5.1 Image Classification
+      Similaridade: 0.8882
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Future Prospects / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+ 27. GT: Transformer with Convolution
+      LLM: 5.3 Image Segmentation
+      Similaridade: 0.8838
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation
+
+ 28. GT: Transformer with Convolution
+      LLM: 5.3 Image Segmentation
+      Similaridade: 0.8838
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Transformer with Convolution / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation
+
+ 29. GT: Transformer with Convolution
+      LLM: 5.3 Image Segmentation
+      Similaridade: 0.8838
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: Vision Transformer > Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation
+
+ 30. GT: Transformer with Convolution
+      LLM: 5.3 Image Segmentation
+      Similaridade: 0.8838
+      Níveis: Nível 4 -> Nível 3
+      Caminhos: root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation
+
+ 31. GT: Transformer with Convolution
+      LLM: 1.1 Historical Context and Development
+      Similaridade: 0.8799
+      Níveis: Nível 4 -> Nível 3
+      Caminhos: root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.1 Historical Context and Development
+
+ 32. GT: Transformer with Convolution
+      LLM: 1.1 Historical Context and Development
+      Similaridade: 0.8799
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: Vision Transformer > Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.1 Historical Context and Development
+
+ 33. GT: Transformer with Convolution
+      LLM: 1.1 Historical Context and Development
+      Similaridade: 0.8799
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.1 Historical Context and Development
+
+ 34. GT: Transformer with Convolution
+      LLM: 1.1 Historical Context and Development
+      Similaridade: 0.8799
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Transformer with Convolution / A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.1 Historical Context and Development
+
+ 35. GT: Transformer with Convolution
+      LLM: References
+      Similaridade: 0.8794
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > References
+
+ 36. GT: Challenges
+      LLM: 5.2 Object Detection
+      Similaridade: 0.8794
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Challenges / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection
+
+ 37. GT: Challenges
+      LLM: 5.2 Object Detection
+      Similaridade: 0.8794
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: root > Conclusions and Discussions > Challenges / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection
+
+ 38. GT: Transformer with Convolution
+      LLM: References
+      Similaridade: 0.8794
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: Transformer with Convolution / A Survey on Visual Transformers > References
+
+ 39. GT: Pure Transformer
+      LLM: 5.1 Image Classification
+      Similaridade: 0.8794
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Pure Transformer / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+ 40. GT: Challenges
+      LLM: 5.2 Object Detection
+      Similaridade: 0.8794
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Conclusions and Discussions > Challenges / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection
+
+ 41. GT: Pure Transformer
+      LLM: 5.1 Image Classification
+      Similaridade: 0.8794
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Backbone for Representation Learning > Pure Transformer / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+ 42. GT: Pure Transformer
+      LLM: 5.1 Image Classification
+      Similaridade: 0.8794
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: Vision Transformer > Backbone for Representation Learning > Pure Transformer / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+ 43. GT: Pure Transformer
+      LLM: 5.1 Image Classification
+      Similaridade: 0.8794
+      Níveis: Nível 4 -> Nível 3
+      Caminhos: root > Vision Transformer > Backbone for Representation Learning > Pure Transformer / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+ 44. GT: Transformer with Convolution
+      LLM: References
+      Similaridade: 0.8794
+      Níveis: Nível 4 -> Nível 2
+      Caminhos: root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > References
+
+ 45. GT: Transformer with Convolution
+      LLM: References
+      Similaridade: 0.8794
+      Níveis: Nível 3 -> Nível 2
+      Caminhos: Vision Transformer > Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > References
+
+ 46. GT: Backbone for Representation Learning
+      LLM: 5.1 Image Classification
+      Similaridade: 0.8774
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Backbone for Representation Learning / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+ 47. GT: Challenges
+      LLM: 3.4 Data Requirements and Learning Flexibility
+      Similaridade: 0.8774
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Challenges / A Survey on Visual Transformers > 3 Attention Mechanisms and Learning Processes > 3.4 Data Requirements and Learning Flexibility
+
+ 48. GT: Challenges
+      LLM: 3.4 Data Requirements and Learning Flexibility
+      Similaridade: 0.8774
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Conclusions and Discussions > Challenges / A Survey on Visual Transformers > 3 Attention Mechanisms and Learning Processes > 3.4 Data Requirements and Learning Flexibility
+
+ 49. GT: Backbone for Representation Learning
+      LLM: 5.1 Image Classification
+      Similaridade: 0.8774
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Vision Transformer > Backbone for Representation Learning / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+ 50. GT: Challenges
+      LLM: 3.4 Data Requirements and Learning Flexibility
+      Similaridade: 0.8774
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: root > Conclusions and Discussions > Challenges / A Survey on Visual Transformers > 3 Attention Mechanisms and Learning Processes > 3.4 Data Requirements and Learning Flexibility
+
+ 51. GT: Backbone for Representation Learning
+      LLM: 5.1 Image Classification
+      Similaridade: 0.8774
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: root > Vision Transformer > Backbone for Representation Learning / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+ 52. GT: Transformer with Convolution
+      LLM: 3.4 Data Requirements and Learning Flexibility
+      Similaridade: 0.8770
+      Níveis: Nível 4 -> Nível 3
+      Caminhos: root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > 3 Attention Mechanisms and Learning Processes > 3.4 Data Requirements and Learning Flexibility
+
+ 53. GT: Transformer with Convolution
+      LLM: 3.4 Data Requirements and Learning Flexibility
+      Similaridade: 0.8770
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: Vision Transformer > Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > 3 Attention Mechanisms and Learning Processes > 3.4 Data Requirements and Learning Flexibility
+
+ 54. GT: Transformer with Convolution
+      LLM: 3.4 Data Requirements and Learning Flexibility
+      Similaridade: 0.8770
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > 3 Attention Mechanisms and Learning Processes > 3.4 Data Requirements and Learning Flexibility
+
+ 55. GT: Transformer with Convolution
+      LLM: 3.4 Data Requirements and Learning Flexibility
+      Similaridade: 0.8770
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Transformer with Convolution / A Survey on Visual Transformers > 3 Attention Mechanisms and Learning Processes > 3.4 Data Requirements and Learning Flexibility
+
+ 56. GT: Future Prospects
+      LLM: References
+      Similaridade: 0.8750
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: Conclusions and Discussions > Future Prospects / A Survey on Visual Transformers > References
+
+ 57. GT: Future Prospects
+      LLM: References
+      Similaridade: 0.8750
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: Future Prospects / A Survey on Visual Transformers > References
+
+ 58. GT: Challenges
+      LLM: References
+      Similaridade: 0.8750
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: Challenges / A Survey on Visual Transformers > References
+
+ 59. GT: Future Prospects
+      LLM: References
+      Similaridade: 0.8750
+      Níveis: Nível 3 -> Nível 2
+      Caminhos: root > Conclusions and Discussions > Future Prospects / A Survey on Visual Transformers > References
+
+ 60. GT: Challenges
+      LLM: References
+      Similaridade: 0.8750
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: Conclusions and Discussions > Challenges / A Survey on Visual Transformers > References
+
+ 61. GT: Challenges
+      LLM: References
+      Similaridade: 0.8750
+      Níveis: Nível 3 -> Nível 2
+      Caminhos: root > Conclusions and Discussions > Challenges / A Survey on Visual Transformers > References
+
+ 62. GT: Pure Transformer
+      LLM: 1.2 Key Concepts and Architecture Overview
+      Similaridade: 0.8745
+      Níveis: Nível 4 -> Nível 3
+      Caminhos: root > Vision Transformer > Backbone for Representation Learning > Pure Transformer / A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.2 Key Concepts and Architecture Overview
+
+ 63. GT: Pure Transformer
+      LLM: 1.2 Key Concepts and Architecture Overview
+      Similaridade: 0.8745
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: Vision Transformer > Backbone for Representation Learning > Pure Transformer / A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.2 Key Concepts and Architecture Overview
+
+ 64. GT: Pure Transformer
+      LLM: 1.2 Key Concepts and Architecture Overview
+      Similaridade: 0.8745
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Backbone for Representation Learning > Pure Transformer / A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.2 Key Concepts and Architecture Overview
+
+ 65. GT: Pure Transformer
+      LLM: 1.2 Key Concepts and Architecture Overview
+      Similaridade: 0.8745
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Pure Transformer / A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.2 Key Concepts and Architecture Overview
+
+ 66. GT: Challenges
+      LLM: 6.3 Data Requirements
+      Similaridade: 0.8682
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: root > Conclusions and Discussions > Challenges / A Survey on Visual Transformers > 6 Challenges and Future Directions > 6.3 Data Requirements
+
+ 67. GT: Challenges
+      LLM: 6.3 Data Requirements
+      Similaridade: 0.8682
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Conclusions and Discussions > Challenges / A Survey on Visual Transformers > 6 Challenges and Future Directions > 6.3 Data Requirements
+
+ 68. GT: Challenges
+      LLM: 6.3 Data Requirements
+      Similaridade: 0.8682
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Challenges / A Survey on Visual Transformers > 6 Challenges and Future Directions > 6.3 Data Requirements
+
+ 69. GT: Challenges
+      LLM: 1.1 Historical Context and Development
+      Similaridade: 0.8657
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Conclusions and Discussions > Challenges / A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.1 Historical Context and Development
+
+ 70. GT: Challenges
+      LLM: 1.3 Comparison with Traditional Convolutional Neural Networks
+      Similaridade: 0.8657
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Challenges / A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.3 Comparison with Traditional Convolutional Neural Networks
+
+ 71. GT: Challenges
+      LLM: 1.3 Comparison with Traditional Convolutional Neural Networks
+      Similaridade: 0.8657
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Conclusions and Discussions > Challenges / A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.3 Comparison with Traditional Convolutional Neural Networks
+
+ 72. GT: Challenges
+      LLM: 1.3 Comparison with Traditional Convolutional Neural Networks
+      Similaridade: 0.8657
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: root > Conclusions and Discussions > Challenges / A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.3 Comparison with Traditional Convolutional Neural Networks
+
+ 73. GT: Challenges
+      LLM: 1.1 Historical Context and Development
+      Similaridade: 0.8657
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Challenges / A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.1 Historical Context and Development
+
+ 74. GT: Segmentation
+      LLM: 5.3 Image Segmentation
+      Similaridade: 0.8657
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: High/Mid-level Vision > Segmentation / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation
+
+ 75. GT: Segmentation
+      LLM: 5.3 Image Segmentation
+      Similaridade: 0.8657
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Segmentation / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation
+
+ 76. GT: Segmentation
+      LLM: 5.3 Image Segmentation
+      Similaridade: 0.8657
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: Vision Transformer > High/Mid-level Vision > Segmentation / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation
+
+ 77. GT: Challenges
+      LLM: 1.1 Historical Context and Development
+      Similaridade: 0.8657
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: root > Conclusions and Discussions > Challenges / A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.1 Historical Context and Development
+
+ 78. GT: Segmentation
+      LLM: 5.3 Image Segmentation
+      Similaridade: 0.8657
+      Níveis: Nível 4 -> Nível 3
+      Caminhos: root > Vision Transformer > High/Mid-level Vision > Segmentation / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation
+
+ 79. GT: Challenges
+      LLM: 2.9 Convolutions in Vision Transformers
+      Similaridade: 0.8638
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: root > Conclusions and Discussions > Challenges / A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.9 Convolutions in Vision Transformers
+
+ 80. GT: Challenges
+      LLM: 2.9 Convolutions in Vision Transformers
+      Similaridade: 0.8638
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Conclusions and Discussions > Challenges / A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.9 Convolutions in Vision Transformers
+
+ 81. GT: Challenges
+      LLM: 2.9 Convolutions in Vision Transformers
+      Similaridade: 0.8638
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Challenges / A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.9 Convolutions in Vision Transformers
+
+ 82. GT: Transformer with Convolution
+      LLM: 6.3 Data Requirements
+      Similaridade: 0.8618
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > 6 Challenges and Future Directions > 6.3 Data Requirements
+
+ 83. GT: Discussions
+      LLM: 5.3 Image Segmentation
+      Similaridade: 0.8618
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Discussions / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation
+
+ 84. GT: Discussions
+      LLM: 5.3 Image Segmentation
+      Similaridade: 0.8618
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: High/Mid-level Vision > Discussions / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation
+
+ 85. GT: Transformer with Convolution
+      LLM: 6.3 Data Requirements
+      Similaridade: 0.8618
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Transformer with Convolution / A Survey on Visual Transformers > 6 Challenges and Future Directions > 6.3 Data Requirements
+
+ 86. GT: Discussions
+      LLM: 5.3 Image Segmentation
+      Similaridade: 0.8618
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: Vision Transformer > High/Mid-level Vision > Discussions / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation
+
+ 87. GT: Transformer with Convolution
+      LLM: 6.3 Data Requirements
+      Similaridade: 0.8618
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: Vision Transformer > Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > 6 Challenges and Future Directions > 6.3 Data Requirements
+
+ 88. GT: Discussions
+      LLM: 5.3 Image Segmentation
+      Similaridade: 0.8618
+      Níveis: Nível 4 -> Nível 3
+      Caminhos: root > Vision Transformer > High/Mid-level Vision > Discussions / A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation
+
+ 89. GT: Transformer with Convolution
+      LLM: 6.3 Data Requirements
+      Similaridade: 0.8618
+      Níveis: Nível 4 -> Nível 3
+      Caminhos: root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > 6 Challenges and Future Directions > 6.3 Data Requirements
+
+ 90. GT: Future Prospects
+      LLM: 1.1 Historical Context and Development
+      Similaridade: 0.8608
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: root > Conclusions and Discussions > Future Prospects / A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.1 Historical Context and Development
+
+ 91. GT: Future Prospects
+      LLM: 1.1 Historical Context and Development
+      Similaridade: 0.8608
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Conclusions and Discussions > Future Prospects / A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.1 Historical Context and Development
+
+ 92. GT: Future Prospects
+      LLM: 1.1 Historical Context and Development
+      Similaridade: 0.8608
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Future Prospects / A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.1 Historical Context and Development
+
+ 93. GT: Transformer with Convolution
+      LLM: 1.4 Inductive Biases and Data Requirements
+      Similaridade: 0.8599
+      Níveis: Nível 4 -> Nível 3
+      Caminhos: root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.4 Inductive Biases and Data Requirements
+
+ 94. GT: Transformer with Convolution
+      LLM: 1.4 Inductive Biases and Data Requirements
+      Similaridade: 0.8599
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: Vision Transformer > Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.4 Inductive Biases and Data Requirements
+
+ 95. GT: Transformer with Convolution
+      LLM: 1.4 Inductive Biases and Data Requirements
+      Similaridade: 0.8599
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.4 Inductive Biases and Data Requirements
+
+ 96. GT: Transformer with Convolution
+      LLM: 1.4 Inductive Biases and Data Requirements
+      Similaridade: 0.8599
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Transformer with Convolution / A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.4 Inductive Biases and Data Requirements
+
+ 97. GT: Transformer with Convolution
+      LLM: 2.5 Mobile Deployment Strategies
+      Similaridade: 0.8594
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.5 Mobile Deployment Strategies
+
+ 98. GT: Transformer with Convolution
+      LLM: 2.5 Mobile Deployment Strategies
+      Similaridade: 0.8594
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Transformer with Convolution / A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.5 Mobile Deployment Strategies
+
+ 99. GT: Transformer with Convolution
+      LLM: 2.5 Mobile Deployment Strategies
+      Similaridade: 0.8594
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: Vision Transformer > Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.5 Mobile Deployment Strategies
+
+100. GT: Transformer with Convolution
+      LLM: 2.5 Mobile Deployment Strategies
+      Similaridade: 0.8594
+      Níveis: Nível 4 -> Nível 3
+      Caminhos: root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution / A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.5 Mobile Deployment Strategies
+

@@ -1,0 +1,793 @@
+{
+  "survey_id": 1,
+  "passages_file": "baselines/ID/output/0/0.md",
+  "threshold": 0.65,
+  "statistics": {
+    "gt_sections_count": 197,
+    "llm_sections_count": 43,
+    "similar_pairs_count": 86
+  },
+  "statistics_details": {
+    "max_similarity": 0.69189453125,
+    "mean_similarity": 0.6640625,
+    "median_similarity": 0.65966796875,
+    "min_similarity": 0.65185546875,
+    "std_similarity": 0.0104827880859375
+  },
+  "top_pairs": [
+    {
+      "gt_title": "Breast cancer",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.69189453125,
+      "gt_level": 4,
+      "llm_level": 3,
+      "gt_path": "root > Applications of graph deep learning \\\\ in digital pathology > Cell-graph representation > Breast cancer",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Breast cancer",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.69189453125,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "Applications of graph deep learning \\\\ in digital pathology > Cell-graph representation > Breast cancer",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Breast cancer",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.69189453125,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Cell-graph representation > Breast cancer",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Breast cancer",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.69189453125,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Breast cancer",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "GCN",
+      "llm_title": "8.3. Physics-Informed Neural Networks (PINNs)",
+      "similarity": 0.68359375,
+      "gt_level": 4,
+      "llm_level": 3,
+      "gt_path": "root > Graph representation learning \\\\ in digital pathology: Background > Graph neural networks models > GCN",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.3. Physics-Informed Neural Networks (PINNs)"
+    },
+    {
+      "gt_title": "Breast cancer",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.68359375,
+      "gt_level": 4,
+      "llm_level": 3,
+      "gt_path": "root > Applications of graph deep learning \\\\ in digital pathology > Cell-graph representation > Breast cancer",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "GCN",
+      "llm_title": "8.3. Physics-Informed Neural Networks (PINNs)",
+      "similarity": 0.68359375,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "Graph representation learning \\\\ in digital pathology: Background > Graph neural networks models > GCN",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.3. Physics-Informed Neural Networks (PINNs)"
+    },
+    {
+      "gt_title": "GCN",
+      "llm_title": "8.3. Physics-Informed Neural Networks (PINNs)",
+      "similarity": 0.68359375,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Graph neural networks models > GCN",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.3. Physics-Informed Neural Networks (PINNs)"
+    },
+    {
+      "gt_title": "GCN",
+      "llm_title": "8.3. Physics-Informed Neural Networks (PINNs)",
+      "similarity": 0.68359375,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "GCN",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.3. Physics-Informed Neural Networks (PINNs)"
+    },
+    {
+      "gt_title": "Breast cancer",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.68359375,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "Applications of graph deep learning \\\\ in digital pathology > Cell-graph representation > Breast cancer",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "Breast cancer",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.68359375,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Cell-graph representation > Breast cancer",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "Breast cancer",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.68359375,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Breast cancer",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "Preliminaries",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.6767578125,
+      "gt_level": 4,
+      "llm_level": 3,
+      "gt_path": "root > Graph representation learning \\\\ in digital pathology: Background > Histopathology graph representation > Preliminaries",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "Preliminaries",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.6767578125,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "Graph representation learning \\\\ in digital pathology: Background > Histopathology graph representation > Preliminaries",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "Preliminaries",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.6767578125,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Histopathology graph representation > Preliminaries",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "Preliminaries",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.6767578125,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Preliminaries",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "Embedding expert knowledge and clinical adoption of graph analytics",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.66748046875,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "root > Discussion and open challenges > Embedding expert knowledge and clinical adoption of graph analytics",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Embedding expert knowledge and clinical adoption of graph analytics",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.66748046875,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Discussion and open challenges > Embedding expert knowledge and clinical adoption of graph analytics",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Embedding expert knowledge and clinical adoption of graph analytics",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.66748046875,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Embedding expert knowledge and clinical adoption of graph analytics",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Node embeddings",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.6669921875,
+      "gt_level": 5,
+      "llm_level": 3,
+      "gt_path": "root > Graph representation learning \\\\ in digital pathology: Background > Histopathology graph representation > Graph construction > Node embeddings",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "Node embeddings",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.6669921875,
+      "gt_level": 4,
+      "llm_level": 3,
+      "gt_path": "Graph representation learning \\\\ in digital pathology: Background > Histopathology graph representation > Graph construction > Node embeddings",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "Node embeddings",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.6669921875,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "Histopathology graph representation > Graph construction > Node embeddings",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "Node embeddings",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.6669921875,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Graph construction > Node embeddings",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "Node embeddings",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.6669921875,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Node embeddings",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "Node definition",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.66455078125,
+      "gt_level": 5,
+      "llm_level": 3,
+      "gt_path": "root > Graph representation learning \\\\ in digital pathology: Background > Histopathology graph representation > Graph construction > Node definition",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "Node definition",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.66455078125,
+      "gt_level": 4,
+      "llm_level": 3,
+      "gt_path": "Graph representation learning \\\\ in digital pathology: Background > Histopathology graph representation > Graph construction > Node definition",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "Node definition",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.66455078125,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "Histopathology graph representation > Graph construction > Node definition",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "Node definition",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.66455078125,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Graph construction > Node definition",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "Node definition",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.66455078125,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Node definition",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "Introduction",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.66357421875,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "root > Introduction",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "Introduction",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.66357421875,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Introduction",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "Breast cancer",
+      "llm_title": "8. Digital Oilfield: Integration of AI and Machine Learning",
+      "similarity": 0.6611328125,
+      "gt_level": 4,
+      "llm_level": 2,
+      "gt_path": "root > Applications of graph deep learning \\\\ in digital pathology > Cell-graph representation > Breast cancer",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning"
+    },
+    {
+      "gt_title": "Breast cancer",
+      "llm_title": "8. Digital Oilfield: Integration of AI and Machine Learning",
+      "similarity": 0.6611328125,
+      "gt_level": 3,
+      "llm_level": 2,
+      "gt_path": "Applications of graph deep learning \\\\ in digital pathology > Cell-graph representation > Breast cancer",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning"
+    },
+    {
+      "gt_title": "Breast cancer",
+      "llm_title": "8. Digital Oilfield: Integration of AI and Machine Learning",
+      "similarity": 0.6611328125,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "Cell-graph representation > Breast cancer",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning"
+    },
+    {
+      "gt_title": "Breast cancer",
+      "llm_title": "8. Digital Oilfield: Integration of AI and Machine Learning",
+      "similarity": 0.6611328125,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "Breast cancer",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning"
+    },
+    {
+      "gt_title": "Introduction",
+      "llm_title": "8. Digital Oilfield: Integration of AI and Machine Learning",
+      "similarity": 0.66064453125,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "root > Introduction",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning"
+    },
+    {
+      "gt_title": "Other GNN architectures in histopathology",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.66064453125,
+      "gt_level": 4,
+      "llm_level": 3,
+      "gt_path": "root > Graph representation learning \\\\ in digital pathology: Background > Graph neural networks models > Other GNN architectures in histopathology",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "Introduction",
+      "llm_title": "8. Digital Oilfield: Integration of AI and Machine Learning",
+      "similarity": 0.66064453125,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "Introduction",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning"
+    },
+    {
+      "gt_title": "Other GNN architectures in histopathology",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.66064453125,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "Graph representation learning \\\\ in digital pathology: Background > Graph neural networks models > Other GNN architectures in histopathology",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "Other GNN architectures in histopathology",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.66064453125,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Graph neural networks models > Other GNN architectures in histopathology",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "Other GNN architectures in histopathology",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.66064453125,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Other GNN architectures in histopathology",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "Graph interpretations",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.65966796875,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "root > Graph representation learning \\\\ in digital pathology: Background > Graph interpretations",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Unimodal and multi-modal feature level fusion",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.65966796875,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "root > Applications of graph deep learning \\\\ in digital pathology > Unimodal and multi-modal feature level fusion",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Graph interpretations",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.65966796875,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Graph representation learning \\\\ in digital pathology: Background > Graph interpretations",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Graph interpretations",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.65966796875,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Graph interpretations",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Unimodal and multi-modal feature level fusion",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.65966796875,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Applications of graph deep learning \\\\ in digital pathology > Unimodal and multi-modal feature level fusion",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Unimodal and multi-modal feature level fusion",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.65966796875,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Unimodal and multi-modal feature level fusion",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Introduction",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.65869140625,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "root > Introduction",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "ChebNet",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.65869140625,
+      "gt_level": 4,
+      "llm_level": 3,
+      "gt_path": "root > Graph representation learning \\\\ in digital pathology: Background > Graph neural networks models > ChebNet",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "GCN",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.65869140625,
+      "gt_level": 4,
+      "llm_level": 3,
+      "gt_path": "root > Graph representation learning \\\\ in digital pathology: Background > Graph neural networks models > GCN",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "Introduction",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.65869140625,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Introduction",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "ChebNet",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.65869140625,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "Graph representation learning \\\\ in digital pathology: Background > Graph neural networks models > ChebNet",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "GCN",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.65869140625,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "Graph representation learning \\\\ in digital pathology: Background > Graph neural networks models > GCN",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "ChebNet",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.65869140625,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Graph neural networks models > ChebNet",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "GCN",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.65869140625,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Graph neural networks models > GCN",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "ChebNet",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.65869140625,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "ChebNet",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "GCN",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.65869140625,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "GCN",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "Preliminaries",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.658203125,
+      "gt_level": 4,
+      "llm_level": 3,
+      "gt_path": "root > Graph representation learning \\\\ in digital pathology: Background > Histopathology graph representation > Preliminaries",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Preliminaries",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.658203125,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "Graph representation learning \\\\ in digital pathology: Background > Histopathology graph representation > Preliminaries",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Preliminaries",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.658203125,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Histopathology graph representation > Preliminaries",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Preliminaries",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.658203125,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Preliminaries",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Colorectal cancer",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.65771484375,
+      "gt_level": 4,
+      "llm_level": 3,
+      "gt_path": "root > Applications of graph deep learning \\\\ in digital pathology > Hierarchical graph representation (macro and micro architectures) > Colorectal cancer",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Colorectal cancer",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.65771484375,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "Applications of graph deep learning \\\\ in digital pathology > Hierarchical graph representation (macro and micro architectures) > Colorectal cancer",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Colorectal cancer",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.65771484375,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Hierarchical graph representation (macro and micro architectures) > Colorectal cancer",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Colorectal cancer",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.65771484375,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Colorectal cancer",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Applications of graph deep learning \\\\ in digital pathology",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.6572265625,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "root > Applications of graph deep learning \\\\ in digital pathology",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Applications of graph deep learning \\\\ in digital pathology",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.6572265625,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Applications of graph deep learning \\\\ in digital pathology",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Breast cancer",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.65673828125,
+      "gt_level": 4,
+      "llm_level": 3,
+      "gt_path": "root > Applications of graph deep learning \\\\ in digital pathology > Hierarchical graph representation (macro and micro architectures) > Breast cancer",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "Breast cancer",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.65673828125,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "Applications of graph deep learning \\\\ in digital pathology > Hierarchical graph representation (macro and micro architectures) > Breast cancer",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "Breast cancer",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.65673828125,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Hierarchical graph representation (macro and micro architectures) > Breast cancer",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "Breast cancer",
+      "llm_title": "8.1. Data-Driven Inversion and SNR Enhancement",
+      "similarity": 0.65673828125,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Breast cancer",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement"
+    },
+    {
+      "gt_title": "Colorectal cancer",
+      "llm_title": "8. Digital Oilfield: Integration of AI and Machine Learning",
+      "similarity": 0.65625,
+      "gt_level": 4,
+      "llm_level": 2,
+      "gt_path": "root > Applications of graph deep learning \\\\ in digital pathology > Hierarchical graph representation (macro and micro architectures) > Colorectal cancer",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning"
+    },
+    {
+      "gt_title": "Colorectal cancer",
+      "llm_title": "8. Digital Oilfield: Integration of AI and Machine Learning",
+      "similarity": 0.65625,
+      "gt_level": 3,
+      "llm_level": 2,
+      "gt_path": "Applications of graph deep learning \\\\ in digital pathology > Hierarchical graph representation (macro and micro architectures) > Colorectal cancer",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning"
+    },
+    {
+      "gt_title": "Colorectal cancer",
+      "llm_title": "8. Digital Oilfield: Integration of AI and Machine Learning",
+      "similarity": 0.65625,
+      "gt_level": 2,
+      "llm_level": 2,
+      "gt_path": "Hierarchical graph representation (macro and micro architectures) > Colorectal cancer",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning"
+    },
+    {
+      "gt_title": "Colorectal cancer",
+      "llm_title": "8. Digital Oilfield: Integration of AI and Machine Learning",
+      "similarity": 0.65625,
+      "gt_level": 1,
+      "llm_level": 2,
+      "gt_path": "Colorectal cancer",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning"
+    },
+    {
+      "gt_title": "Patch-graphs and Tissue-graphs representations",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.65478515625,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "root > Applications of graph deep learning \\\\ in digital pathology > Patch-graphs and Tissue-graphs representations",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Automated graph generation",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.65478515625,
+      "gt_level": 4,
+      "llm_level": 3,
+      "gt_path": "root > Discussion and open challenges > Entity-graph construction > Automated graph generation",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Patch-graphs and Tissue-graphs representations",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.65478515625,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Applications of graph deep learning \\\\ in digital pathology > Patch-graphs and Tissue-graphs representations",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Patch-graphs and Tissue-graphs representations",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.65478515625,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Patch-graphs and Tissue-graphs representations",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Automated graph generation",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.65478515625,
+      "gt_level": 3,
+      "llm_level": 3,
+      "gt_path": "Discussion and open challenges > Entity-graph construction > Automated graph generation",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Automated graph generation",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.65478515625,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "Entity-graph construction > Automated graph generation",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Automated graph generation",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.65478515625,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Automated graph generation",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Graph representation learning \\\\ in digital pathology: Background",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.65380859375,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "root > Graph representation learning \\\\ in digital pathology: Background",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Graph representation learning \\\\ in digital pathology: Background",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.65380859375,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Graph representation learning \\\\ in digital pathology: Background",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Conclusion",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.65185546875,
+      "gt_level": 2,
+      "llm_level": 3,
+      "gt_path": "root > Conclusion",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    },
+    {
+      "gt_title": "Conclusion",
+      "llm_title": "8.2. Automated Fluid Identification",
+      "similarity": 0.65185546875,
+      "gt_level": 1,
+      "llm_level": 3,
+      "gt_path": "Conclusion",
+      "llm_path": "Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification"
+    }
+  ]
+}

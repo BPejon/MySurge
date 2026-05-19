@@ -1,0 +1,514 @@
+======================================================================================================================================================
+RELATÓRIO DE SIMILARIDADE DE SEÇÕES - TOP 100 PARES MAIS SIMILARES
+======================================================================================================================================================
+
+ESTATÍSTICAS GERAIS:
+   • Similaridade Máxima: 0.9102
+   • Similaridade Média: 0.7656
+   • Similaridade Mínima: 0.7002
+   • Total de pares similares encontrados: 4228
+
+======================================================================================================================================================
+TOP 100 PARES COM MAIOR SIMILARIDADE
+======================================================================================================================================================
+
+  1. GT: Transformer with Convolution                       | LLM: 5.1 Image Classification                          
+     Similaridade: 0.9100 | Níveis: Nível 4 -> Nível 3 | Tamanho: 425 vs 574
+     Caminho GT: root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+  2. GT: Transformer with Convolution                       | LLM: 5.1 Image Classification                          
+     Similaridade: 0.9100 | Níveis: Nível 1 -> Nível 3 | Tamanho: 425 vs 574
+     Caminho GT: Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+  3. GT: Transformer with Convolution                       | LLM: 5.1 Image Classification                          
+     Similaridade: 0.9100 | Níveis: Nível 3 -> Nível 3 | Tamanho: 425 vs 574
+     Caminho GT: Vision Transformer > Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+  4. GT: Transformer with Convolution                       | LLM: 5.1 Image Classification                          
+     Similaridade: 0.9100 | Níveis: Nível 2 -> Nível 3 | Tamanho: 425 vs 574
+     Caminho GT: Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+  5. GT: Transformer with Convolution                       | LLM: 2.9 Convolutions in Vision Transformers           
+     Similaridade: 0.8975 | Níveis: Nível 2 -> Nível 3 | Tamanho: 425 vs 710
+     Caminho GT: Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.9 Convolutions in Vision Transformers
+
+  6. GT: Transformer with Convolution                       | LLM: 2.9 Convolutions in Vision Transformers           
+     Similaridade: 0.8975 | Níveis: Nível 1 -> Nível 3 | Tamanho: 425 vs 710
+     Caminho GT: Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.9 Convolutions in Vision Transformers
+
+  7. GT: Transformer with Convolution                       | LLM: 2.9 Convolutions in Vision Transformers           
+     Similaridade: 0.8975 | Níveis: Nível 4 -> Nível 3 | Tamanho: 425 vs 710
+     Caminho GT: root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.9 Convolutions in Vision Transformers
+
+  8. GT: Transformer with Convolution                       | LLM: 2.9 Convolutions in Vision Transformers           
+     Similaridade: 0.8975 | Níveis: Nível 3 -> Nível 3 | Tamanho: 425 vs 710
+     Caminho GT: Vision Transformer > Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.9 Convolutions in Vision Transformers
+
+  9. GT: Challenges                                         | LLM: 5.1 Image Classification                          
+     Similaridade: 0.8970 | Níveis: Nível 1 -> Nível 3 | Tamanho: 396 vs 574
+     Caminho GT: Challenges
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+ 10. GT: Challenges                                         | LLM: 5.1 Image Classification                          
+     Similaridade: 0.8970 | Níveis: Nível 3 -> Nível 3 | Tamanho: 396 vs 574
+     Caminho GT: root > Conclusions and Discussions > Challenges
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+ 11. GT: Challenges                                         | LLM: 5.1 Image Classification                          
+     Similaridade: 0.8970 | Níveis: Nível 2 -> Nível 3 | Tamanho: 396 vs 574
+     Caminho GT: Conclusions and Discussions > Challenges
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+ 12. GT: Generic Object Detection                           | LLM: 5.2 Object Detection                              
+     Similaridade: 0.8950 | Níveis: Nível 3 -> Nível 3 | Tamanho: 1866 vs 810
+     Caminho GT: Vision Transformer > High/Mid-level Vision > Generic Object Detection
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection
+
+ 13. GT: Generic Object Detection                           | LLM: 5.2 Object Detection                              
+     Similaridade: 0.8950 | Níveis: Nível 2 -> Nível 3 | Tamanho: 1866 vs 810
+     Caminho GT: High/Mid-level Vision > Generic Object Detection
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection
+
+ 14. GT: Generic Object Detection                           | LLM: 5.2 Object Detection                              
+     Similaridade: 0.8950 | Níveis: Nível 1 -> Nível 3 | Tamanho: 1866 vs 810
+     Caminho GT: Generic Object Detection
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection
+
+ 15. GT: Generic Object Detection                           | LLM: 5.2 Object Detection                              
+     Similaridade: 0.8950 | Níveis: Nível 4 -> Nível 3 | Tamanho: 1866 vs 810
+     Caminho GT: root > Vision Transformer > High/Mid-level Vision > Generic Object Detection
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection
+
+ 16. GT: Transformer with Convolution                       | LLM: 1.2 Key Concepts and Architecture Overview        
+     Similaridade: 0.8936 | Níveis: Nível 4 -> Nível 3 | Tamanho: 425 vs 580
+     Caminho GT: root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.2 Key Concepts and Architecture Overview
+
+ 17. GT: Transformer with Convolution                       | LLM: 1.2 Key Concepts and Architecture Overview        
+     Similaridade: 0.8936 | Níveis: Nível 3 -> Nível 3 | Tamanho: 425 vs 580
+     Caminho GT: Vision Transformer > Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.2 Key Concepts and Architecture Overview
+
+ 18. GT: Transformer with Convolution                       | LLM: 1.2 Key Concepts and Architecture Overview        
+     Similaridade: 0.8936 | Níveis: Nível 2 -> Nível 3 | Tamanho: 425 vs 580
+     Caminho GT: Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.2 Key Concepts and Architecture Overview
+
+ 19. GT: Transformer with Convolution                       | LLM: 1.2 Key Concepts and Architecture Overview        
+     Similaridade: 0.8936 | Níveis: Nível 1 -> Nível 3 | Tamanho: 425 vs 580
+     Caminho GT: Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.2 Key Concepts and Architecture Overview
+
+ 20. GT: Transformer with Convolution                       | LLM: 5.2 Object Detection                              
+     Similaridade: 0.8910 | Níveis: Nível 2 -> Nível 3 | Tamanho: 425 vs 810
+     Caminho GT: Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection
+
+ 21. GT: Transformer with Convolution                       | LLM: 5.2 Object Detection                              
+     Similaridade: 0.8910 | Níveis: Nível 1 -> Nível 3 | Tamanho: 425 vs 810
+     Caminho GT: Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection
+
+ 22. GT: Transformer with Convolution                       | LLM: 5.2 Object Detection                              
+     Similaridade: 0.8910 | Níveis: Nível 3 -> Nível 3 | Tamanho: 425 vs 810
+     Caminho GT: Vision Transformer > Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection
+
+ 23. GT: Transformer with Convolution                       | LLM: 5.2 Object Detection                              
+     Similaridade: 0.8910 | Níveis: Nível 4 -> Nível 3 | Tamanho: 425 vs 810
+     Caminho GT: root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection
+
+ 24. GT: Future Prospects                                   | LLM: 5.1 Image Classification                          
+     Similaridade: 0.8880 | Níveis: Nível 3 -> Nível 3 | Tamanho: 2535 vs 574
+     Caminho GT: root > Conclusions and Discussions > Future Prospects
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+ 25. GT: Future Prospects                                   | LLM: 5.1 Image Classification                          
+     Similaridade: 0.8880 | Níveis: Nível 2 -> Nível 3 | Tamanho: 2535 vs 574
+     Caminho GT: Conclusions and Discussions > Future Prospects
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+ 26. GT: Future Prospects                                   | LLM: 5.1 Image Classification                          
+     Similaridade: 0.8880 | Níveis: Nível 1 -> Nível 3 | Tamanho: 2535 vs 574
+     Caminho GT: Future Prospects
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+ 27. GT: Transformer with Convolution                       | LLM: 5.3 Image Segmentation                            
+     Similaridade: 0.8840 | Níveis: Nível 4 -> Nível 3 | Tamanho: 425 vs 733
+     Caminho GT: root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation
+
+ 28. GT: Transformer with Convolution                       | LLM: 5.3 Image Segmentation                            
+     Similaridade: 0.8840 | Níveis: Nível 3 -> Nível 3 | Tamanho: 425 vs 733
+     Caminho GT: Vision Transformer > Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation
+
+ 29. GT: Transformer with Convolution                       | LLM: 5.3 Image Segmentation                            
+     Similaridade: 0.8840 | Níveis: Nível 2 -> Nível 3 | Tamanho: 425 vs 733
+     Caminho GT: Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation
+
+ 30. GT: Transformer with Convolution                       | LLM: 5.3 Image Segmentation                            
+     Similaridade: 0.8840 | Níveis: Nível 1 -> Nível 3 | Tamanho: 425 vs 733
+     Caminho GT: Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation
+
+ 31. GT: Transformer with Convolution                       | LLM: 1.1 Historical Context and Development            
+     Similaridade: 0.8800 | Níveis: Nível 1 -> Nível 3 | Tamanho: 425 vs 507
+     Caminho GT: Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.1 Historical Context and Development
+
+ 32. GT: Transformer with Convolution                       | LLM: 1.1 Historical Context and Development            
+     Similaridade: 0.8800 | Níveis: Nível 2 -> Nível 3 | Tamanho: 425 vs 507
+     Caminho GT: Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.1 Historical Context and Development
+
+ 33. GT: Transformer with Convolution                       | LLM: 1.1 Historical Context and Development            
+     Similaridade: 0.8800 | Níveis: Nível 4 -> Nível 3 | Tamanho: 425 vs 507
+     Caminho GT: root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.1 Historical Context and Development
+
+ 34. GT: Transformer with Convolution                       | LLM: 1.1 Historical Context and Development            
+     Similaridade: 0.8800 | Níveis: Nível 3 -> Nível 3 | Tamanho: 425 vs 507
+     Caminho GT: Vision Transformer > Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.1 Historical Context and Development
+
+ 35. GT: Pure Transformer                                   | LLM: 5.1 Image Classification                          
+     Similaridade: 0.8794 | Níveis: Nível 4 -> Nível 3 | Tamanho: 1415 vs 574
+     Caminho GT: root > Vision Transformer > Backbone for Representation Learning > Pure Transformer
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+ 36. GT: Transformer with Convolution                       | LLM: References                                        
+     Similaridade: 0.8794 | Níveis: Nível 4 -> Nível 2 | Tamanho: 425 vs 642
+     Caminho GT: root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > References
+
+ 37. GT: Pure Transformer                                   | LLM: 5.1 Image Classification                          
+     Similaridade: 0.8794 | Níveis: Nível 3 -> Nível 3 | Tamanho: 1415 vs 574
+     Caminho GT: Vision Transformer > Backbone for Representation Learning > Pure Transformer
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+ 38. GT: Transformer with Convolution                       | LLM: References                                        
+     Similaridade: 0.8794 | Níveis: Nível 3 -> Nível 2 | Tamanho: 425 vs 642
+     Caminho GT: Vision Transformer > Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > References
+
+ 39. GT: Pure Transformer                                   | LLM: 5.1 Image Classification                          
+     Similaridade: 0.8794 | Níveis: Nível 2 -> Nível 3 | Tamanho: 1415 vs 574
+     Caminho GT: Backbone for Representation Learning > Pure Transformer
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+ 40. GT: Transformer with Convolution                       | LLM: References                                        
+     Similaridade: 0.8794 | Níveis: Nível 2 -> Nível 2 | Tamanho: 425 vs 642
+     Caminho GT: Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > References
+
+ 41. GT: Pure Transformer                                   | LLM: 5.1 Image Classification                          
+     Similaridade: 0.8794 | Níveis: Nível 1 -> Nível 3 | Tamanho: 1415 vs 574
+     Caminho GT: Pure Transformer
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+ 42. GT: Transformer with Convolution                       | LLM: References                                        
+     Similaridade: 0.8794 | Níveis: Nível 1 -> Nível 2 | Tamanho: 425 vs 642
+     Caminho GT: Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > References
+
+ 43. GT: Challenges                                         | LLM: 5.2 Object Detection                              
+     Similaridade: 0.8794 | Níveis: Nível 3 -> Nível 3 | Tamanho: 396 vs 810
+     Caminho GT: root > Conclusions and Discussions > Challenges
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection
+
+ 44. GT: Challenges                                         | LLM: 5.2 Object Detection                              
+     Similaridade: 0.8794 | Níveis: Nível 2 -> Nível 3 | Tamanho: 396 vs 810
+     Caminho GT: Conclusions and Discussions > Challenges
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection
+
+ 45. GT: Challenges                                         | LLM: 5.2 Object Detection                              
+     Similaridade: 0.8794 | Níveis: Nível 1 -> Nível 3 | Tamanho: 396 vs 810
+     Caminho GT: Challenges
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.2 Object Detection
+
+ 46. GT: Backbone for Representation Learning               | LLM: 5.1 Image Classification                          
+     Similaridade: 0.8774 | Níveis: Nível 1 -> Nível 3 | Tamanho: 195 vs 574
+     Caminho GT: Backbone for Representation Learning
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+ 47. GT: Challenges                                         | LLM: 3.4 Data Requirements and Learning Flexibility    
+     Similaridade: 0.8774 | Níveis: Nível 1 -> Nível 3 | Tamanho: 396 vs 755
+     Caminho GT: Challenges
+     Caminho LLM: A Survey on Visual Transformers > 3 Attention Mechanisms and Learning Processes > 3.4 Data Requirements and Learning Flexibility
+
+ 48. GT: Challenges                                         | LLM: 3.4 Data Requirements and Learning Flexibility    
+     Similaridade: 0.8774 | Níveis: Nível 2 -> Nível 3 | Tamanho: 396 vs 755
+     Caminho GT: Conclusions and Discussions > Challenges
+     Caminho LLM: A Survey on Visual Transformers > 3 Attention Mechanisms and Learning Processes > 3.4 Data Requirements and Learning Flexibility
+
+ 49. GT: Backbone for Representation Learning               | LLM: 5.1 Image Classification                          
+     Similaridade: 0.8774 | Níveis: Nível 2 -> Nível 3 | Tamanho: 195 vs 574
+     Caminho GT: Vision Transformer > Backbone for Representation Learning
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+ 50. GT: Challenges                                         | LLM: 3.4 Data Requirements and Learning Flexibility    
+     Similaridade: 0.8774 | Níveis: Nível 3 -> Nível 3 | Tamanho: 396 vs 755
+     Caminho GT: root > Conclusions and Discussions > Challenges
+     Caminho LLM: A Survey on Visual Transformers > 3 Attention Mechanisms and Learning Processes > 3.4 Data Requirements and Learning Flexibility
+
+ 51. GT: Backbone for Representation Learning               | LLM: 5.1 Image Classification                          
+     Similaridade: 0.8774 | Níveis: Nível 3 -> Nível 3 | Tamanho: 195 vs 574
+     Caminho GT: root > Vision Transformer > Backbone for Representation Learning
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.1 Image Classification
+
+ 52. GT: Transformer with Convolution                       | LLM: 3.4 Data Requirements and Learning Flexibility    
+     Similaridade: 0.8770 | Níveis: Nível 4 -> Nível 3 | Tamanho: 425 vs 755
+     Caminho GT: root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 3 Attention Mechanisms and Learning Processes > 3.4 Data Requirements and Learning Flexibility
+
+ 53. GT: Transformer with Convolution                       | LLM: 3.4 Data Requirements and Learning Flexibility    
+     Similaridade: 0.8770 | Níveis: Nível 3 -> Nível 3 | Tamanho: 425 vs 755
+     Caminho GT: Vision Transformer > Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 3 Attention Mechanisms and Learning Processes > 3.4 Data Requirements and Learning Flexibility
+
+ 54. GT: Transformer with Convolution                       | LLM: 3.4 Data Requirements and Learning Flexibility    
+     Similaridade: 0.8770 | Níveis: Nível 2 -> Nível 3 | Tamanho: 425 vs 755
+     Caminho GT: Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 3 Attention Mechanisms and Learning Processes > 3.4 Data Requirements and Learning Flexibility
+
+ 55. GT: Transformer with Convolution                       | LLM: 3.4 Data Requirements and Learning Flexibility    
+     Similaridade: 0.8770 | Níveis: Nível 1 -> Nível 3 | Tamanho: 425 vs 755
+     Caminho GT: Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 3 Attention Mechanisms and Learning Processes > 3.4 Data Requirements and Learning Flexibility
+
+ 56. GT: Challenges                                         | LLM: References                                        
+     Similaridade: 0.8750 | Níveis: Nível 3 -> Nível 2 | Tamanho: 396 vs 642
+     Caminho GT: root > Conclusions and Discussions > Challenges
+     Caminho LLM: A Survey on Visual Transformers > References
+
+ 57. GT: Future Prospects                                   | LLM: References                                        
+     Similaridade: 0.8750 | Níveis: Nível 3 -> Nível 2 | Tamanho: 2535 vs 642
+     Caminho GT: root > Conclusions and Discussions > Future Prospects
+     Caminho LLM: A Survey on Visual Transformers > References
+
+ 58. GT: Challenges                                         | LLM: References                                        
+     Similaridade: 0.8750 | Níveis: Nível 2 -> Nível 2 | Tamanho: 396 vs 642
+     Caminho GT: Conclusions and Discussions > Challenges
+     Caminho LLM: A Survey on Visual Transformers > References
+
+ 59. GT: Future Prospects                                   | LLM: References                                        
+     Similaridade: 0.8750 | Níveis: Nível 2 -> Nível 2 | Tamanho: 2535 vs 642
+     Caminho GT: Conclusions and Discussions > Future Prospects
+     Caminho LLM: A Survey on Visual Transformers > References
+
+ 60. GT: Challenges                                         | LLM: References                                        
+     Similaridade: 0.8750 | Níveis: Nível 1 -> Nível 2 | Tamanho: 396 vs 642
+     Caminho GT: Challenges
+     Caminho LLM: A Survey on Visual Transformers > References
+
+ 61. GT: Future Prospects                                   | LLM: References                                        
+     Similaridade: 0.8750 | Níveis: Nível 1 -> Nível 2 | Tamanho: 2535 vs 642
+     Caminho GT: Future Prospects
+     Caminho LLM: A Survey on Visual Transformers > References
+
+ 62. GT: Pure Transformer                                   | LLM: 1.2 Key Concepts and Architecture Overview        
+     Similaridade: 0.8745 | Níveis: Nível 2 -> Nível 3 | Tamanho: 1415 vs 580
+     Caminho GT: Backbone for Representation Learning > Pure Transformer
+     Caminho LLM: A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.2 Key Concepts and Architecture Overview
+
+ 63. GT: Pure Transformer                                   | LLM: 1.2 Key Concepts and Architecture Overview        
+     Similaridade: 0.8745 | Níveis: Nível 1 -> Nível 3 | Tamanho: 1415 vs 580
+     Caminho GT: Pure Transformer
+     Caminho LLM: A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.2 Key Concepts and Architecture Overview
+
+ 64. GT: Pure Transformer                                   | LLM: 1.2 Key Concepts and Architecture Overview        
+     Similaridade: 0.8745 | Níveis: Nível 3 -> Nível 3 | Tamanho: 1415 vs 580
+     Caminho GT: Vision Transformer > Backbone for Representation Learning > Pure Transformer
+     Caminho LLM: A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.2 Key Concepts and Architecture Overview
+
+ 65. GT: Pure Transformer                                   | LLM: 1.2 Key Concepts and Architecture Overview        
+     Similaridade: 0.8745 | Níveis: Nível 4 -> Nível 3 | Tamanho: 1415 vs 580
+     Caminho GT: root > Vision Transformer > Backbone for Representation Learning > Pure Transformer
+     Caminho LLM: A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.2 Key Concepts and Architecture Overview
+
+ 66. GT: Challenges                                         | LLM: 6.3 Data Requirements                             
+     Similaridade: 0.8680 | Níveis: Nível 3 -> Nível 3 | Tamanho: 396 vs 704
+     Caminho GT: root > Conclusions and Discussions > Challenges
+     Caminho LLM: A Survey on Visual Transformers > 6 Challenges and Future Directions > 6.3 Data Requirements
+
+ 67. GT: Challenges                                         | LLM: 6.3 Data Requirements                             
+     Similaridade: 0.8680 | Níveis: Nível 2 -> Nível 3 | Tamanho: 396 vs 704
+     Caminho GT: Conclusions and Discussions > Challenges
+     Caminho LLM: A Survey on Visual Transformers > 6 Challenges and Future Directions > 6.3 Data Requirements
+
+ 68. GT: Challenges                                         | LLM: 6.3 Data Requirements                             
+     Similaridade: 0.8680 | Níveis: Nível 1 -> Nível 3 | Tamanho: 396 vs 704
+     Caminho GT: Challenges
+     Caminho LLM: A Survey on Visual Transformers > 6 Challenges and Future Directions > 6.3 Data Requirements
+
+ 69. GT: Segmentation                                       | LLM: 5.3 Image Segmentation                            
+     Similaridade: 0.8657 | Níveis: Nível 4 -> Nível 3 | Tamanho: 512 vs 733
+     Caminho GT: root > Vision Transformer > High/Mid-level Vision > Segmentation
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation
+
+ 70. GT: Challenges                                         | LLM: 1.1 Historical Context and Development            
+     Similaridade: 0.8657 | Níveis: Nível 3 -> Nível 3 | Tamanho: 396 vs 507
+     Caminho GT: root > Conclusions and Discussions > Challenges
+     Caminho LLM: A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.1 Historical Context and Development
+
+ 71. GT: Segmentation                                       | LLM: 5.3 Image Segmentation                            
+     Similaridade: 0.8657 | Níveis: Nível 3 -> Nível 3 | Tamanho: 512 vs 733
+     Caminho GT: Vision Transformer > High/Mid-level Vision > Segmentation
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation
+
+ 72. GT: Segmentation                                       | LLM: 5.3 Image Segmentation                            
+     Similaridade: 0.8657 | Níveis: Nível 2 -> Nível 3 | Tamanho: 512 vs 733
+     Caminho GT: High/Mid-level Vision > Segmentation
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation
+
+ 73. GT: Segmentation                                       | LLM: 5.3 Image Segmentation                            
+     Similaridade: 0.8657 | Níveis: Nível 1 -> Nível 3 | Tamanho: 512 vs 733
+     Caminho GT: Segmentation
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation
+
+ 74. GT: Challenges                                         | LLM: 1.1 Historical Context and Development            
+     Similaridade: 0.8657 | Níveis: Nível 2 -> Nível 3 | Tamanho: 396 vs 507
+     Caminho GT: Conclusions and Discussions > Challenges
+     Caminho LLM: A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.1 Historical Context and Development
+
+ 75. GT: Challenges                                         | LLM: 1.1 Historical Context and Development            
+     Similaridade: 0.8657 | Níveis: Nível 1 -> Nível 3 | Tamanho: 396 vs 507
+     Caminho GT: Challenges
+     Caminho LLM: A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.1 Historical Context and Development
+
+ 76. GT: Challenges                                         | LLM: 1.3 Comparison with Traditional Convolutional Neural Networks
+     Similaridade: 0.8657 | Níveis: Nível 3 -> Nível 3 | Tamanho: 396 vs 705
+     Caminho GT: root > Conclusions and Discussions > Challenges
+     Caminho LLM: A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.3 Comparison with Traditional Convolutional Neural Networks
+
+ 77. GT: Challenges                                         | LLM: 1.3 Comparison with Traditional Convolutional Neural Networks
+     Similaridade: 0.8657 | Níveis: Nível 2 -> Nível 3 | Tamanho: 396 vs 705
+     Caminho GT: Conclusions and Discussions > Challenges
+     Caminho LLM: A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.3 Comparison with Traditional Convolutional Neural Networks
+
+ 78. GT: Challenges                                         | LLM: 1.3 Comparison with Traditional Convolutional Neural Networks
+     Similaridade: 0.8657 | Níveis: Nível 1 -> Nível 3 | Tamanho: 396 vs 705
+     Caminho GT: Challenges
+     Caminho LLM: A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.3 Comparison with Traditional Convolutional Neural Networks
+
+ 79. GT: Challenges                                         | LLM: 2.9 Convolutions in Vision Transformers           
+     Similaridade: 0.8640 | Níveis: Nível 1 -> Nível 3 | Tamanho: 396 vs 710
+     Caminho GT: Challenges
+     Caminho LLM: A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.9 Convolutions in Vision Transformers
+
+ 80. GT: Challenges                                         | LLM: 2.9 Convolutions in Vision Transformers           
+     Similaridade: 0.8640 | Níveis: Nível 2 -> Nível 3 | Tamanho: 396 vs 710
+     Caminho GT: Conclusions and Discussions > Challenges
+     Caminho LLM: A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.9 Convolutions in Vision Transformers
+
+ 81. GT: Challenges                                         | LLM: 2.9 Convolutions in Vision Transformers           
+     Similaridade: 0.8640 | Níveis: Nível 3 -> Nível 3 | Tamanho: 396 vs 710
+     Caminho GT: root > Conclusions and Discussions > Challenges
+     Caminho LLM: A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.9 Convolutions in Vision Transformers
+
+ 82. GT: Transformer with Convolution                       | LLM: 6.3 Data Requirements                             
+     Similaridade: 0.8620 | Níveis: Nível 4 -> Nível 3 | Tamanho: 425 vs 704
+     Caminho GT: root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 6 Challenges and Future Directions > 6.3 Data Requirements
+
+ 83. GT: Discussions                                        | LLM: 5.3 Image Segmentation                            
+     Similaridade: 0.8620 | Níveis: Nível 4 -> Nível 3 | Tamanho: 197 vs 733
+     Caminho GT: root > Vision Transformer > High/Mid-level Vision > Discussions
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation
+
+ 84. GT: Transformer with Convolution                       | LLM: 6.3 Data Requirements                             
+     Similaridade: 0.8620 | Níveis: Nível 3 -> Nível 3 | Tamanho: 425 vs 704
+     Caminho GT: Vision Transformer > Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 6 Challenges and Future Directions > 6.3 Data Requirements
+
+ 85. GT: Discussions                                        | LLM: 5.3 Image Segmentation                            
+     Similaridade: 0.8620 | Níveis: Nível 3 -> Nível 3 | Tamanho: 197 vs 733
+     Caminho GT: Vision Transformer > High/Mid-level Vision > Discussions
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation
+
+ 86. GT: Transformer with Convolution                       | LLM: 6.3 Data Requirements                             
+     Similaridade: 0.8620 | Níveis: Nível 2 -> Nível 3 | Tamanho: 425 vs 704
+     Caminho GT: Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 6 Challenges and Future Directions > 6.3 Data Requirements
+
+ 87. GT: Transformer with Convolution                       | LLM: 6.3 Data Requirements                             
+     Similaridade: 0.8620 | Níveis: Nível 1 -> Nível 3 | Tamanho: 425 vs 704
+     Caminho GT: Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 6 Challenges and Future Directions > 6.3 Data Requirements
+
+ 88. GT: Discussions                                        | LLM: 5.3 Image Segmentation                            
+     Similaridade: 0.8620 | Níveis: Nível 2 -> Nível 3 | Tamanho: 197 vs 733
+     Caminho GT: High/Mid-level Vision > Discussions
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation
+
+ 89. GT: Discussions                                        | LLM: 5.3 Image Segmentation                            
+     Similaridade: 0.8620 | Níveis: Nível 1 -> Nível 3 | Tamanho: 197 vs 733
+     Caminho GT: Discussions
+     Caminho LLM: A Survey on Visual Transformers > 5 Applications and Performance Analysis > 5.3 Image Segmentation
+
+ 90. GT: Future Prospects                                   | LLM: 1.1 Historical Context and Development            
+     Similaridade: 0.8610 | Níveis: Nível 3 -> Nível 3 | Tamanho: 2535 vs 507
+     Caminho GT: root > Conclusions and Discussions > Future Prospects
+     Caminho LLM: A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.1 Historical Context and Development
+
+ 91. GT: Future Prospects                                   | LLM: 1.1 Historical Context and Development            
+     Similaridade: 0.8610 | Níveis: Nível 2 -> Nível 3 | Tamanho: 2535 vs 507
+     Caminho GT: Conclusions and Discussions > Future Prospects
+     Caminho LLM: A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.1 Historical Context and Development
+
+ 92. GT: Future Prospects                                   | LLM: 1.1 Historical Context and Development            
+     Similaridade: 0.8610 | Níveis: Nível 1 -> Nível 3 | Tamanho: 2535 vs 507
+     Caminho GT: Future Prospects
+     Caminho LLM: A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.1 Historical Context and Development
+
+ 93. GT: Transformer with Convolution                       | LLM: 1.4 Inductive Biases and Data Requirements        
+     Similaridade: 0.8600 | Níveis: Nível 1 -> Nível 3 | Tamanho: 425 vs 931
+     Caminho GT: Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.4 Inductive Biases and Data Requirements
+
+ 94. GT: Transformer with Convolution                       | LLM: 1.4 Inductive Biases and Data Requirements        
+     Similaridade: 0.8600 | Níveis: Nível 2 -> Nível 3 | Tamanho: 425 vs 931
+     Caminho GT: Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.4 Inductive Biases and Data Requirements
+
+ 95. GT: Transformer with Convolution                       | LLM: 1.4 Inductive Biases and Data Requirements        
+     Similaridade: 0.8600 | Níveis: Nível 4 -> Nível 3 | Tamanho: 425 vs 931
+     Caminho GT: root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.4 Inductive Biases and Data Requirements
+
+ 96. GT: Transformer with Convolution                       | LLM: 1.4 Inductive Biases and Data Requirements        
+     Similaridade: 0.8600 | Níveis: Nível 3 -> Nível 3 | Tamanho: 425 vs 931
+     Caminho GT: Vision Transformer > Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 1 Introduction to Visual Transformers > 1.4 Inductive Biases and Data Requirements
+
+ 97. GT: Transformer with Convolution                       | LLM: 2.5 Mobile Deployment Strategies                  
+     Similaridade: 0.8594 | Níveis: Nível 4 -> Nível 3 | Tamanho: 425 vs 862
+     Caminho GT: root > Vision Transformer > Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.5 Mobile Deployment Strategies
+
+ 98. GT: Transformer with Convolution                       | LLM: 2.5 Mobile Deployment Strategies                  
+     Similaridade: 0.8594 | Níveis: Nível 3 -> Nível 3 | Tamanho: 425 vs 862
+     Caminho GT: Vision Transformer > Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.5 Mobile Deployment Strategies
+
+ 99. GT: Transformer with Convolution                       | LLM: 2.5 Mobile Deployment Strategies                  
+     Similaridade: 0.8594 | Níveis: Nível 2 -> Nível 3 | Tamanho: 425 vs 862
+     Caminho GT: Backbone for Representation Learning > Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.5 Mobile Deployment Strategies
+
+100. GT: Transformer with Convolution                       | LLM: 2.5 Mobile Deployment Strategies                  
+     Similaridade: 0.8594 | Níveis: Nível 1 -> Nível 3 | Tamanho: 425 vs 862
+     Caminho GT: Transformer with Convolution
+     Caminho LLM: A Survey on Visual Transformers > 2 Architectural Innovations in Visual Transformers > 2.5 Mobile Deployment Strategies
+

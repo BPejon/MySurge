@@ -1,0 +1,620 @@
+====================================================================================================
+ANÁLISE DE SIMILARIDADE DE SEÇÕES - Survey 0
+====================================================================================================
+
+Arquivo: baselines/ID/output/0/0.md
+Threshold: 0.5
+Data: 2026-04-29 11:44:57
+
+ESTATÍSTICAS:
+  Seções GT: 201
+  Seções LLM: 28
+  Pares Similares: 1360
+  Similaridade Máxima: 0.6108
+  Similaridade Média: 0.5244
+  Similaridade Mínima: 0.5000
+
+====================================================================================================
+TOP 100 PARES
+====================================================================================================
+
+  1. GT: Cachier and Precog
+      LLM: Relaxation measurements
+      Similaridade: 0.6108
+      Níveis: Nível 3 -> Nível 2
+      Caminhos: root > Edge Computing Systems and Tools > Cachier and Precog / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements
+
+  2. GT: Cachier and Precog
+      LLM: Relaxation measurements
+      Similaridade: 0.6108
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: Cachier and Precog / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements
+
+  3. GT: Cachier and Precog
+      LLM: Relaxation measurements
+      Similaridade: 0.6108
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: Edge Computing Systems and Tools > Cachier and Precog / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements
+
+  4. GT: Cachier and Precog
+      LLM: Two-dimensional NMR measurements
+      Similaridade: 0.6016
+      Níveis: Nível 3 -> Nível 2
+      Caminhos: root > Edge Computing Systems and Tools > Cachier and Precog / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Two-dimensional NMR measurements
+
+  5. GT: Cachier and Precog
+      LLM: Two-dimensional NMR measurements
+      Similaridade: 0.6016
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: Cachier and Precog / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Two-dimensional NMR measurements
+
+  6. GT: Cachier and Precog
+      LLM: Two-dimensional NMR measurements
+      Similaridade: 0.6016
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: Edge Computing Systems and Tools > Cachier and Precog / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Two-dimensional NMR measurements
+
+  7. GT: Conclusions
+      LLM: Two-dimensional NMR measurements
+      Similaridade: 0.5898
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: root > Conclusions / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Two-dimensional NMR measurements
+
+  8. GT: Conclusions
+      LLM: Two-dimensional NMR measurements
+      Similaridade: 0.5898
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: Conclusions / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Two-dimensional NMR measurements
+
+  9. GT: Conclusions
+      LLM: Relaxation measurements
+      Similaridade: 0.5889
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: root > Conclusions / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements
+
+ 10. GT: Conclusions
+      LLM: Relaxation measurements
+      Similaridade: 0.5889
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: Conclusions / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements
+
+ 11. GT: Deep Learning Packages
+      LLM: Future research directions
+      Similaridade: 0.5879
+      Níveis: Nível 3 -> Nível 2
+      Caminhos: root > Deep Learning Optimization at the Edge > Deep Learning Packages / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Future research directions
+
+ 12. GT: Deep Learning Packages
+      LLM: Future research directions
+      Similaridade: 0.5879
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: Deep Learning Optimization at the Edge > Deep Learning Packages / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Future research directions
+
+ 13. GT: Deep Learning Packages
+      LLM: Future research directions
+      Similaridade: 0.5879
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: Deep Learning Packages / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Future research directions
+
+ 14. GT: Cachier and Precog
+      LLM: References
+      Similaridade: 0.5845
+      Níveis: Nível 3 -> Nível 2
+      Caminhos: root > Edge Computing Systems and Tools > Cachier and Precog / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > References
+
+ 15. GT: Cachier and Precog
+      LLM: References
+      Similaridade: 0.5845
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: Edge Computing Systems and Tools > Cachier and Precog / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > References
+
+ 16. GT: Cachier and Precog
+      LLM: References
+      Similaridade: 0.5845
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: Cachier and Precog / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > References
+
+ 17. GT: Multi-domain Management and Cooperation
+      LLM: Declaration
+      Similaridade: 0.5840
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: Mobility Support > Multi-domain Management and Cooperation / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Declaration
+
+ 18. GT: Multi-domain Management and Cooperation
+      LLM: Declaration
+      Similaridade: 0.5840
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: Multi-domain Management and Cooperation / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Declaration
+
+ 19. GT: Multi-domain Management and Cooperation
+      LLM: Declaration
+      Similaridade: 0.5840
+      Níveis: Nível 3 -> Nível 2
+      Caminhos: Key Design Issues > Mobility Support > Multi-domain Management and Cooperation / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Declaration
+
+ 20. GT: Multi-domain Management and Cooperation
+      LLM: Declaration
+      Similaridade: 0.5840
+      Níveis: Nível 4 -> Nível 2
+      Caminhos: root > Key Design Issues > Mobility Support > Multi-domain Management and Cooperation / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Declaration
+
+ 21. GT: Comparative Study
+      LLM: Two-dimensional NMR measurements
+      Similaridade: 0.5835
+      Níveis: Nível 3 -> Nível 2
+      Caminhos: root > Open Source Edge Computing Projects > Comparative Study / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Two-dimensional NMR measurements
+
+ 22. GT: Comparative Study
+      LLM: Two-dimensional NMR measurements
+      Similaridade: 0.5835
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: Open Source Edge Computing Projects > Comparative Study / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Two-dimensional NMR measurements
+
+ 23. GT: Comparative Study
+      LLM: Two-dimensional NMR measurements
+      Similaridade: 0.5835
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: Comparative Study / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Two-dimensional NMR measurements
+
+ 24. GT: FPGA-based Hardware
+      LLM: Relaxation measurements
+      Similaridade: 0.5825
+      Níveis: Nível 3 -> Nível 2
+      Caminhos: Deep Learning Optimization at the Edge > Hardware System > FPGA-based Hardware / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements
+
+ 25. GT: FPGA-based Hardware
+      LLM: Relaxation measurements
+      Similaridade: 0.5825
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: FPGA-based Hardware / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements
+
+ 26. GT: FPGA-based Hardware
+      LLM: Relaxation measurements
+      Similaridade: 0.5825
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: Hardware System > FPGA-based Hardware / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements
+
+ 27. GT: Comparative Study
+      LLM: Future research directions
+      Similaridade: 0.5825
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: Open Source Edge Computing Projects > Comparative Study / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Future research directions
+
+ 28. GT: Comparative Study
+      LLM: Future research directions
+      Similaridade: 0.5825
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: Comparative Study / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Future research directions
+
+ 29. GT: FPGA-based Hardware
+      LLM: Relaxation measurements
+      Similaridade: 0.5825
+      Níveis: Nível 4 -> Nível 2
+      Caminhos: root > Deep Learning Optimization at the Edge > Hardware System > FPGA-based Hardware / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements
+
+ 30. GT: Comparative Study
+      LLM: Future research directions
+      Similaridade: 0.5825
+      Níveis: Nível 3 -> Nível 2
+      Caminhos: root > Open Source Edge Computing Projects > Comparative Study / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Future research directions
+
+ 31. GT: Comparative Study
+      LLM: Design and improvements in LWD-NMR
+      Similaridade: 0.5767
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: root > Open Source Edge Computing Projects > Comparative Study / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in field scale > Design and improvements in LWD-NMR
+
+ 32. GT: Comparative Study
+      LLM: Design and improvements in LWD-NMR
+      Similaridade: 0.5767
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Open Source Edge Computing Projects > Comparative Study / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in field scale > Design and improvements in LWD-NMR
+
+ 33. GT: Comparative Study
+      LLM: Design and improvements in LWD-NMR
+      Similaridade: 0.5767
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Comparative Study / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in field scale > Design and improvements in LWD-NMR
+
+ 34. GT: Cachier and Precog
+      LLM: Pore size distribution
+      Similaridade: 0.5762
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: root > Edge Computing Systems and Tools > Cachier and Precog / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Petrophysics > Pore size distribution
+
+ 35. GT: Conclusions
+      LLM: Future research directions
+      Similaridade: 0.5762
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: root > Conclusions / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Future research directions
+
+ 36. GT: Cachier and Precog
+      LLM: Pore size distribution
+      Similaridade: 0.5762
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Cachier and Precog / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Petrophysics > Pore size distribution
+
+ 37. GT: Conclusions
+      LLM: Future research directions
+      Similaridade: 0.5762
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: Conclusions / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Future research directions
+
+ 38. GT: Cachier and Precog
+      LLM: Pore size distribution
+      Similaridade: 0.5762
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Edge Computing Systems and Tools > Cachier and Precog / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Petrophysics > Pore size distribution
+
+ 39. GT: Comparative Study
+      LLM: Introduction
+      Similaridade: 0.5742
+      Níveis: Nível 3 -> Nível 2
+      Caminhos: root > Open Source Edge Computing Projects > Comparative Study / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Introduction
+
+ 40. GT: Comparative Study
+      LLM: Introduction
+      Similaridade: 0.5742
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: Open Source Edge Computing Projects > Comparative Study / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Introduction
+
+ 41. GT: Comparative Study
+      LLM: Introduction
+      Similaridade: 0.5742
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: Comparative Study / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Introduction
+
+ 42. GT: Cachier and Precog
+      LLM: Future research directions
+      Similaridade: 0.5737
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: Cachier and Precog / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Future research directions
+
+ 43. GT: Comparative Study
+      LLM: Relaxation measurements
+      Similaridade: 0.5737
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: Comparative Study / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements
+
+ 44. GT: Comparative Study
+      LLM: Relaxation measurements
+      Similaridade: 0.5737
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: Open Source Edge Computing Projects > Comparative Study / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements
+
+ 45. GT: Cachier and Precog
+      LLM: Future research directions
+      Similaridade: 0.5737
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: Edge Computing Systems and Tools > Cachier and Precog / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Future research directions
+
+ 46. GT: Comparative Study
+      LLM: Relaxation measurements
+      Similaridade: 0.5737
+      Níveis: Nível 3 -> Nível 2
+      Caminhos: root > Open Source Edge Computing Projects > Comparative Study / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements
+
+ 47. GT: Cachier and Precog
+      LLM: Future research directions
+      Similaridade: 0.5737
+      Níveis: Nível 3 -> Nível 2
+      Caminhos: root > Edge Computing Systems and Tools > Cachier and Precog / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Future research directions
+
+ 48. GT: Deep Learning Packages
+      LLM: Relaxation measurements
+      Similaridade: 0.5732
+      Níveis: Nível 3 -> Nível 2
+      Caminhos: root > Deep Learning Optimization at the Edge > Deep Learning Packages / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements
+
+ 49. GT: Deep Learning Packages
+      LLM: Relaxation measurements
+      Similaridade: 0.5732
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: Deep Learning Optimization at the Edge > Deep Learning Packages / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements
+
+ 50. GT: Deep Learning Packages
+      LLM: Relaxation measurements
+      Similaridade: 0.5732
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: Deep Learning Packages / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements
+
+ 51. GT: Deep Learning Packages
+      LLM: Two-dimensional NMR measurements
+      Similaridade: 0.5728
+      Níveis: Nível 3 -> Nível 2
+      Caminhos: root > Deep Learning Optimization at the Edge > Deep Learning Packages / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Two-dimensional NMR measurements
+
+ 52. GT: Deep Learning Packages
+      LLM: Two-dimensional NMR measurements
+      Similaridade: 0.5728
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: Deep Learning Optimization at the Edge > Deep Learning Packages / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Two-dimensional NMR measurements
+
+ 53. GT: Deep Learning Packages
+      LLM: Two-dimensional NMR measurements
+      Similaridade: 0.5728
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: Deep Learning Packages / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Two-dimensional NMR measurements
+
+ 54. GT: At the Middle Edge Server Layer
+      LLM: Relaxation measurements
+      Similaridade: 0.5708
+      Níveis: Nível 3 -> Nível 2
+      Caminhos: root > Enhancing Energy Efficiency of Edge Computing Systems > At the Middle Edge Server Layer / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements
+
+ 55. GT: At the Middle Edge Server Layer
+      LLM: Relaxation measurements
+      Similaridade: 0.5708
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: Enhancing Energy Efficiency of Edge Computing Systems > At the Middle Edge Server Layer / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements
+
+ 56. GT: At the Middle Edge Server Layer
+      LLM: NMR applications in laboratory scale
+      Similaridade: 0.5708
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: Enhancing Energy Efficiency of Edge Computing Systems > At the Middle Edge Server Layer / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in laboratory scale
+
+ 57. GT: At the Middle Edge Server Layer
+      LLM: Relaxation measurements
+      Similaridade: 0.5708
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: At the Middle Edge Server Layer / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements
+
+ 58. GT: At the Middle Edge Server Layer
+      LLM: NMR applications in laboratory scale
+      Similaridade: 0.5708
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: At the Middle Edge Server Layer / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in laboratory scale
+
+ 59. GT: At the Middle Edge Server Layer
+      LLM: NMR applications in laboratory scale
+      Similaridade: 0.5708
+      Níveis: Nível 3 -> Nível 2
+      Caminhos: root > Enhancing Energy Efficiency of Edge Computing Systems > At the Middle Edge Server Layer / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in laboratory scale
+
+ 60. GT: Deep Learning Packages
+      LLM: Introduction
+      Similaridade: 0.5703
+      Níveis: Nível 3 -> Nível 2
+      Caminhos: root > Deep Learning Optimization at the Edge > Deep Learning Packages / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Introduction
+
+ 61. GT: Deep Learning Packages
+      LLM: Introduction
+      Similaridade: 0.5703
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: Deep Learning Optimization at the Edge > Deep Learning Packages / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Introduction
+
+ 62. GT: Deep Learning Packages
+      LLM: Introduction
+      Similaridade: 0.5703
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: Deep Learning Packages / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Introduction
+
+ 63. GT: Comparative Study
+      LLM: References
+      Similaridade: 0.5688
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: Open Source Edge Computing Projects > Comparative Study / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > References
+
+ 64. GT: Comparative Study
+      LLM: References
+      Similaridade: 0.5688
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: Comparative Study / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > References
+
+ 65. GT: Comparative Study
+      LLM: References
+      Similaridade: 0.5688
+      Níveis: Nível 3 -> Nível 2
+      Caminhos: root > Open Source Edge Computing Projects > Comparative Study / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > References
+
+ 66. GT: Deep Learning Packages
+      LLM: References
+      Similaridade: 0.5669
+      Níveis: Nível 3 -> Nível 2
+      Caminhos: root > Deep Learning Optimization at the Edge > Deep Learning Packages / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > References
+
+ 67. GT: Cachier and Precog
+      LLM: Diffusion measurements
+      Similaridade: 0.5669
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: Edge Computing Systems and Tools > Cachier and Precog / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Diffusion measurements
+
+ 68. GT: Cachier and Precog
+      LLM: Diffusion measurements
+      Similaridade: 0.5669
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: Cachier and Precog / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Diffusion measurements
+
+ 69. GT: Deep Learning Packages
+      LLM: References
+      Similaridade: 0.5669
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: Deep Learning Optimization at the Edge > Deep Learning Packages / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > References
+
+ 70. GT: Deep Learning Packages
+      LLM: References
+      Similaridade: 0.5669
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: Deep Learning Packages / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > References
+
+ 71. GT: Cachier and Precog
+      LLM: Diffusion measurements
+      Similaridade: 0.5669
+      Níveis: Nível 3 -> Nível 2
+      Caminhos: root > Edge Computing Systems and Tools > Cachier and Precog / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Diffusion measurements
+
+ 72. GT: Deep Learning Packages
+      LLM: Design and improvements in LWD-NMR
+      Similaridade: 0.5664
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: root > Deep Learning Optimization at the Edge > Deep Learning Packages / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in field scale > Design and improvements in LWD-NMR
+
+ 73. GT: Deep Learning Packages
+      LLM: Design and improvements in LWD-NMR
+      Similaridade: 0.5664
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Deep Learning Optimization at the Edge > Deep Learning Packages / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in field scale > Design and improvements in LWD-NMR
+
+ 74. GT: Deep Learning Packages
+      LLM: Design and improvements in LWD-NMR
+      Similaridade: 0.5664
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Deep Learning Packages / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in field scale > Design and improvements in LWD-NMR
+
+ 75. GT: Cloud-Sea Computing Systems
+      LLM: Future research directions
+      Similaridade: 0.5654
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: Cloud-Sea Computing Systems / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Future research directions
+
+ 76. GT: Conclusions
+      LLM: References
+      Similaridade: 0.5654
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: Conclusions / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > References
+
+ 77. GT: Cloud-Sea Computing Systems
+      LLM: Future research directions
+      Similaridade: 0.5654
+      Níveis: Nível 3 -> Nível 2
+      Caminhos: root > Edge Computing Systems and Tools > Cloud-Sea Computing Systems / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Future research directions
+
+ 78. GT: Cloud-Sea Computing Systems
+      LLM: Future research directions
+      Similaridade: 0.5654
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: Edge Computing Systems and Tools > Cloud-Sea Computing Systems / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Future research directions
+
+ 79. GT: Conclusions
+      LLM: References
+      Similaridade: 0.5654
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: root > Conclusions / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > References
+
+ 80. GT: ASIC
+      LLM: Relaxation measurements
+      Similaridade: 0.5649
+      Níveis: Nível 4 -> Nível 2
+      Caminhos: root > Deep Learning Optimization at the Edge > Hardware System > ASIC / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements
+
+ 81. GT: ASIC
+      LLM: Relaxation measurements
+      Similaridade: 0.5649
+      Níveis: Nível 3 -> Nível 2
+      Caminhos: Deep Learning Optimization at the Edge > Hardware System > ASIC / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements
+
+ 82. GT: ASIC
+      LLM: Relaxation measurements
+      Similaridade: 0.5649
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: Hardware System > ASIC / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements
+
+ 83. GT: ASIC
+      LLM: Relaxation measurements
+      Similaridade: 0.5649
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: ASIC / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Relaxation measurements
+
+ 84. GT: Cachier and Precog
+      LLM: Introduction
+      Similaridade: 0.5635
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: Edge Computing Systems and Tools > Cachier and Precog / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Introduction
+
+ 85. GT: Cachier and Precog
+      LLM: Introduction
+      Similaridade: 0.5635
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: Cachier and Precog / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Introduction
+
+ 86. GT: Cachier and Precog
+      LLM: Introduction
+      Similaridade: 0.5635
+      Níveis: Nível 3 -> Nível 2
+      Caminhos: root > Edge Computing Systems and Tools > Cachier and Precog / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Introduction
+
+ 87. GT: Cloud-Sea Computing Systems
+      LLM: References
+      Similaridade: 0.5630
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: Cloud-Sea Computing Systems / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > References
+
+ 88. GT: Cloud-Sea Computing Systems
+      LLM: References
+      Similaridade: 0.5630
+      Níveis: Nível 3 -> Nível 2
+      Caminhos: root > Edge Computing Systems and Tools > Cloud-Sea Computing Systems / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > References
+
+ 89. GT: Cloud-Sea Computing Systems
+      LLM: References
+      Similaridade: 0.5630
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: Edge Computing Systems and Tools > Cloud-Sea Computing Systems / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > References
+
+ 90. GT: At the Middle Edge Server Layer
+      LLM: Two-dimensional NMR measurements
+      Similaridade: 0.5615
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: Enhancing Energy Efficiency of Edge Computing Systems > At the Middle Edge Server Layer / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Two-dimensional NMR measurements
+
+ 91. GT: At the Middle Edge Server Layer
+      LLM: Two-dimensional NMR measurements
+      Similaridade: 0.5615
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: At the Middle Edge Server Layer / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Two-dimensional NMR measurements
+
+ 92. GT: At the Middle Edge Server Layer
+      LLM: Two-dimensional NMR measurements
+      Similaridade: 0.5615
+      Níveis: Nível 3 -> Nível 2
+      Caminhos: root > Enhancing Energy Efficiency of Edge Computing Systems > At the Middle Edge Server Layer / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > Two-dimensional NMR measurements
+
+ 93. GT: Conclusions
+      LLM: Design and improvements in LWD-NMR
+      Similaridade: 0.5605
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: root > Conclusions / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in field scale > Design and improvements in LWD-NMR
+
+ 94. GT: Conclusions
+      LLM: Design and improvements in LWD-NMR
+      Similaridade: 0.5605
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Conclusions / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in field scale > Design and improvements in LWD-NMR
+
+ 95. GT: Cachier and Precog
+      LLM: Tar detection in carbonates
+      Similaridade: 0.5596
+      Níveis: Nível 2 -> Nível 4
+      Caminhos: Edge Computing Systems and Tools > Cachier and Precog / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in field scale > Field implementation and applications > Tar detection in carbonates
+
+ 96. GT: Cachier and Precog
+      LLM: Tar detection in carbonates
+      Similaridade: 0.5596
+      Níveis: Nível 1 -> Nível 4
+      Caminhos: Cachier and Precog / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in field scale > Field implementation and applications > Tar detection in carbonates
+
+ 97. GT: Cachier and Precog
+      LLM: Tar detection in carbonates
+      Similaridade: 0.5596
+      Níveis: Nível 3 -> Nível 4
+      Caminhos: root > Edge Computing Systems and Tools > Cachier and Precog / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in field scale > Field implementation and applications > Tar detection in carbonates
+
+ 98. GT: Cachier and Precog
+      LLM: Design and improvements in LWD-NMR
+      Similaridade: 0.5581
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Edge Computing Systems and Tools > Cachier and Precog / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in field scale > Design and improvements in LWD-NMR
+
+ 99. GT: Cachier and Precog
+      LLM: Design and improvements in LWD-NMR
+      Similaridade: 0.5581
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Cachier and Precog / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in field scale > Design and improvements in LWD-NMR
+
+100. GT: Cachier and Precog
+      LLM: Design and improvements in LWD-NMR
+      Similaridade: 0.5581
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: root > Edge Computing Systems and Tools > Cachier and Precog / A review on the applications of nuclear magnetic resonance (NMR) in the oil and gas industry: laboratory and field-scale measurements > NMR applications in field scale > Design and improvements in LWD-NMR
+

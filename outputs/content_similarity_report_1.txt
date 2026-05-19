@@ -1,0 +1,536 @@
+====================================================================================================
+ANÁLISE DE SIMILARIDADE DE SEÇÕES - Survey 1
+====================================================================================================
+
+Arquivo: baselines/ID/output/0/0.md
+Threshold: 0.65
+Data: 2026-04-28 23:01:59
+
+ESTATÍSTICAS:
+  Seções GT: 197
+  Seções LLM: 43
+  Pares Similares: 86
+  Similaridade Máxima: 0.6919
+  Similaridade Média: 0.6641
+  Similaridade Mínima: 0.6519
+
+====================================================================================================
+TOP 86 PARES
+====================================================================================================
+
+  1. GT: Breast cancer
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6919
+      Níveis: Nível 4 -> Nível 3
+      Caminhos: root > Applications of graph deep learning \\ in digital pathology > Cell-graph representation > Breast cancer / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+  2. GT: Breast cancer
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6919
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Breast cancer / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+  3. GT: Breast cancer
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6919
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: Applications of graph deep learning \\ in digital pathology > Cell-graph representation > Breast cancer / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+  4. GT: Breast cancer
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6919
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Cell-graph representation > Breast cancer / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+  5. GT: GCN
+      LLM: 8.3. Physics-Informed Neural Networks (PINNs)
+      Similaridade: 0.6836
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: GCN / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.3. Physics-Informed Neural Networks (PINNs)
+
+  6. GT: Breast cancer
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6836
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Cell-graph representation > Breast cancer / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+  7. GT: Breast cancer
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6836
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: Applications of graph deep learning \\ in digital pathology > Cell-graph representation > Breast cancer / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+  8. GT: Breast cancer
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6836
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Breast cancer / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+  9. GT: GCN
+      LLM: 8.3. Physics-Informed Neural Networks (PINNs)
+      Similaridade: 0.6836
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Graph neural networks models > GCN / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.3. Physics-Informed Neural Networks (PINNs)
+
+ 10. GT: GCN
+      LLM: 8.3. Physics-Informed Neural Networks (PINNs)
+      Similaridade: 0.6836
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: Graph representation learning \\ in digital pathology: Background > Graph neural networks models > GCN / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.3. Physics-Informed Neural Networks (PINNs)
+
+ 11. GT: Breast cancer
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6836
+      Níveis: Nível 4 -> Nível 3
+      Caminhos: root > Applications of graph deep learning \\ in digital pathology > Cell-graph representation > Breast cancer / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 12. GT: GCN
+      LLM: 8.3. Physics-Informed Neural Networks (PINNs)
+      Similaridade: 0.6836
+      Níveis: Nível 4 -> Nível 3
+      Caminhos: root > Graph representation learning \\ in digital pathology: Background > Graph neural networks models > GCN / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.3. Physics-Informed Neural Networks (PINNs)
+
+ 13. GT: Preliminaries
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6768
+      Níveis: Nível 4 -> Nível 3
+      Caminhos: root > Graph representation learning \\ in digital pathology: Background > Histopathology graph representation > Preliminaries / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 14. GT: Preliminaries
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6768
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: Graph representation learning \\ in digital pathology: Background > Histopathology graph representation > Preliminaries / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 15. GT: Preliminaries
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6768
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Histopathology graph representation > Preliminaries / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 16. GT: Preliminaries
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6768
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Preliminaries / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 17. GT: Embedding expert knowledge and clinical adoption of graph analytics
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6675
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: root > Discussion and open challenges > Embedding expert knowledge and clinical adoption of graph analytics / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+ 18. GT: Embedding expert knowledge and clinical adoption of graph analytics
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6675
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Discussion and open challenges > Embedding expert knowledge and clinical adoption of graph analytics / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+ 19. GT: Embedding expert knowledge and clinical adoption of graph analytics
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6675
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Embedding expert knowledge and clinical adoption of graph analytics / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+ 20. GT: Node embeddings
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6670
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: Histopathology graph representation > Graph construction > Node embeddings / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 21. GT: Node embeddings
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6670
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Node embeddings / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 22. GT: Node embeddings
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6670
+      Níveis: Nível 4 -> Nível 3
+      Caminhos: Graph representation learning \\ in digital pathology: Background > Histopathology graph representation > Graph construction > Node embeddings / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 23. GT: Node embeddings
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6670
+      Níveis: Nível 5 -> Nível 3
+      Caminhos: root > Graph representation learning \\ in digital pathology: Background > Histopathology graph representation > Graph construction > Node embeddings / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 24. GT: Node embeddings
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6670
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Graph construction > Node embeddings / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 25. GT: Node definition
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6646
+      Níveis: Nível 5 -> Nível 3
+      Caminhos: root > Graph representation learning \\ in digital pathology: Background > Histopathology graph representation > Graph construction > Node definition / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 26. GT: Node definition
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6646
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: Histopathology graph representation > Graph construction > Node definition / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 27. GT: Node definition
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6646
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Graph construction > Node definition / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 28. GT: Node definition
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6646
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Node definition / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 29. GT: Node definition
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6646
+      Níveis: Nível 4 -> Nível 3
+      Caminhos: Graph representation learning \\ in digital pathology: Background > Histopathology graph representation > Graph construction > Node definition / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 30. GT: Introduction
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6636
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: root > Introduction / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 31. GT: Introduction
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6636
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Introduction / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 32. GT: Breast cancer
+      LLM: 8. Digital Oilfield: Integration of AI and Machine Learning
+      Similaridade: 0.6611
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: Cell-graph representation > Breast cancer / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning
+
+ 33. GT: Breast cancer
+      LLM: 8. Digital Oilfield: Integration of AI and Machine Learning
+      Similaridade: 0.6611
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: Breast cancer / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning
+
+ 34. GT: Breast cancer
+      LLM: 8. Digital Oilfield: Integration of AI and Machine Learning
+      Similaridade: 0.6611
+      Níveis: Nível 4 -> Nível 2
+      Caminhos: root > Applications of graph deep learning \\ in digital pathology > Cell-graph representation > Breast cancer / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning
+
+ 35. GT: Breast cancer
+      LLM: 8. Digital Oilfield: Integration of AI and Machine Learning
+      Similaridade: 0.6611
+      Níveis: Nível 3 -> Nível 2
+      Caminhos: Applications of graph deep learning \\ in digital pathology > Cell-graph representation > Breast cancer / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning
+
+ 36. GT: Introduction
+      LLM: 8. Digital Oilfield: Integration of AI and Machine Learning
+      Similaridade: 0.6606
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: root > Introduction / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning
+
+ 37. GT: Other GNN architectures in histopathology
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6606
+      Níveis: Nível 4 -> Nível 3
+      Caminhos: root > Graph representation learning \\ in digital pathology: Background > Graph neural networks models > Other GNN architectures in histopathology / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 38. GT: Introduction
+      LLM: 8. Digital Oilfield: Integration of AI and Machine Learning
+      Similaridade: 0.6606
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: Introduction / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning
+
+ 39. GT: Other GNN architectures in histopathology
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6606
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: Graph representation learning \\ in digital pathology: Background > Graph neural networks models > Other GNN architectures in histopathology / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 40. GT: Other GNN architectures in histopathology
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6606
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Graph neural networks models > Other GNN architectures in histopathology / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 41. GT: Other GNN architectures in histopathology
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6606
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Other GNN architectures in histopathology / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 42. GT: Graph interpretations
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6597
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Graph interpretations / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+ 43. GT: Unimodal and multi-modal feature level fusion
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6597
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Unimodal and multi-modal feature level fusion / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+ 44. GT: Unimodal and multi-modal feature level fusion
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6597
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Applications of graph deep learning \\ in digital pathology > Unimodal and multi-modal feature level fusion / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+ 45. GT: Graph interpretations
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6597
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Graph representation learning \\ in digital pathology: Background > Graph interpretations / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+ 46. GT: Unimodal and multi-modal feature level fusion
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6597
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: root > Applications of graph deep learning \\ in digital pathology > Unimodal and multi-modal feature level fusion / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+ 47. GT: Graph interpretations
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6597
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: root > Graph representation learning \\ in digital pathology: Background > Graph interpretations / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+ 48. GT: Introduction
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6587
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: root > Introduction / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+ 49. GT: GCN
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6587
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: Graph representation learning \\ in digital pathology: Background > Graph neural networks models > GCN / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 50. GT: ChebNet
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6587
+      Níveis: Nível 4 -> Nível 3
+      Caminhos: root > Graph representation learning \\ in digital pathology: Background > Graph neural networks models > ChebNet / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 51. GT: GCN
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6587
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Graph neural networks models > GCN / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 52. GT: ChebNet
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6587
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Graph neural networks models > ChebNet / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 53. GT: GCN
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6587
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: GCN / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 54. GT: ChebNet
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6587
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: Graph representation learning \\ in digital pathology: Background > Graph neural networks models > ChebNet / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 55. GT: Introduction
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6587
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Introduction / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+ 56. GT: GCN
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6587
+      Níveis: Nível 4 -> Nível 3
+      Caminhos: root > Graph representation learning \\ in digital pathology: Background > Graph neural networks models > GCN / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 57. GT: ChebNet
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6587
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: ChebNet / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 58. GT: Preliminaries
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6582
+      Níveis: Nível 4 -> Nível 3
+      Caminhos: root > Graph representation learning \\ in digital pathology: Background > Histopathology graph representation > Preliminaries / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+ 59. GT: Preliminaries
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6582
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: Graph representation learning \\ in digital pathology: Background > Histopathology graph representation > Preliminaries / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+ 60. GT: Preliminaries
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6582
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Histopathology graph representation > Preliminaries / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+ 61. GT: Preliminaries
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6582
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Preliminaries / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+ 62. GT: Colorectal cancer
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6577
+      Níveis: Nível 4 -> Nível 3
+      Caminhos: root > Applications of graph deep learning \\ in digital pathology > Hierarchical graph representation (macro and micro architectures) > Colorectal cancer / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+ 63. GT: Colorectal cancer
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6577
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: Applications of graph deep learning \\ in digital pathology > Hierarchical graph representation (macro and micro architectures) > Colorectal cancer / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+ 64. GT: Colorectal cancer
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6577
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Hierarchical graph representation (macro and micro architectures) > Colorectal cancer / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+ 65. GT: Colorectal cancer
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6577
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Colorectal cancer / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+ 66. GT: Applications of graph deep learning \\ in digital pathology
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6572
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Applications of graph deep learning \\ in digital pathology / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+ 67. GT: Applications of graph deep learning \\ in digital pathology
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6572
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: root > Applications of graph deep learning \\ in digital pathology / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+ 68. GT: Breast cancer
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6567
+      Níveis: Nível 4 -> Nível 3
+      Caminhos: root > Applications of graph deep learning \\ in digital pathology > Hierarchical graph representation (macro and micro architectures) > Breast cancer / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 69. GT: Breast cancer
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6567
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Hierarchical graph representation (macro and micro architectures) > Breast cancer / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 70. GT: Breast cancer
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6567
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Breast cancer / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 71. GT: Breast cancer
+      LLM: 8.1. Data-Driven Inversion and SNR Enhancement
+      Similaridade: 0.6567
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: Applications of graph deep learning \\ in digital pathology > Hierarchical graph representation (macro and micro architectures) > Breast cancer / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.1. Data-Driven Inversion and SNR Enhancement
+
+ 72. GT: Colorectal cancer
+      LLM: 8. Digital Oilfield: Integration of AI and Machine Learning
+      Similaridade: 0.6562
+      Níveis: Nível 4 -> Nível 2
+      Caminhos: root > Applications of graph deep learning \\ in digital pathology > Hierarchical graph representation (macro and micro architectures) > Colorectal cancer / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning
+
+ 73. GT: Colorectal cancer
+      LLM: 8. Digital Oilfield: Integration of AI and Machine Learning
+      Similaridade: 0.6562
+      Níveis: Nível 3 -> Nível 2
+      Caminhos: Applications of graph deep learning \\ in digital pathology > Hierarchical graph representation (macro and micro architectures) > Colorectal cancer / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning
+
+ 74. GT: Colorectal cancer
+      LLM: 8. Digital Oilfield: Integration of AI and Machine Learning
+      Similaridade: 0.6562
+      Níveis: Nível 2 -> Nível 2
+      Caminhos: Hierarchical graph representation (macro and micro architectures) > Colorectal cancer / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning
+
+ 75. GT: Colorectal cancer
+      LLM: 8. Digital Oilfield: Integration of AI and Machine Learning
+      Similaridade: 0.6562
+      Níveis: Nível 1 -> Nível 2
+      Caminhos: Colorectal cancer / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning
+
+ 76. GT: Automated graph generation
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6548
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: Discussion and open challenges > Entity-graph construction > Automated graph generation / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+ 77. GT: Automated graph generation
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6548
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Automated graph generation / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+ 78. GT: Automated graph generation
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6548
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Entity-graph construction > Automated graph generation / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+ 79. GT: Automated graph generation
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6548
+      Níveis: Nível 4 -> Nível 3
+      Caminhos: root > Discussion and open challenges > Entity-graph construction > Automated graph generation / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+ 80. GT: Patch-graphs and Tissue-graphs representations
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6548
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Patch-graphs and Tissue-graphs representations / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+ 81. GT: Patch-graphs and Tissue-graphs representations
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6548
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: Applications of graph deep learning \\ in digital pathology > Patch-graphs and Tissue-graphs representations / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+ 82. GT: Patch-graphs and Tissue-graphs representations
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6548
+      Níveis: Nível 3 -> Nível 3
+      Caminhos: root > Applications of graph deep learning \\ in digital pathology > Patch-graphs and Tissue-graphs representations / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+ 83. GT: Graph representation learning \\ in digital pathology: Background
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6538
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: root > Graph representation learning \\ in digital pathology: Background / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+ 84. GT: Graph representation learning \\ in digital pathology: Background
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6538
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Graph representation learning \\ in digital pathology: Background / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+ 85. GT: Conclusion
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6519
+      Níveis: Nível 2 -> Nível 3
+      Caminhos: root > Conclusion / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
+ 86. GT: Conclusion
+      LLM: 8.2. Automated Fluid Identification
+      Similaridade: 0.6519
+      Níveis: Nível 1 -> Nível 3
+      Caminhos: Conclusion / Applications of Nuclear Magnetic Resonance (NMR) in the Oil and Gas Industries > 8. Digital Oilfield: Integration of AI and Machine Learning > 8.2. Automated Fluid Identification
+
